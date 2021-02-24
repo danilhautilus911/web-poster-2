@@ -1,0 +1,81 @@
+@import 'reset.css';
+@import 'layout.css';
+body {
+ width: 100%;
+ height: 100%;
+ max-height: 900px;
+
+ margin: 0 auto;
+ display: block;
+ position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.2;
+  background: url("../images/background1.png") no-repeat;
+  background-size: 100% auto;
+}
+html{
+  position: relative;
+  height: 100%;
+  max-height: 900px;
+  width: 100%;
+}
+.block1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.part1 {
+  height: 92%;
+  width: 32%;
+  position: relative;
+  background: yellow;
+  /* display: inline-block; */
+}
+.part2 {
+  height: 92%;
+  width: 67.5%;
+  position: relative;
+  background: red;
+  /* display: inline-block; */
+}
+.part3 {
+  height: 8%;
+  width: 100%;
+  position: relative;
+  background: blue;
+}
+.p1 {
+  height: 50%;
+  width: 85%;
+  margin-top: 10%;
+  margin-left: 8%;
+  background: red;
+  opacity: 0.5;
+  position: relative;
+  font-size: 105px;
+  font-family: TwentytwelveSansG;
+  /* text-decoration: underline; */
+}
+.p2 {
+  height: 30%;
+  width: 70%;
+  /* margin-top: 10%; */
+  margin-left: 8%;
+  background: red;
+  opacity: 0.5;
+  position: relative;
+  font-size: 21px;
+  font-family: TwentytwelveSansG;
+  border-radius: 50px;
+  border: 20px solid blue;
+  padding: 15px;
+}
