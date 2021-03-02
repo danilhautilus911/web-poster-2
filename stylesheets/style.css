@@ -69,41 +69,114 @@ html{
   grid-template-columns: 10% 1fr 10%;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:  "previous_button1 slider1 next_button1"
-                        ". slider2 ."
-                        ". slider3 ."
+                        "previous_button2 slider2 next_button2"
+                        "previous_button3 slider3 next_button3"
 }
 .slider1 {
+  position: relative;
   grid-area: slider1;
+  overflow: hidden;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
 }
-.slide1 {
-  display:
+#slide1 {
   width: 100%;
   height: 100%;
   background-color: red;
 }
-.slide2 {
+/* .mask {
+  mask-type: alpha;
+  mask: url("../images/nextbutton2.svg");
+  background-color: black;
+  position:absolute;
+  bottom: 0;
+  left: 20%;
+  height: 100%;
+  width: 50%;
+}
+.mask:hover {
+  background-color: blue;
+} */
+/* #slide1 img {
+  position:absolute;
+  bottom: 0;
+  left: 20%;
+  height: 100%;
+} */
+#slide2 {
   width: 100%;
   height: 100%;
   background-color: green;
 }
-.slide3 {
+#slide3 {
   width: 100%;
   height: 100%;
   background-color: yellow;
 }
-
-.slider2 {
-  grid-area: slider2;
-}
-.slider3 {
-  grid-area: slider3;
-}
-.next {
+.next1 {
+  height: 58%;
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 50%;
   grid-area: next_button1;
+  background: url("../images/nextbutton.png") no-repeat;
 }
-.previous {
+.previous1 {
+  height: 58%;
+  width: 58%;
+  margin: 0 auto;
+  margin-top: 50%;
   grid-area: previous_button1;
+  background: url("../images/previousbutton.png") no-repeat;
 }
+.slider2 {
+  position: relative;
+  grid-area: slider2;
+  overflow: hidden;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+.next2 {
+  height: 58%;
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 50%;
+  grid-area: next_button2;
+  background: url("../images/nextbutton.png") no-repeat;
+}
+.previous2 {
+  height: 58%;
+  width: 58%;
+  margin: 0 auto;
+  margin-top: 50%;
+  grid-area: previous_button2;
+  background: url("../images/previousbutton.png") no-repeat;
+}
+#slide1_2 {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+#slide2_2 {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+#slide3_2 {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+
+.slider3 {
+  position: relative;
+  grid-area: slider3;
+  overflow: hidden;
+}
+
+
 .part3 {
   position: relative;
   background: white;
@@ -182,13 +255,13 @@ html{
   /* text-decoration: underline; */
 }
 .p2 {
-  height: 34%;
+  height: 31%;
   width: 70%;
   margin: 0 auto;
   /* background: red; */
   opacity: 1;
   position: relative;
-  font-size: 23px;
+  font-size: 22px;
   font-family: TwentytwelveSansG;
   border-radius: 50px;
   border: 20px solid red;
