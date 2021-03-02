@@ -30,9 +30,8 @@ html{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 10%;
+  grid-template-rows: 1fr 10%;
   grid-template-areas:  "part1 part2 part2"
-                        "part1 part2 part2"
                         "part3 part3 part3"
 }
 /* the layout on ipad */
@@ -47,36 +46,94 @@ html{
 }
 .part1 {
   position: relative;
-  background: yellow;
+  background: #FFFFE0;
   grid-area: part1;
 }
 .part2 {
   position: relative;
-  background: red;
+  background: #E0FFFF;
   grid-area: part2;
+  display: grid;
+  grid-template-columns: 5% 1fr 7%;
+  grid-template-rows: 5% 1fr 5%;
+  grid-template-areas: ". . ."
+                       ". slider_wrapper ."
+                       ". . ."
 }
+
+
+
 .part3 {
   position: relative;
-  background: green;
+  background: white;
   grid-area: part3;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  display: grid;
+  grid-template-columns: 45% 45% 10%;
+  grid-template-areas: "part3_1 part3_2 part3_3";
 }
-.part3 img {
-  display: inline;
-  margin-top: auto;
-  margin-bottom: auto 
+.part3_1 {
+  grid-area: part3_1;
+  /* background: red; */
 }
-.part3 p {
-  display: inline;
-  margin: 0 auto;
+.part3_1 img {
+  position: absolute;
+  top: 14%;
+  left: 1%;
+}
+.part3_1 div {
+  font-size: 23px;
+  font-family: TwentytwelveSansG;
+  margin-top: 2.5%;
+  margin-left: 11%;
+}
+.part3_2 {
+  grid-area: part3_2;
+  /* background: yellow; */
+}
+.part3_2 div {
+  font-size: 23px;
+  font-family: TwentytwelveSansG;
+  margin-top: 2.5%;
+  margin-left: 64%;
+}
+.part3_2 img {
+  position: absolute;
+  top: 39%;
+  right: 11%;
+}
+.part3_3 {
+  grid-area: part3_3;
+  background: #00B6F5;
+  border-left: 5px solid black;
+}
+.part3_3 div {
+  width: 100%;
+  font-size: 36px;
+  font-family: TwentytwelveSansG;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+/* .part3 p {
+  display: inline-block;
+  margin-top: 1%;
   font-size: 24px;
-  vertical-align: baseline;
-}
+  font-family: TwentytwelveSansG;
+} */
+
+
+
+
+
 .p1 {
   height: 46%;
   width: 85%;
   margin: 0 auto;
-  margin-top: 10%;
-  background: red;
+  margin-top: 0%;
+  /* background: red; */
   opacity: 1;
   position: relative;
   font-size: 115px;
@@ -87,12 +144,39 @@ html{
   height: 34%;
   width: 70%;
   margin: 0 auto;
-  background: red;
-  opacity: 0.5;
+  margin-top: 10%;
+  /* background: red; */
+  opacity: 1;
   position: relative;
-  font-size: 24px;
+  font-size: 23px;
   font-family: TwentytwelveSansG;
   border-radius: 50px;
-  border: 20px solid blue;
+  border: 20px solid red;
   padding: 15px;
 }
+
+
+.slider_wrapper {
+  grid-area: slider_wrapper;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+  background-color: pink;
+  /* border: 20px solid black; */
+  /* margin: 0 auto;
+  margin-top: 4%; */
+}
+/* .slider1 {
+  position: relative;
+  width: 100%;
+  height: 33%;
+}
+.slide1 img, .slide2 img, .slide3 img {
+  object-fit: cover;
+  height: 100%;
+}
+.previous, .next {
+  height: 100%;
+  width: 20%;
+} */
