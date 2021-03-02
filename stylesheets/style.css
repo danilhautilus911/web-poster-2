@@ -60,9 +60,50 @@ html{
                        ". slider_wrapper ."
                        ". . ."
 }
+.slider_wrapper {
+  grid-area: slider_wrapper;
+  border-radius: 80px;
+  background-color: pink;
+  border: 20px solid black;
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:  "previous_button1 slider1 next_button1"
+                        ". slider2 ."
+                        ". slider3 ."
+}
+.slider1 {
+  grid-area: slider1;
+}
+.slide1 {
+  display:
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.slide2 {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.slide3 {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
 
-
-
+.slider2 {
+  grid-area: slider2;
+}
+.slider3 {
+  grid-area: slider3;
+}
+.next {
+  grid-area: next_button1;
+}
+.previous {
+  grid-area: previous_button1;
+}
 .part3 {
   position: relative;
   background: white;
@@ -129,7 +170,7 @@ html{
 
 
 .p1 {
-  height: 46%;
+  height: 53%;
   width: 85%;
   margin: 0 auto;
   margin-top: 0%;
@@ -144,7 +185,6 @@ html{
   height: 34%;
   width: 70%;
   margin: 0 auto;
-  margin-top: 10%;
   /* background: red; */
   opacity: 1;
   position: relative;
@@ -154,29 +194,3 @@ html{
   border: 20px solid red;
   padding: 15px;
 }
-
-
-.slider_wrapper {
-  grid-area: slider_wrapper;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 80px;
-  background-color: pink;
-  /* border: 20px solid black; */
-  /* margin: 0 auto;
-  margin-top: 4%; */
-}
-/* .slider1 {
-  position: relative;
-  width: 100%;
-  height: 33%;
-}
-.slide1 img, .slide2 img, .slide3 img {
-  object-fit: cover;
-  height: 100%;
-}
-.previous, .next {
-  height: 100%;
-  width: 20%;
-} */
