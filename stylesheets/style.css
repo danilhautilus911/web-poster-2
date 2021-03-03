@@ -28,7 +28,8 @@ html{
 .block1 {
   height: 100%;
   width: 100%;
-  display: grid;
+  /* display: grid; */
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "part1 part2 part2"
@@ -162,7 +163,7 @@ html{
 #slide2_2 {
   width: 100%;
   height: 100%;
-  background-color: pink;
+  background-color: purple;
 }
 #slide3_2 {
   width: 100%;
@@ -266,4 +267,171 @@ html{
   border-radius: 50px;
   border: 20px solid red;
   padding: 15px;
+}
+
+
+/* начало второго блока */
+.block2 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  /* display: none; */
+  grid-template-rows: 1fr 10%;
+  grid-template-areas:  "mainpart"
+                        "footer2"
+}
+/* _______________________________________________ */
+.mainpart {
+  grid-area: mainpart;
+  position: relative;
+  background-image: url("../images/road.jpg");
+  display: grid;
+  grid-template-columns: 2% 1fr 1fr 1fr 2%;
+  grid-template-areas:  ". light1 light2 light3 ."
+}
+.oval1, .oval2, .oval3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 100% / 100%;
+  transform: skew(20deg);
+}
+.stop_signal, .wait_signal, .go_signal {
+  position: absolute;
+  font-size: 120px;
+  font-family: TwentytwelveSansG;
+  transform: rotate(-32deg);
+}
+.light1 {
+  grid-area: light1;
+  position: relative;
+  opacity: 0.4;
+  animation: red_signal_work 25s linear;
+}
+.oval1 {
+  background: red;
+}
+.stop_signal {
+  top: 40%;
+  left: 17%;
+}
+.light2 {
+  grid-area: light2;
+  position: relative;
+  opacity: 0.4;
+  animation: yellow_signal_work 25s ease;
+}
+.oval2 {
+  background: #FFD42F;
+}
+.wait_signal {
+  top: 40%;
+  left: 19%;
+}
+.light3 {
+  grid-area: light3;
+  position: relative;
+  animation: green_signal_work 25s ease;
+}
+.oval3 {
+  background: #11DA00;
+}
+.go_signal {
+  top: 40%;
+  left: 33%;
+}
+/* _______________________________________________ */
+@keyframes red_signal_work {
+  0% {opacity: 1}
+  20% {opacity: 1}
+
+  21% {opacity: 0}
+  22% {opacity: 0}
+
+  23% {opacity: 1}
+  24% {opacity: 1}
+
+  25% {opacity: 0}
+  26% {opacity: 0}
+
+  27% {opacity: 1}
+  28% {opacity: 1}
+
+  29% {opacity: 0}
+  30% {opacity: 0}
+
+  31% {opacity: 1}
+  32% {opacity: 1}
+
+  33% {opacity: 0}
+  34% {opacity: 0.4}
+  100% {opacity: 0.4}
+}
+@keyframes yellow_signal_work {
+  0% {opacity: 0.4}
+  34% {opacity: 0.4}
+  35% {opacity: 1}
+  50% {opacity: 1}
+
+  51% {opacity: 0}
+  52% {opacity: 0}
+
+  53% {opacity: 1}
+  54% {opacity: 1}
+
+  55% {opacity: 0}
+  56% {opacity: 0}
+
+  57% {opacity: 1}
+  58% {opacity: 1}
+
+  59% {opacity: 0}
+  60% {opacity: 0}
+
+  61% {opacity: 1}
+  62% {opacity: 1}
+
+  63% {opacity: 0.4}
+  100% {opacity: 0.4}
+}
+@keyframes green_signal_work {
+  0% {opacity: 0.4}
+  65% {opacity: 0.4}
+  66% {opacity: 1}
+  100% {opacity: 1}
+}
+/* _______________________________________________ */
+.footer2 {
+  grid-area: footer2;
+  position: relative;
+  background: #E0FFFF;
+  display: grid;
+  grid-template-columns: 1fr 10%;
+  grid-template-areas:  "part1_footer2 part2_footer2";
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.part1_footer2 {
+  position: relative;
+  grid-area: part1_footer2;
+}
+.part1_footer2 div {
+  font-size: 23px;
+  font-family: TwentytwelveSansG;
+  margin-top: 1.5%;
+  margin-left: 2%;
+}
+.part2_footer2 {
+  grid-area: part2_footer2;
+  background: #00B6F5;
+  border-left: 5px solid black;
+}
+.part2_footer2 div {
+  width: 100%;
+  font-size: 36px;
+  font-family: TwentytwelveSansG;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
 }
