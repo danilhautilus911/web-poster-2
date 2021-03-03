@@ -33,11 +33,25 @@
       slides[slideIndex - 1].style.display = "block";
       }
 
+      function showSlides(n) {
+      let slides = document.getElementsByClassName("item2");
+      if (n > slides.length) {
+      slideIndex = 1
+      }
+      if (n < 1) {
+      slideIndex = slides.length
+      }
+      for (let slide of slides) {
+      slide.style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+      }
+
 
     </script>
   </head>
   <body>
-    <div class="block1">
+    <section class="block1">
       <div class="part1">
           <p class="p1">твой первый мобиль</p>
           <p class="p2">привет, дружище!<br>сегодня тебе выпал суперский шанс ощутить что такое быть водителем! давай определимся с тем как будет выглядеть твоя тачка, а потом проедемся по различным местам и даже пособлюдаем некоторые правила дорожного движения.</p>
@@ -60,9 +74,9 @@
           <a class="next1" onclick="nextSlide()"></a>
 
           <div class="slider2">
-            <div class="item" id="slide1_2"></div>
-            <div class="item" id="slide2_2"></div>
-            <div class="item" id="slide3_2"></div>
+            <div class="item2" id="slide1_2"></div>
+            <div class="item2" id="slide2_2"></div>
+            <div class="item2" id="slide3_2"></div>
           </div>
           <a class="previous2" onclick="previousSlide()"></a>
           <a class="next2" onclick="nextSlide()"></a>
@@ -85,15 +99,31 @@
         <div class="part3_3">
             <div class="">вперёд</div>
         </div>
-
-
-
-
-
-
-
       </div>
-
-    </div>
+    </section>
+    <section class="block2">
+      <div class="mainpart">
+        <div class="light1">
+            <div class="oval1"></div>
+            <div class="stop_signal">stop</div>
+        </div>
+        <div class="light2">
+            <div class="oval2"></div>
+            <div class="wait_signal">wait</div>
+        </div>
+        <div class="light3">
+            <div class="oval3"></div>
+            <div class="go_signal">go</div>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="part1_footer2">
+          <div class="">красный сигнал светофора запрещает движение!</div>
+        </div>
+        <div class="part2_footer2">
+          <div class="">вперёд</div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
