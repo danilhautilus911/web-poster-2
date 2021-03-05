@@ -56,7 +56,7 @@ html{
 .p1 {
   height: 53%;
   width: 85%;
-  margin-left: 10%;
+  margin: 0 auto;
   margin-top: 0%;
   /* background: red; */
   opacity: 1;
@@ -66,10 +66,10 @@ html{
   /* text-decoration: underline; */
 }
 .p2 {
-  height: 30%;
+  height: 33%;
   width: 70%;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: -1%;
   /* background: red; */
   opacity: 1;
   position: relative;
@@ -112,56 +112,11 @@ html{
   border-left: 5px solid black;
   border-right: 5px solid black;
 }
-#slide1 {
-  width: 100%;
-  height: 100%;
-  background-color: red;
-}
-/* .mask {
-  mask-type: alpha;
-  mask: url("../images/nextbutton2.svg");
-  background-color: black;
-  position:absolute;
-  bottom: 0;
-  left: 20%;
-  height: 100%;
-  width: 50%;
-}
-.mask:hover {
-  background-color: blue;
-} */
-/* #slide1 img {
-  position:absolute;
-  bottom: 0;
-  left: 20%;
-  height: 100%;
-} */
-#slide2 {
-  width: 100%;
-  height: 100%;
-  background-color: green;
-}
-#slide3 {
-  width: 100%;
-  height: 100%;
-  background-color: yellow;
-}
-.next1 {
-  height: 58%;
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 50%;
-  grid-area: next_button1;
-  background: url("../images/nextbutton.png") no-repeat;
-}
-.previous1 {
-  height: 58%;
-  width: 58%;
-  margin: 0 auto;
-  margin-top: 50%;
-  grid-area: previous_button1;
-  background: url("../images/previousbutton.png") no-repeat;
-}
+#slide1, #slide2, #slide3 {width: 100%; height: 100%;}
+#slide1 {background-color: red;}
+#slide2 {background-color: green;}
+#slide3 {background-color: yellow;}
+
 .slider2 {
   position: relative;
   grid-area: slider2;
@@ -170,42 +125,44 @@ html{
   border-left: 5px solid black;
   border-right: 5px solid black;
 }
-.next2 {
-  height: 58%;
-  width: 78%;
-  margin: 0 auto;
-  margin-top: 50%;
-  grid-area: next_button2;
-  background: url("../images/nextbutton.png") no-repeat;
-}
-.previous2 {
-  height: 58%;
-  width: 58%;
-  margin: 0 auto;
-  margin-top: 50%;
-  grid-area: previous_button2;
-  background: url("../images/previousbutton.png") no-repeat;
-}
-#slide1_2 {
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-}
-#slide2_2 {
-  width: 100%;
-  height: 100%;
-  background-color: purple;
-}
-#slide3_2 {
-  width: 100%;
-  height: 100%;
-  background-color: orange;
-}
+
+#slide1_2, #slide2_2, #slide3_2 {width: 100%; height: 100%;}
+#slide1_2 {background-color: blue;}
+#slide2_2 {background-color: purple;}
+#slide3_2 {background-color: orange;}
+
 .slider3 {
   position: relative;
   grid-area: slider3;
   overflow: hidden;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
 }
+#slide1_3, #slide2_3, #slide3_3 {width: 100%; height: 100%;}
+#slide1_3 {background-color: brown;}
+#slide2_3 {background-color: green;}
+#slide3_3 {background-color: skyblue;}
+
+
+.next1, .next2, .next3 {
+  height: 58%;
+  width: 78%;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+.next1 { grid-area: next_button1; background: url("../images/nextbutton.png") no-repeat;}
+.next2 { grid-area: next_button2; background: url("../images/nextbutton.png") no-repeat;}
+.next3 { grid-area: next_button3; background: url("../images/nextbutton.png") no-repeat;}
+
+.previous1, .previous2, .previous3 {
+  height: 58%;
+  width: 58%;
+  margin: 0 auto;
+  margin-top: 50%;
+}
+.previous1 { grid-area: previous_button1; background: url("../images/previousbutton.png") no-repeat;}
+.previous2 { grid-area: previous_button2; background: url("../images/previousbutton.png") no-repeat;}
+.previous3 { grid-area: previous_button3; background: url("../images/previousbutton.png") no-repeat;}
 
 /* _______________________________________________ */
 .part3 {
@@ -246,7 +203,7 @@ html{
 .part3_2 img {
   position: absolute;
   top: 40%;
-  right: 11.7%;
+  right: 11%;
 }
 .part3_3 {
   grid-area: part3_3;
@@ -271,12 +228,16 @@ html{
 
 
 
+
+
+
+
 /* начало второго блока */
 .block2 {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  /* display: grid; */
+  display: grid;
   display: none;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart"
@@ -444,7 +405,7 @@ html{
   width: 100%;
   /* overflow: hidden; */
   display: grid;
-  /* display: none; */
+  display: none;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart3"
                         "footer3"
@@ -468,8 +429,8 @@ html{
 .line_bottom {grid-area: line_bottom; position: relative;}
 
 .car1, .car2 {position: absolute; height: 100%;}
-.car1 {left: -40%; animation: edut_tachki1 10s infinite ease-in;}
-.car2 {left: -25%; animation: edut_tachki2 7s infinite ease-in;}
+.car1 {left: 0%; animation: 10s infinite ease-in;}
+.car2 {left: 55%; animation: 7s infinite ease-in;}
 
 .car3, .car4, .car5, .car6, .car7, .car8, .car9, .car10 {
   position: relative;
@@ -637,4 +598,18 @@ html{
 }
 .vpered3 {
   margin-top: 4%;
+}
+
+
+
+/* начало четвертого блока */
+.block4 {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  display: grid;
+  /* display: none; */
+  grid-template-rows: 1fr 10%;
+  grid-template-areas:  "mainpart4"
+                        "footer4"
 }
