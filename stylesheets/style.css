@@ -25,6 +25,8 @@ html{
   height: 100%;
   width: 100%;
 }
+
+/* начало первого блока */
 .block1 {
   height: 100%;
   width: 100%;
@@ -45,11 +47,40 @@ html{
                         "part3 part3 part3"
   }
 }
+/* _______________________________________________ */
 .part1 {
   position: relative;
   background: #FFFFE0;
   grid-area: part1;
 }
+.p1 {
+  height: 53%;
+  width: 85%;
+  margin-left: 10%;
+  margin-top: 0%;
+  /* background: red; */
+  opacity: 1;
+  position: relative;
+  font-size: 115px;
+  font-family: TwentytwelveSansG;
+  /* text-decoration: underline; */
+}
+.p2 {
+  height: 30%;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  /* background: red; */
+  opacity: 1;
+  position: relative;
+  font-size: 22px;
+  font-family: TwentytwelveSansG;
+  border-radius: 50px;
+  border: 19px solid red;
+  padding: 15px;
+}
+/* _______________________________________________ */
+
 .part2 {
   position: relative;
   background: #E0FFFF;
@@ -170,14 +201,13 @@ html{
   height: 100%;
   background-color: orange;
 }
-
 .slider3 {
   position: relative;
   grid-area: slider3;
   overflow: hidden;
 }
 
-
+/* _______________________________________________ */
 .part3 {
   position: relative;
   background: white;
@@ -215,8 +245,8 @@ html{
 }
 .part3_2 img {
   position: absolute;
-  top: 39%;
-  right: 11%;
+  top: 40%;
+  right: 11.7%;
 }
 .part3_3 {
   grid-area: part3_3;
@@ -241,42 +271,13 @@ html{
 
 
 
-
-
-.p1 {
-  height: 53%;
-  width: 85%;
-  margin: 0 auto;
-  margin-top: 0%;
-  /* background: red; */
-  opacity: 1;
-  position: relative;
-  font-size: 115px;
-  font-family: TwentytwelveSansG;
-  /* text-decoration: underline; */
-}
-.p2 {
-  height: 31%;
-  width: 70%;
-  margin: 0 auto;
-  /* background: red; */
-  opacity: 1;
-  position: relative;
-  font-size: 22px;
-  font-family: TwentytwelveSansG;
-  border-radius: 50px;
-  border: 20px solid red;
-  padding: 15px;
-}
-
-
 /* начало второго блока */
 .block2 {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  display: grid;
-  /* display: none; */
+  /* display: grid; */
+  display: none;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart"
                         "footer2"
@@ -433,5 +434,207 @@ html{
   font-family: TwentytwelveSansG;
   display: flex;
   justify-content: center;
+  margin-top: 4%;
+}
+
+
+/* начало третьего блока */
+.block3 {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  display: grid;
+  /* display: none; */
+  grid-template-rows: 1fr 10%;
+  grid-template-areas:  "mainpart3"
+                        "footer3"
+}
+
+/* _______________________________________________ */
+.mainpart3 {
+  grid-area: mainpart3;
+  position: relative;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: "line_top"
+                       "line_middle1"
+                       "line_middle2"
+                       "line_bottom"
+}
+
+.line_top {grid-area: line_top;}
+.line_middle1 {grid-area: line_middle1;}
+.line_middle2 {grid-area: line_middle2;}
+.line_bottom {grid-area: line_bottom; position: relative;}
+
+.car1, .car2 {position: absolute; height: 100%;}
+.car1 {left: -40%; animation: edut_tachki1 10s infinite ease-in;}
+.car2 {left: -25%; animation: edut_tachki2 7s infinite ease-in;}
+
+.car3, .car4, .car5, .car6, .car7, .car8, .car9, .car10 {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.car5, .car8, .car9 {width: 22%;}
+.car1 {width: 23%;}
+.car5 {margin-left: 2%}
+.car2, .car6, .car7, .car3, .car4, .car10 {width: 25%;}
+.car3 {margin-left: -5%;}
+.car4 {margin-right: 1%;}
+
+.car5 img, .car7 img, .car10 img {animation: maschiny_v_probke 1s infinite ease-in}
+.car6 img, .car3 img, .car9 img {animation: maschiny_v_probke2 1s infinite ease-in}
+.car4 img, .car8 img {animation: maschiny_v_probke3 1s infinite ease-in}
+
+.car2 img, .car3 img, .car6 img, .car10 img {
+  position: absolute;
+  bottom: 0;
+  height: 141%;
+}
+.car1 img, .car4 img, .car5 img, .car7 img, .car8 img, .car9 img {
+  position: absolute;
+  bottom: 0;
+  height: 165%;
+}
+@keyframes maschiny_v_probke {
+  0% {margin-bottom: 0%;}
+  19% {margin-bottom: 0%;}
+  20% {margin-bottom: 0.5%; , margin-left: 1%}
+  39% {margin-bottom: 0.5%; margin-left: 1%}
+  40% {margin-bottom: 0%;}
+  59% {margin-bottom: 0%;}
+  60% {margin-bottom: 1%;}
+  79% {margin-bottom: 1%;}
+  80% {margin-bottom: 0%; margin-left: 1%}
+  99% {margin-bottom: 0%; margin-left: 1%}
+  100% {margin-bottom: 1%;}
+}
+@keyframes maschiny_v_probke2 {
+  0% {margin-bottom: 1%;}
+  19% {margin-bottom: 1%;}
+  20% {margin-bottom: 0%; margin-right: 1%}
+  39% {margin-bottom: 0%; margin-right: 1%}
+  40% {margin-bottom: 1%;}
+  59% {margin-bottom: 1%;}
+  60% {margin-bottom: 0%;}
+  79% {margin-bottom: 0%;}
+  80% {margin-bottom: 1%;}
+  99% {margin-bottom: 1%;}
+  100% {margin-bottom: 0%;}
+}
+@keyframes maschiny_v_probke3 {
+  0% {margin-bottom: 0%; margin-left: 1%}
+  19% {margin-bottom: 0%; margin-left: 1%}
+  20% {margin-bottom: 1%;}
+  39% {margin-bottom: 1%;}
+  40% {margin-bottom: 0%; margin-left: 1.5%}
+  59% {margin-bottom: 0%; margin-left: 1.5%}
+  60% {margin-bottom: 1%;}
+  79% {margin-bottom: 1%;}
+  80% {margin-bottom: 0%; margin-left: 1%}
+  99% {margin-bottom: 0%; margin-left: 1%}
+  100% {margin-bottom: 1%;}
+}
+@keyframes edut_tachki1 {
+  0% {}
+  100% {left: 130%;}
+}
+@keyframes edut_tachki2 {
+  0% {bottom: 0%;}
+  10% {bottom: 2%;}
+  15% {bottom: 0%;}
+  20% {bottom: 2%;}
+  25% {bottom: 0%;}
+  29% {bottom: 0%;}
+
+  30% {bottom: 2%; left: 30%;}
+  34% {bottom: 2%; left: 30%;}
+
+  35% {bottom: 0%; left: 35%;}
+  39% {bottom: 0%; left: 35%;}
+
+  40% {bottom: 4%; left: 40%;}
+  44% {bottom: 4%; left: 40%;}
+
+  45% {bottom: 0%; left: 45%;}
+  49% {bottom: 0%; left: 45%;}
+
+  50% {bottom: 4%; left: 50%;}
+  54% {bottom: 4%; left: 50%;}
+
+
+  60% {bottom: 0%;}
+  61% {bottom: 2%;}
+  60% {bottom: 0%;}
+  61% {bottom: 2%;}
+  62% {bottom: 0%;}
+  /* 100% {left: 130%;} */
+}
+/* _______________________________________________ */
+
+.footer3 {
+  grid-area: footer3;
+  position: relative;
+  background: #E0FFFF;
+  display: grid;
+  grid-template-columns: 7% 12% 10% 1fr 10%;
+  grid-template-areas:  "part1_footer3 part2_footer3 part3_footer3 part4_footer3 part5_footer3";
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.part1_footer3 div, .part2_footer3 div, .part3_footer3 div, .part5_footer3 div {
+  width: 100%;
+  font-size: 36px;
+  font-family: TwentytwelveSansG;
+  display: flex;
+  justify-content: center;
+}
+.part1_footer3 div, .part2_footer3 div, .part3_footer3 div {margin-top: 4%;}
+.part1_footer3 {
+  grid-area: part1_footer3;
+  border-right: 5px solid black;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.part1_footer3:hover {
+  background-color: #11DA00;
+}
+.part2_footer3 {
+  grid-area: part2_footer3;
+  border-right: 5px solid black;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.part2_footer3:hover {
+  background-color: #FF0000;
+}
+.part3_footer3 {
+  grid-area: part3_footer3;
+  border-right: 5px solid black;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.part3_footer3:hover {
+  background-color: #0038FF;
+}
+.part4_footer3 {
+  grid-area: part4_footer3;
+  position: relative;
+}
+.part4_footer3 img {
+  position: absolute;
+  top: 17%;
+  right: 2%;
+  cursor: pointer;
+}
+.part5_footer3 {
+  grid-area: part5_footer3;
+  background: #00B6F5;
+  border-left: 5px solid black;
+  cursor: pointer;
+  /* transition: all 0.25s ease; */
+}
+.vpered3 {
   margin-top: 4%;
 }
