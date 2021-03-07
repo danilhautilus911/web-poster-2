@@ -604,6 +604,7 @@ html{
 
 /* начало четвертого блока */
 .block4 {
+  position: relative;
   height: 100%;
   width: 100%;
   /* overflow: hidden; */
@@ -612,4 +613,196 @@ html{
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart4"
                         "footer4"
+}
+.mainpart4 {
+  grid-area: mainpart4;
+  display: grid;
+  grid-template-rows: 5% 15% 1fr 5%;
+  grid-template-columns: 3% 1fr 3%;
+  grid-template-areas:  ". . ."
+                        ". slider_block4_part1 ."
+                        ". slider_block4_part2 ."
+                        ". . ."
+}
+.slider_block4_part1 {
+  grid-area: slider_block4_part1;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-areas:  ".  city_slider .";
+  position: relative;
+}
+.city_slider {
+  grid-area: city_slider;
+  position: relative;
+  display: grid;
+  grid-template-columns: 12% 1fr 12%;
+  grid-template-areas: "previous_button_part4 city_name next_button_part4"
+}
+.rectangle_part4 {
+  position: absolute;
+  top: 0%;
+  height: 80%;
+  width: 95%;
+  background-color: pink;
+  border-radius: 100px;
+  border: 20px solid black;
+  z-index: -1;
+}
+.previous_button_part4 {
+  grid-area: previous_button_part4;
+  border-right: 5px solid black;
+  position: relative;
+}
+.previous_button_part4 img {
+  position: absolute;
+  height: 80%;
+  top: 19%;
+  left: 38%;
+}
+.next_button_part4 {
+  grid-area: next_button_part4;
+  border-left: 5px solid black;
+  position: relative;
+}
+.next_button_part4 img {
+  position: absolute;
+  height: 80%;
+  top: 19%;
+  left: 10%;
+}
+.city_name {
+  position: relative;
+  grid-area: city_name;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.city_name div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* .city_name div div  */
+.city1 {
+  /* background-color: red; */
+}
+.city2 {
+  background-color: green;
+}
+.city3 {
+  background-color: blue;
+}
+#city_name_paragraphs {
+  position: absolute;
+  display: inline-block;
+  font-size: 36px;
+  font-family: TwentytwelveSansG;
+  top: 35%;
+  left: 39%;
+}
+
+.slider_block4_part2 {
+  grid-area: slider_block4_part2;
+  border-radius: 80px;
+  border: 20px solid black;
+  overflow: hidden;
+}
+.background1_part4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/nsk_background.png) no-repeat top;
+  background-size: 100%;
+}
+
+/* _______________________________________________ */
+.road_sign_1 {
+  position: absolute;
+  top: 3%;
+  left: 8%;
+  height: 27%;
+  width: 16%;
+}
+.road_sign_1 img {
+  height: 100%;
+  width: 100%;
+}
+.road_sign_2 {
+  position: absolute;
+  top: 9%;
+  left: 0%;
+  height: 27%;
+  width: 16%;
+}
+.road_sign_2 img {
+  height: 100%;
+  width: 87%;
+}
+.road_sign_3 {
+  position: absolute;
+  top: 9%;
+  right: 0.5%;
+  height: 29%;
+  width: 24%;
+}
+.road_sign_3 img {
+  height: 82%;
+  width: 100%;
+}
+/* _______________________________________________ */
+.footer4 {
+  grid-area: footer4;
+  position: relative;
+  background: #E0FFFF;
+  display: grid;
+  grid-template-columns: 1fr 11% 10%;
+  grid-template-areas:  "part1_footer4 part2_footer4 part3_footer4";
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.part1_footer4 {
+  grid-area: part1_footer4;
+  position: relative;
+}
+.hr {
+ position: absolute;
+ border: 3px dashed black;
+ width: 86%;
+ top: 33%;
+ left: 5%;
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  display: inline-block;
+  background-color: grey;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-top: 1%;
+  margin-left: 4%;
+}
+.part2_footer4 {
+  grid-area: part2_footer4;
+  position: relative;
+}
+.part2_footer4 img {
+  position: absolute;
+  top: 17%;
+  right: 7%;
+  cursor: pointer;
+}
+.part3_footer4 {
+  grid-area: part3_footer4;
+  border-left: 5px solid black;
+  background: #00B6F5;
+  cursor: pointer;
+}
+.vpered4 {
+  width: 100%;
+  font-size: 36px;
+  font-family: TwentytwelveSansG;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
 }
