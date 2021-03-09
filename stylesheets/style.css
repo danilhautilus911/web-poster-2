@@ -127,8 +127,13 @@ html{
 .pink_color_1 {
   height: 100%;
   width: 100%;
-  clip: url(../images/slide_1.svg);
-  background-color: white;
+  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
+  mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 25% 0%;
+  mask-position: 25% 0%;
+  background-color: orange;
 }
 
 .yellow_color_1 {
