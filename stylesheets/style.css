@@ -116,19 +116,21 @@ html{
 #slide1 {background-color: red;}
 #slide2 {background-color: green;}
 #slide3 {background-color: yellow;}
-#slide1 img {
+
+/* #slide1 img {
   height: 95%;
   position: absolute;
   bottom: 0;
   left: 10%;
-  clip: rect(10px, 290px, 190px, 10px);
-}
+} */
+
 .pink_color_1 {
   height: 100%;
   width: 100%;
-  mask: url(../images/slide_1.png);
+  clip: url(../images/slide_1.svg);
   background-color: white;
 }
+
 .yellow_color_1 {
   background-color: yellow;
 }
@@ -628,7 +630,7 @@ html{
   height: 100%;
   width: 100%;
   /* overflow: hidden; */
-  /* display: grid; */
+  display: grid;
   display: none;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart4"
