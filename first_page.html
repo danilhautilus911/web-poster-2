@@ -5,47 +5,39 @@
     <title>бибика</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="javascript" href="stylesheets/js.js">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      function nextSlide() {
-      showSlides(slideIndex += 1);
-      }
-      function previousSlide() {
-      showSlides(slideIndex -= 1);
-      }
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
+    /* _______________________________________________ */
+    var slideIndex = [1, 1, 1];
+    var slideId = ["item", "item2", "item3"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+    showDivs(1, 2);
 
-      function showSlides(n) {
-      let slides = document.getElementsByClassName("item");
-      if (n > slides.length) {
-      slideIndex = 1
+
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {
+        slideIndex[no] = 1
       }
       if (n < 1) {
-      slideIndex = slides.length
+        slideIndex[no] = x.length
       }
-      for (let slide of slides) {
-      slide.style.display = "none";
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-      slides[slideIndex - 1].style.display = "block";
-      }
+      x[slideIndex[no] - 1].style.display = "block";
+    }
+    /* _______________________________________________ */
 
-      function showSlides(n) {
-      let slides = document.getElementsByClassName("item2");
-      if (n > slides.length) {
-      slideIndex = 1
-      }
-      if (n < 1) {
-      slideIndex = slides.length
-      }
-      for (let slide of slides) {
-      slide.style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "block";
-      }
+
 
 
     </script>
@@ -59,35 +51,38 @@
 
       <div class="part2">
         <div class="slider_wrapper">
+
           <div class="slider1">
             <div class="item" id="slide1">
-              <!-- <div class="mask"></div> -->
+              <!-- <img src="./images/slide_1.svg" alt=""> -->
+              <div class="pink_color_1"></div>
+              <!-- <div class="yellow_color_1"></div> -->
             </div>
-            <div class="item" id="slide2">
-              <!-- <img src="./images/forslider2.png" alt=""> -->
-            </div>
-            <div class="item" id="slide3">
-              <!-- <img src="./images/forslider3.png" alt=""> -->
-            </div>
+            <div class="item" id="slide2"></div>
+            <div class="item" id="slide3"></div>
           </div>
-          <a class="previous1" onclick="previousSlide()"></a>
-          <a class="next1" onclick="nextSlide()"></a>
+
+          <a class="previous1" onclick="plusDivs(-1, 0)"></a>
+          <a class="next1" onclick="plusDivs(1, 0)"></a>
 
           <div class="slider2">
             <div class="item2" id="slide1_2"></div>
             <div class="item2" id="slide2_2"></div>
             <div class="item2" id="slide3_2"></div>
           </div>
-          <a class="previous2" onclick="previousSlide()"></a>
-          <a class="next2" onclick="nextSlide()"></a>
+
+          <a class="previous2" onclick="plusDivs(-1, 1)"></a>
+          <a class="next2" onclick="plusDivs(1, 1)"></a>
 
           <div class="slider3">
             <div class="item3" id="slide1_3"></div>
             <div class="item3" id="slide2_3"></div>
             <div class="item3" id="slide3_3"></div>
           </div>
-          <a class="previous3" onclick="previousSlide()"></a>
-          <a class="next3" onclick="nextSlide()"></a>
+
+          <a class="previous3" onclick="plusDivs(-1, 2)"></a>
+          <a class="next3" onclick="plusDivs(-1, 2)"></a>
+
         </div>
       </div>
 
