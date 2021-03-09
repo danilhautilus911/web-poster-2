@@ -83,7 +83,6 @@ html{
 
 .part2 {
   position: relative;
-  background: #E0FFFF;
   grid-area: part2;
   display: grid;
   grid-template-columns: 5% 1fr 7%;
@@ -95,7 +94,6 @@ html{
 .slider_wrapper {
   grid-area: slider_wrapper;
   border-radius: 80px;
-  background-color: pink;
   border: 20px solid black;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
@@ -113,32 +111,59 @@ html{
   border-right: 5px solid black;
 }
 #slide1, #slide2, #slide3 {width: 100%; height: 100%; position: relative;}
-#slide1 {background-color: red;}
-#slide2 {background-color: green;}
+/* #slide1 {background-color: red;} */
+/* #slide2 {background-color: green;} */
 #slide3 {background-color: yellow;}
 
-/* #slide1 img {
-  height: 95%;
+.element1_slide1 {
   position: absolute;
-  bottom: 0;
-  left: 10%;
-} */
-
-.pink_color_1 {
   height: 100%;
-  width: 100%;
+  width: 47%;
   -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
   mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: 25% 0%;
-  mask-position: 25% 0%;
+  -webkit-mask-position: 0% 0%;
+  mask-position: 0% 0%;
   background-color: orange;
 }
-
-.yellow_color_1 {
-  background-color: yellow;
+.element2_slide1 {
+  right: 20%;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_2.svg");
+  mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_2.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 96% 0%;
+  mask-position: 96% 0%;
+  background-color: brown;
 }
+.element1_slide2 {
+  position: absolute;
+  height: 75%;
+  width: 15%;
+  left: 44%;
+  top: 10%;
+  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_3.svg"); mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_3.svg");
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: 0% 0%; mask-position: 0% 0%;
+  background-color: orange;
+}
+.element2_slide2 {
+  position: absolute;
+  height: 100%;
+  width: 53%;
+  left: 10%;
+  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_4.svg"); mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_4.svg");
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: bottom; mask-position: bottom;
+  -webkit-mask-size: 100% 88%; mask-size: 100% 88%;
+  background-color: black;
+}
+
+
 
 .slider2 {
   position: relative;
