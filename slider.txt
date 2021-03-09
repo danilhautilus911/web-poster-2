@@ -39,3 +39,14 @@
       }
       slides[slideIndex - 1].style.display = "block";
       }
+
+.pl2-3 {
+mask: url("https://simonzlo.github.io/Plesk_poster/images/plesk_group3.svg");
+animation-play-state: paused;
+background-color: black;
+}
+
+.pl2-3:hover {
+animation-play-state: running;
+background-color: #FFD600;
+}
