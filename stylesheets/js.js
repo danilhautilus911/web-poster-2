@@ -1,54 +1,49 @@
-<script type="text/javascript">
+var slideIndex = [1, 1, 1];
+var slideId = ["item", "item2", "item3"]
+showDivs(1, 0);
+showDivs(1, 1);
+showDivs(1, 2);
+
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {
+    slideIndex[no] = 1
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex[no] - 1].style.display = "block";
+}
 
 /* _______________________________________________ */
-  (function() {
-
-    init(); //on page load - show first slide, hide the rest
-
-    function init() {
-
-      parents = document.getElementsByClassName('slider1');
-
-      for (j = 0; j < parents.length; j++) {
-        var slides = parents[j].getElementsByClassName("item");
-        slides[0].classList.add('active-slide');
-      }
-    }
-    /* _______________________________________________ */
-
-  //prev/next functionality
-    links = document.querySelectorAll('.slider1 a');
-
-    for (i = 0; i < links.length; i++) {
-      links[i].onclick = function() {
-        current = this.parentNode;
-
-        var slides = current.getElementsByClassName("item");
-        curr_slide = current.getElementsByClassName('active-slide')[0];
-        curr_slide.classList.remove('active-slide');
-        if (this.className == 'next1') {
-
-          if (curr_slide.nextElementSibling.classList.contains('item')) {
-            curr_slide.nextElementSibling.classList.add('active-slide');
-          } else {
-            slides[0].classList.add('active-slide');
-          }
-
-        }
-
-        if (this.className == 'previous1') {
-
-          if (curr_slide.previousElementSibling) {
-            curr_slide.previousElementSibling.classList.add('active-slide');
-          } else {
-            slides[slides.length - 1].classList.add('active-slide');
-          }
-
-        }
-
-      }
-
-    }
-  })();
-
-</script>
+$(document).ready(function() {
+            var count = 1;
+            $('.p1').on('click', function() {
+                if (count === 1) {
+                    $('.p1').css('background-color', 'green');
+                    count++;
+                } else if (count === 2) {
+                    $('.p1').css('background-color', 'pink');
+                    count++;
+                } else if (count === 3) {
+                    $('.p1').css('background-color', 'purple');
+                    count++;
+                } else if (count === 4) {
+                    $('.p1').css('background-color', 'blue');
+                    count++;
+                } else if (count === 5) {
+                    $('.p1').css('background-color', 'red');
+                    count = 1;
+                }
+            });
+        });
+/* _______________________________________________ */
