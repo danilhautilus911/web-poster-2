@@ -58,7 +58,7 @@ html{
   width: 85%;
   margin: 0 auto;
   margin-top: 0%;
-  /* background: red; */
+  background-color: red;
   opacity: 1;
   position: relative;
   font-size: 115px;
@@ -113,57 +113,54 @@ html{
 #slide1, #slide2, #slide3 {width: 100%; height: 100%; position: relative;}
 /* #slide1 {background-color: red;} */
 /* #slide2 {background-color: green;} */
-#slide3 {background-color: yellow;}
+/* #slide3 {background-color: yellow;} */
 
 .element1_slide1 {
   position: absolute;
-  height: 100%;
-  width: 47%;
-  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
-  mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_1.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 0% 0%;
-  mask-position: 0% 0%;
-  background-color: orange;
+  height: 79%; width: 36%;
+  left: 17%; top: 21%;
+  transform: skewX(25deg);
+  background-color: black;
 }
 .element2_slide1 {
-  right: 20%;
   position: absolute;
-  height: 100%;
-  width: 20%;
-  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_2.svg");
-  mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_2.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: 96% 0%;
-  mask-position: 96% 0%;
-  background-color: brown;
+  height: 120%; width: 10%;
+  left: 46%; top: 6%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
 }
 .element1_slide2 {
   position: absolute;
-  height: 75%;
-  width: 15%;
-  left: 44%;
-  top: 10%;
-  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_3.svg"); mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_3.svg");
-  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
-  -webkit-mask-position: 0% 0%; mask-position: 0% 0%;
-  background-color: orange;
+  height: 111%; width: 32%;
+  left: 21%; top: 22%;
+  transform: skewX(25deg);
+  background-color: black;
+  border-radius: 60px;
 }
 .element2_slide2 {
   position: absolute;
-  height: 100%;
-  width: 53%;
-  left: 10%;
-  -webkit-mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_4.svg"); mask: url("https://danilhautilus911.github.io/web-poster-2/images/slide_4.svg");
-  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
-  -webkit-mask-position: bottom; mask-position: bottom;
-  -webkit-mask-size: 100% 88%; mask-size: 100% 88%;
+  height: 39%; width: 7%;
+  left: 51%; top: 49%;
+  transform: skew(25deg);
   background-color: black;
 }
-
-
+.element1_slide3 {
+  position: absolute;
+  height: 52%; width: 47%;
+  left: 13%; top: 48%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element2_slide3 {
+  position: absolute;
+  height: 85%; width: 10%;
+  left: 37%; top: 6%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+/* _______________________________________________ */
 
 .slider2 {
   position: relative;
@@ -174,11 +171,55 @@ html{
   border-right: 5px solid black;
 }
 
-#slide1_2, #slide2_2, #slide3_2 {width: 100%; height: 100%;}
-#slide1_2 {background-color: blue;}
-#slide2_2 {background-color: purple;}
-#slide3_2 {background-color: orange;}
+#slide1_2, #slide2_2, #slide3_2 {width: 100%; height: 100%; position: relative;}
 
+.element1_slide1_slider2 {
+  position: absolute;
+  height: 100%; width: 54%;
+  left: 20%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element2_slide1_slider2 {
+  position: absolute;
+  height: 47%; width: 72%;
+  left: 10%; top: 20%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element1_slide2_slider2 {
+  position: absolute;
+  height: 100%; width: 70%;
+  left: 11%;
+  transform: skewX(25deg);
+  background-color: black;
+  border-radius: 70px;
+}
+.element2_slide2_slider2 {
+  position: absolute;
+  height: 38%; width: 8%;
+  left: 81%; top: 32%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element1_slide3_slider2 {
+  position: absolute;
+  height: 100%; width: 70%;
+  left: 13%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element2_slide3_slider2 {
+  position: absolute;
+  height: 40%; width: 90%;
+  left: 4%; top: 40%;
+  transform: skewX(25deg);
+  background-color: black;
+  border-radius: 70px;
+  z-index: -1;
+}
+
+/* _______________________________________________ */
 .slider3 {
   position: relative;
   grid-area: slider3;
@@ -186,11 +227,64 @@ html{
   border-left: 5px solid black;
   border-right: 5px solid black;
 }
-#slide1_3, #slide2_3, #slide3_3 {width: 100%; height: 100%;}
-#slide1_3 {background-color: brown;}
-#slide2_3 {background-color: green;}
-#slide3_3 {background-color: skyblue;}
+#slide1_3, #slide2_3, #slide3_3 {width: 100%; height: 100%; position: relative; overflow: hidden;}
+/* #slide3_3 {background-color: skyblue;} */
 
+.element1_slide1_slider3 {
+  position: absolute;
+  height: 100%; width: 20%;
+  left: 38%; top: 0%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element2_slide1_slider3 {
+  position: absolute;
+  height: 100%; width: 20%;
+  left: 60%; top: 0%;
+  transform: skewX(25deg);
+  background-color: black;
+}
+.element1_slide2_slider3 {
+  position: absolute;
+  height: 150%; width: 20%;
+  left: 35%; bottom: -4%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+.element2_slide2_slider3 {
+  position: absolute;
+  height: 150%; width: 20%;
+  left: 60%; bottom: -4%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+.element1_slide3_slider3 {
+  position: absolute;
+  height: 150%; width: 13%;
+  left: 61%; bottom: -5%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+.element2_slide3_slider3 {
+  position: absolute;
+  height: 150%; width: 13%;
+  left: 48%; bottom: -5%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+.element3_slide3_slider3 {
+  position: absolute;
+  height: 150%; width: 13%;
+  left: 35%; bottom: -5%;
+  transform: rotate(-25deg);
+  background-color: black;
+  border-radius: 100px;
+}
+/* _______________________________________________ */
 
 .next1, .next2, .next3 {
   height: 58%;
@@ -270,15 +364,6 @@ html{
   justify-content: center;
   margin-top: 4%;
 }
-
-/* .part3 p {
-  display: inline-block;
-  margin-top: 1%;
-  font-size: 24px;
-  font-family: TwentytwelveSansG;
-} */
-
-
 
 
 
