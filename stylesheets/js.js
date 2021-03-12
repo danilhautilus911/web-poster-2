@@ -28,19 +28,19 @@ function showDivs(n, no) {
 $(document).ready(function() {
             var count = 1;
             $('.element1_slide1').on('click', function() {
-                if (count === 1) {
+                if (count == 1) {
                     $('.element1_slide1').css('background-color', 'green');
                     count++;
-                } else if (count === 2) {
+                } else if (count == 2) {
                     $('.element1_slide1').css('background-color', 'pink');
                     count++;
-                } else if (count === 3) {
+                } else if (count == 3) {
                     $('.element1_slide1').css('background-color', 'purple');
                     count++;
-                } else if (count === 4) {
+                } else if (count == 4) {
                     $('.element1_slide1').css('background-color', 'blue');
                     count++;
-                } else if (count === 5) {
+                } else if (count == 5) {
                     $('.element1_slide1').css('background-color', 'red');
                     count = 1;
                 }
