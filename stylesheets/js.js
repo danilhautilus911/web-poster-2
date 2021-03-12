@@ -27,21 +27,21 @@ function showDivs(n, no) {
 /* _______________________________________________ */
 $(document).ready(function() {
             var count = 1;
-            $('.slide1').on('click', function() {
+            $('.element1_slide1').on('click', function() {
                 if (count === 1) {
-                    $('.slide1').css('background-color', 'green');
+                    $('.element1_slide1').css('background-color', 'green');
                     count++;
                 } else if (count === 2) {
-                    $('.slide1').css('background-color', 'pink');
+                    $('.element1_slide1').css('background-color', 'pink');
                     count++;
                 } else if (count === 3) {
-                    $('.slide1').css('background-color', 'purple');
+                    $('.element1_slide1').css('background-color', 'purple');
                     count++;
                 } else if (count === 4) {
-                    $('.slide1').css('background-color', 'blue');
+                    $('.element1_slide1').css('background-color', 'blue');
                     count++;
                 } else if (count === 5) {
-                    $('.slide1').css('background-color', 'red');
+                    $('.element1_slide1').css('background-color', 'red');
                     count = 1;
                 }
             });
