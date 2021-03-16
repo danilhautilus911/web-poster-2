@@ -26,7 +26,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 $('.vpered1').click(function () {
   $('.wrapper2').addClass('wrapper2_action1');
-  $('.light1, .light2, .light3, .phrase1, .phrase2, .phrase3, .phrase4, .phrase5').addClass('animation_start')
+  $('.oval1, .stop_signal, .oval2, .wait_signal, .oval3, .go_signal, .part2_footer2, .phrase1_part1, .phrase2, .phrase3, .phrase4, .phrase5').addClass('animation_start')
 });
 });
 
