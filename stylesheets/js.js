@@ -21,6 +21,21 @@ $(document).ready(function() {
 });
 
 /* _______________________________________________ */
+// $('.vpered1').on('click', function() {
+//   window.scroll({
+//     left: element.offsetLeft,
+//     top: 0,
+//     behavior: 'smooth'
+//     })
+// });
+
+
+$('vpered1').on('click', function(){
+    $(window).scrollBy(1440,0)
+});
+
+/* _______________________________________________ */
+
 
 var slideIndex = [1, 1, 1];
 var slideId = ["item", "item2", "item3"]
