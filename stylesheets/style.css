@@ -6,6 +6,7 @@ body {
  margin: 0 auto;
  display: block;
  position: relative;
+ /* overflow: hidden; */
 }
 /* body::before {
   content: "";
@@ -26,8 +27,18 @@ html{
   width: 100%;
 }
 
+.wrapper {
+  height: 100%;
+  width: 400%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "block1 block2 block3 block4"
+}
+
 /* начало первого блока */
 .block1 {
+  grid-area: block1;
   height: 100%;
   width: 100%;
   display: grid;
@@ -356,7 +367,7 @@ html{
   background: #00B6F5;
   border-left: 5px solid black;
 }
-.part3_3 div {
+.vpered1 {
   width: 100%;
   font-size: 36px;
   font-family: TwentytwelveSansG;
@@ -371,11 +382,12 @@ html{
 
 /* начало второго блока */
 .block2 {
+  grid-area: block2;
   height: 100%;
   width: 100%;
   overflow: hidden;
   display: grid;
-  display: none;
+  /* display: none; */
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart"
                         "footer2"
@@ -538,11 +550,12 @@ html{
 
 /* начало третьего блока */
 .block3 {
+  grid-area: block3;
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: grid;
-  display: none;
+  /* display: none; */
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart3"
                         "footer3"
@@ -741,12 +754,13 @@ html{
 
 /* начало четвертого блока */
 .block4 {
+  grid-area: block4;
   position: relative;
   height: 100%;
   width: 100%;
   /* overflow: hidden; */
   display: grid;
-  display: none;
+  /* display: none; */
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart4"
                         "footer4"
