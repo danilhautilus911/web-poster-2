@@ -29,11 +29,30 @@ html{
 
 .wrapper {
   height: 100%;
-  width: 400%;
+  width: 100%;
   position: relative;
+  overflow: hidden;
+}
+.wrapper2 {
+  height: 100%;
+  width: 400%;
+  left: 0%;
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "block1 block2 block3 block4"
+}
+.wrapper2_action1 {
+  left: -100%;
+  transition: all 0.25s ease;
+}
+.wrapper2_action2 {
+  left: -200%;
+  transition: all 0.25s ease;
+}
+.wrapper2_action3 {
+  left: -300%;
+  transition: all 0.25s ease;
 }
 
 /* начало первого блока */
@@ -61,7 +80,6 @@ html{
 /* _______________________________________________ */
 .part1 {
   position: relative;
-  background: #FFFFE0;
   grid-area: part1;
 }
 .p1 {
@@ -131,7 +149,7 @@ html{
   height: 79%; width: 36%;
   left: 17%; top: 21%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #F656A0;
 }
 .element2_slide1 {
   position: absolute;
@@ -146,7 +164,7 @@ html{
   height: 111%; width: 32%;
   left: 21%; top: 22%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #FFD42F;
   border-radius: 60px;
 }
 .element2_slide2 {
@@ -154,14 +172,14 @@ html{
   height: 39%; width: 7%;
   left: 51%; top: 49%;
   transform: skew(25deg);
-  background-color: black;
+  background-color: #FF0000;
 }
 .element1_slide3 {
   position: absolute;
   height: 52%; width: 47%;
   left: 13%; top: 48%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #0038FF;
 }
 .element2_slide3 {
   position: absolute;
@@ -189,21 +207,21 @@ html{
   height: 100%; width: 54%;
   left: 20%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #F656A0;
 }
 .element2_slide1_slider2 {
   position: absolute;
   height: 47%; width: 72%;
   left: 10%; top: 20%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #FF0000;
 }
 .element1_slide2_slider2 {
   position: absolute;
   height: 100%; width: 70%;
   left: 11%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #FFD42F;
   border-radius: 70px;
 }
 .element2_slide2_slider2 {
@@ -218,14 +236,14 @@ html{
   height: 100%; width: 70%;
   left: 13%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #0038FF;
 }
 .element2_slide3_slider2 {
   position: absolute;
   height: 40%; width: 90%;
   left: 4%; top: 40%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #FFD42F;
   border-radius: 70px;
   z-index: -1;
 }
@@ -246,21 +264,21 @@ html{
   height: 100%; width: 20%;
   left: 38%; top: 0%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #0038FF;
 }
 .element2_slide1_slider3 {
   position: absolute;
   height: 100%; width: 20%;
   left: 60%; top: 0%;
   transform: skewX(25deg);
-  background-color: black;
+  background-color: #0038FF;
 }
 .element1_slide2_slider3 {
   position: absolute;
   height: 150%; width: 20%;
   left: 35%; bottom: -4%;
   transform: rotate(-25deg);
-  background-color: black;
+  background-color: #FF0000;
   border-radius: 100px;
 }
 .element2_slide2_slider3 {
@@ -268,31 +286,31 @@ html{
   height: 150%; width: 20%;
   left: 60%; bottom: -4%;
   transform: rotate(-25deg);
-  background-color: black;
+  background-color: #FF0000;
   border-radius: 100px;
 }
 .element1_slide3_slider3 {
   position: absolute;
   height: 150%; width: 13%;
-  left: 61%; bottom: -5%;
+  left: 64%; bottom: -5%;
   transform: rotate(-25deg);
-  background-color: black;
+  background-color: #F656A0;
   border-radius: 100px;
 }
 .element2_slide3_slider3 {
   position: absolute;
   height: 150%; width: 13%;
-  left: 48%; bottom: -5%;
+  left: 51%; bottom: -5%;
   transform: rotate(-25deg);
-  background-color: black;
+  background-color: #F656A0;
   border-radius: 100px;
 }
 .element3_slide3_slider3 {
   position: absolute;
   height: 150%; width: 13%;
-  left: 35%; bottom: -5%;
+  left: 38%; bottom: -5%;
   transform: rotate(-25deg);
-  background-color: black;
+  background-color: #F656A0;
   border-radius: 100px;
 }
 /* _______________________________________________ */
@@ -364,6 +382,7 @@ html{
 }
 .part3_3 {
   grid-area: part3_3;
+  /* background: #00B6F5; */
   background: #00B6F5;
   border-left: 5px solid black;
 }
@@ -372,10 +391,14 @@ html{
   font-size: 36px;
   font-family: TwentytwelveSansG;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   margin-top: 4%;
 }
-
+.part3_3:hover {
+  background: #06A0D6;
+  transition: all 0.25s ease;
+}
 
 
 
@@ -419,6 +442,7 @@ html{
   position: relative;
   opacity: 0.4;
   animation: red_signal_work 25s linear;
+  animation-play-state: paused;
 }
 .oval1 {
   background: red;
@@ -432,6 +456,7 @@ html{
   position: relative;
   opacity: 0.4;
   animation: yellow_signal_work 25s ease;
+  animation-play-state: paused;
 }
 .oval2 {
   background: #FFD42F;
@@ -444,6 +469,7 @@ html{
   grid-area: light3;
   position: relative;
   animation: green_signal_work 25s ease;
+  animation-play-state: paused;
 }
 .oval3 {
   background: #11DA00;
@@ -452,6 +478,7 @@ html{
   top: 40%;
   left: 33%;
 }
+
 /* _______________________________________________ */
 @keyframes red_signal_work {
   0% {opacity: 1}
@@ -527,16 +554,59 @@ html{
   position: relative;
   grid-area: part1_footer2;
 }
-.part1_footer2 div {
+.phrase1, .phrase2, .phrase3, .phrase4, .phrase5 {
+  position: absolute;
   font-size: 23px;
   font-family: TwentytwelveSansG;
   margin-top: 1.5%;
   margin-left: 2%;
+  opacity: 0;
 }
+.phrase1 {animation: phrase1_animation 5s ease; animation-play-state: paused;}
+.phrase2 {animation: phrase2_animation 3.25s 5s ease; animation-play-state: paused;}
+.phrase3 {animation: phrase3_animation 3.75s 8.25s ease; animation-play-state: paused;}
+.phrase4 {animation: phrase4_animation 3.5s 12s ease; animation-play-state: paused;}
+.phrase5 {opacity: 1; animation: phrase5_animation 16.5s ease; animation-play-state: paused;}
+
+@keyframes phrase1_animation {
+  0% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes phrase2_animation {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes phrase3_animation {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes phrase4_animation {
+  0% {opacity: 0;}
+  5% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes phrase5_animation {
+  0% {opacity: 0;}
+  97% {opacity: 0;}
+  98% {opacity: 1;}
+  100% {opacity: 1;}
+}
+
 .part2_footer2 {
   grid-area: part2_footer2;
   background: #00B6F5;
   border-left: 5px solid black;
+  cursor: pointer;
+}
+.part2_footer2:hover {
+  background: #06A0D6;
+  transition: all 0.25s ease;
 }
 .part2_footer2 div {
   width: 100%;
@@ -546,7 +616,9 @@ html{
   justify-content: center;
   margin-top: 4%;
 }
-
+.animation_start {
+  animation-play-state: running;
+}
 
 /* начало третьего блока */
 .block3 {
@@ -744,7 +816,10 @@ html{
   background: #00B6F5;
   border-left: 5px solid black;
   cursor: pointer;
-  /* transition: all 0.25s ease; */
+}
+.part5_footer3:hover {
+  background: #06A0D6;
+  transition: all 0.25s ease;
 }
 .vpered3 {
   margin-top: 4%;
