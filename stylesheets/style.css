@@ -365,6 +365,7 @@ html{
   margin-top: 2.5%;
   margin-left: 11%;
 }
+
 .part3_2 {
   grid-area: part3_2;
   /* background: yellow; */
@@ -424,6 +425,18 @@ html{
   grid-template-columns: 2% 1fr 1fr 1fr 2%;
   grid-template-areas:  ". light1 light2 light3 ."
 }
+.light1 {
+  grid-area: light1;
+  position: relative;
+}
+.light2 {
+  grid-area: light2;
+  position: relative;
+}
+.light3 {
+  grid-area: light3;
+  position: relative;
+}
 .oval1, .oval2, .oval3 {
   position: relative;
   height: 100%;
@@ -431,119 +444,121 @@ html{
   border-radius: 100% / 100%;
   transform: skew(20deg);
 }
+.oval1 {
+  background: red;
+  opacity: 0.4;
+  animation: red_signal_work 25s linear;
+  animation-play-state: paused;
+}
+.oval2 {
+  background: #FFD42F;
+  opacity: 0.4;
+  animation: yellow_signal_work 25s ease;
+  animation-play-state: paused;
+}
+.oval3 {
+  background: #11DA00;
+  opacity: 1;
+  animation: green_signal_work 25s ease;
+  animation-play-state: paused;
+  box-shadow: 0px 0px 40px 20px #11DA00;
+}
 .stop_signal, .wait_signal, .go_signal {
   position: absolute;
   font-size: 120px;
   font-family: TwentytwelveSansG;
   transform: rotate(-32deg);
 }
-.light1 {
-  grid-area: light1;
-  position: relative;
-  opacity: 0.4;
-  animation: red_signal_work 25s linear;
-  animation-play-state: paused;
-}
-.oval1 {
-  background: red;
-}
 .stop_signal {
   top: 40%;
   left: 17%;
-}
-.light2 {
-  grid-area: light2;
-  position: relative;
   opacity: 0.4;
-  animation: yellow_signal_work 25s ease;
+  animation: light1_work 25s linear;
   animation-play-state: paused;
-}
-.oval2 {
-  background: #FFD42F;
 }
 .wait_signal {
   top: 40%;
   left: 19%;
-}
-.light3 {
-  grid-area: light3;
-  position: relative;
-  animation: green_signal_work 25s ease;
+  opacity: 0.4;
+  animation: light2_work 25s ease;
   animation-play-state: paused;
-}
-.oval3 {
-  background: #11DA00;
 }
 .go_signal {
   top: 40%;
   left: 33%;
+  opacity: 1;
+  animation: light3_work 25s ease;
+  animation-play-state: paused;
 }
 
 /* _______________________________________________ */
+@keyframes light1_work {
+  0% {opacity: 0.4} 5% {opacity: 0.4}
+  6% {opacity: 1} 20% {opacity: 1}
+  21% {opacity: 0} 22% {opacity: 0}
+  23% {opacity: 1} 24% {opacity: 1}
+  25% {opacity: 0} 26% {opacity: 0}
+  27% {opacity: 1} 28% {opacity: 1}
+  29% {opacity: 0} 30% {opacity: 0}
+  31% {opacity: 1} 32% {opacity: 1}
+  33% {opacity: 0} 34% {opacity: 0.4} 100% {opacity: 0.4}
+}
 @keyframes red_signal_work {
-  0% {opacity: 1}
-  20% {opacity: 1}
-
-  21% {opacity: 0}
-  22% {opacity: 0}
-
-  23% {opacity: 1}
-  24% {opacity: 1}
-
-  25% {opacity: 0}
-  26% {opacity: 0}
-
-  27% {opacity: 1}
-  28% {opacity: 1}
-
-  29% {opacity: 0}
-  30% {opacity: 0}
-
-  31% {opacity: 1}
-  32% {opacity: 1}
-
-  33% {opacity: 0}
-  34% {opacity: 0.4}
-  100% {opacity: 0.4}
+  0% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98);} 5% {opacity: 0.4; transform: skew(20deg) scale(0.98);}
+  6% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  20% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  21% {opacity: 0; transform: skew(20deg) scale(0.98);} 22% {opacity: 0; transform: skew(20deg) scale(0.98);}
+  23% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  24% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  25% {opacity: 0; transform: skew(20deg) scale(0.98);} 26% {opacity: 0; transform: skew(20deg) scale(0.98);}
+  27% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  28% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  29% {opacity: 0; transform: skew(20deg) scale(0.98);} 30% {opacity: 0; transform: skew(20deg) scale(0.98);}
+  31% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  32% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
+  33% {opacity: 0; transform: skew(20deg) scale(0.98);} 34% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1);} 100% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1);}
+}
+@keyframes light2_work {
+  0% {opacity: 0.4} 34% {opacity: 0.4}
+  35% {opacity: 1} 50% {opacity: 1}
+  51% {opacity: 0} 52% {opacity: 0}
+  53% {opacity: 1} 54% {opacity: 1}
+  55% {opacity: 0} 56% {opacity: 0}
+  57% {opacity: 1} 58% {opacity: 1}
+  59% {opacity: 0} 60% {opacity: 0}
+  61% {opacity: 1} 62% {opacity: 1}
+  63% {opacity: 0.4} 100% {opacity: 0.4}
 }
 @keyframes yellow_signal_work {
-  0% {opacity: 0.4}
-  34% {opacity: 0.4}
-  35% {opacity: 1}
-  50% {opacity: 1}
-
-  51% {opacity: 0}
-  52% {opacity: 0}
-
-  53% {opacity: 1}
-  54% {opacity: 1}
-
-  55% {opacity: 0}
-  56% {opacity: 0}
-
-  57% {opacity: 1}
-  58% {opacity: 1}
-
-  59% {opacity: 0}
-  60% {opacity: 0}
-
-  61% {opacity: 1}
-  62% {opacity: 1}
-
-  63% {opacity: 0.4}
-  100% {opacity: 0.4}
+  0% {opacity: 0.4; transform: skew(20deg) scale(0.98)} 34% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)}
+  35% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  50% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  51% {opacity: 0; transform: skew(20deg) scale(0.98)} 52% {opacity: 0; transform: skew(20deg) scale(0.98)}
+  53% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  54% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  55% {opacity: 0; transform: skew(20deg) scale(0.98)} 56% {opacity: 0; transform: skew(20deg) scale(0.98)}
+  57% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  58% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  59% {opacity: 0; transform: skew(20deg) scale(0.98)} 60% {opacity: 0; transform: skew(20deg) scale(0.98)}
+  61% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  62% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
+  63% {opacity: 0; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(0.98)}
+  64% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1)} 100% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1) }
+}
+@keyframes light3_work {
+  0% {opacity: 0.4} 63% {opacity: 0.4}
+  64% {opacity: 1} 100% {opacity: 1}
 }
 @keyframes green_signal_work {
-  0% {opacity: 0.4}
-  65% {opacity: 0.4}
-  66% {opacity: 1}
-  100% {opacity: 1}
+  0% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)} 63% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)}
+  64% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
+  100% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
 }
 /* _______________________________________________ */
 .footer2 {
   grid-area: footer2;
   position: relative;
-  background: #E0FFFF;
+  background: white;
   display: grid;
   grid-template-columns: 1fr 10%;
   grid-template-areas:  "part1_footer2 part2_footer2";
@@ -554,19 +569,38 @@ html{
   position: relative;
   grid-area: part1_footer2;
 }
-.phrase1, .phrase2, .phrase3, .phrase4, .phrase5 {
-  position: absolute;
-  font-size: 23px;
-  font-family: TwentytwelveSansG;
-  margin-top: 1.5%;
+.phrase1 {
+  position: relative;
+  height: 100%;
+  width: 97%;
   margin-left: 2%;
-  opacity: 0;
 }
-.phrase1 {animation: phrase1_animation 5s ease; animation-play-state: paused;}
-.phrase2 {animation: phrase2_animation 3.25s 5s ease; animation-play-state: paused;}
+.phrase1_part1 {
+  width: 39ch;
+  font-family: monospace;
+  animation: printed_text1 10s steps(39);
+  animation-play-state: paused;
+}
+@keyframes printed_text1 {
+  from {
+    width: 0;
+  }
+}
+.phrase1 div, .phrase2, .phrase3, .phrase4, .phrase5 {
+  position: relative;
+  display: inline-block;
+  font-size: 23px;
+  /* font-family: TwentytwelveSansG; */
+  margin-top: 1.5%;
+  white-space: nowrap;
+  overflow: hidden;
+  /* opacity: 0; */
+}
+/* .phrase1 {animation: phrase1_animation 5s ease; animation-play-state: paused;} */
+/* .phrase2 {animation: phrase2_animation 3.25s 5s ease; animation-play-state: paused;}
 .phrase3 {animation: phrase3_animation 3.75s 8.25s ease; animation-play-state: paused;}
 .phrase4 {animation: phrase4_animation 3.5s 12s ease; animation-play-state: paused;}
-.phrase5 {opacity: 1; animation: phrase5_animation 16.5s ease; animation-play-state: paused;}
+.phrase5 {opacity: 1; animation: phrase5_animation 16.5s ease; animation-play-state: paused;} */
 
 @keyframes phrase1_animation {
   0% {opacity: 1;}
@@ -603,6 +637,14 @@ html{
   background: #00B6F5;
   border-left: 5px solid black;
   cursor: pointer;
+  opacity: 1;
+  animation: vpered2_activity 16.5s ease;
+  animation-play-state: paused;
+}
+@keyframes vpered2_activity {
+  0% {opacity: 0; cursor: none}
+  97% {opacity: 0; cursor: none}
+  100% {opacity: 1; cursor: none}
 }
 .part2_footer2:hover {
   background: #06A0D6;
@@ -619,6 +661,8 @@ html{
 .animation_start {
   animation-play-state: running;
 }
+
+
 
 /* начало третьего блока */
 .block3 {
