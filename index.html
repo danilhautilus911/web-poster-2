@@ -9,6 +9,8 @@
     <script src="stylesheets/js.js"></script>
   </head>
   <body>
+    <div class="wrapper">
+
     <section class="block1">
       <div class="part1">
           <p class="p1">твой первый мобиль</p>
@@ -89,7 +91,7 @@
             <div class="">если готово, жми</div>
         </div>
         <div class="part3_3">
-            <div class="">вперёд</div>
+            <div class="vpered1" onclick="window.scrollBy({ left: 1440, behavior: 'smooth' })">вперёд</div>
         </div>
       </div>
       <div class="color_change1"></div>
@@ -117,7 +119,7 @@
           <div class="">красный сигнал светофора запрещает движение!</div>
         </div>
         <div class="part2_footer2">
-          <div class="">вперёд</div>
+          <div class="vpered2" onclick="window.scrollBy({ left: 1440, behavior: 'smooth' })">вперёд</div>
         </div>
       </div>
     </section>
@@ -183,7 +185,7 @@
           <img src="./images/bip_bip.svg" alt="">
         </div>
         <div class="part5_footer3">
-          <div class="vpered3">вперёд</div>
+          <div class="vpered3" onclick="window.scrollBy({ left: 1440, behavior: 'smooth' })">вперёд</div>
         </div>
       </div>
     </section>
@@ -191,15 +193,18 @@
 
     <section class="block4">
       <div class="mainpart4">
+
         <div class="slider_block4_part1">
           <div class="city_slider">
             <div class="rectangle_part4"></div>
-            <div class="previous_button_part4">
+
+            <div class="previous_button_part4" onclick="minusSlide()">
               <img src="./images/previousbutton.svg" alt="">
             </div>
-            <div class="next_button_part4">
+            <div class="next_button_part4" onclick="plusSlide()">
               <img src="./images/nextbutton.svg" alt="">
             </div>
+
             <div class="city_name">
               <div class="city1">
                 <p id="city_name_paragraphs">город 1</p>
@@ -213,9 +218,11 @@
             </div>
           </div>
         </div>
+
         <div class="slider_block4_part2">
           <div class="background1_part4"></div>
         </div>
+
       </div>
 
       <div class="road_sign_1">
@@ -248,11 +255,11 @@
           <img src="./images/bip_bip.svg" alt="">
         </div>
         <div class="part3_footer4">
-          <div class="vpered4">вперёд</div>
+          <div class="vpered4" onclick="window.scrollBy({ left: 400, behavior: 'smooth' })">вперёд</div>
         </div>
       </div>
     </section>
 
-
+  </div>
   </body>
 </html>
