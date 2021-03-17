@@ -1,0 +1,17 @@
+@keyframes edut_tachki3 {
+  0% {left: 20%}
+  100% {left: 100%}
+}
+@keyframes edut_tachki4 {
+  0% {left: -30%}
+  100% {left: 110%}
+}
+/* @keyframes edut_tachki5 {
+  0% {left: -30%}
+  100% {left: 110%}
+}
+@keyframes nitro {
+  to {
+    margin-left: 30%;
+  }
+} */
