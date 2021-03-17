@@ -15,3 +15,9 @@
     margin-left: 30%;
   }
 } */
+@keyframes bip_bip_flashing {
+ 0% {background: url(../images/bip_bip.svg) no-repeat;}
+ 49% {background: url(../images/bip_bip.svg) no-repeat;}
+ 50% {background: url(../images/bip_bip2.svg) no-repeat;}
+ 100% {background: url(../images/bip_bip2.svg) no-repeat;}
+}
