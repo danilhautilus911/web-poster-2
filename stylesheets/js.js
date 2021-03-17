@@ -44,7 +44,6 @@ $('.vpered3').click(function () {
 
 /* _______________________________________________ */
 
-
 var slideIndex = [1, 1, 1];
 var slideId = ["item", "item2", "item3"]
 showDivs(1, 0);
