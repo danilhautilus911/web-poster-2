@@ -1,5 +1,6 @@
 @import 'reset.css';
 @import 'layout.css';
+@import 'animation.css';
 body {
  width: 100%;
  height: 100%;
@@ -29,14 +30,14 @@ html{
 
 .wrapper {
   height: 100%;
-  width: 100%;
+  width: 400%;
   position: relative;
   overflow: hidden;
 }
 .wrapper2 {
   height: 100%;
-  width: 400%;
-  left: 0%;
+  width: 100%;
+  /* left: -200%; */
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -658,9 +659,7 @@ html{
   justify-content: center;
   margin-top: 4%;
 }
-.animation_start {
-  animation-play-state: running;
-}
+
 
 
 
@@ -669,7 +668,7 @@ html{
   grid-area: block3;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: grid;
   /* display: none; */
   grid-template-rows: 1fr 10%;
@@ -689,6 +688,17 @@ html{
                        "line_bottom"
 }
 
+.bip_bip_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: none;
+}
+.bip_bip_img img {position: absolute; height: 100%;}
+.i_img {left: 30%;}
+.p_img {right: 0;}
+
 .line_top {grid-area: line_top;}
 .line_middle1 {grid-area: line_middle1;}
 .line_middle2 {grid-area: line_middle2; position: relative;}
@@ -705,7 +715,9 @@ html{
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "slider1_second_slider_wrapper"
                        "slider2_second_slider_wrapper"
-                       "slider3_second_slider_wrapper"
+                       "slider3_second_slider_wrapper";
+  /* animation: edut_tachki3 2s linear, edut_tachki4 7s 2s infinite;
+  animation-play-state: paused; */
 }
 .slider1_second_slider_wrapper {
   grid-area: slider1_second_slider_wrapper;
@@ -719,7 +731,6 @@ html{
   grid-area: slider3_second_slider_wrapper;
   overflow: hidden;
 }
-
 .car1, .car2 {position: absolute; height: 100%;}
 .car1 {left: 0%; animation: 10s infinite ease-in;}
 .car2 {left: 55%; animation: 7s infinite ease-in;}
@@ -875,11 +886,14 @@ html{
   grid-area: part4_footer3;
   position: relative;
 }
-.part4_footer3 img {
+.bip_bip_button {
   position: absolute;
+  height: 100%;
+  width: 17%;
   top: 17%;
-  right: 2%;
+  right: 1%;
   cursor: pointer;
+  background: url(../images/bip_bip.svg) no-repeat;
 }
 .part5_footer3 {
   grid-area: part5_footer3;
@@ -905,7 +919,7 @@ html{
   width: 100%;
   /* overflow: hidden; */
   display: grid;
-  /* display: none; */
+  display: none;
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart4"
                         "footer4"
@@ -1101,4 +1115,17 @@ html{
   display: flex;
   justify-content: center;
   margin-top: 4%;
+}
+
+.animation_start {
+  animation-play-state: running;
+}
+.animation_pause {
+  animation-play-state: paused;
+}
+.bip_bip_display {
+  display: block;
+}
+.bip_bip_button_img {
+  background: url(../images/bip_bip2.svg) no-repeat;
 }
