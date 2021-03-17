@@ -147,7 +147,7 @@ html{
 .element1_slide1 {
   position: absolute;
   height: 79%; width: 36%;
-  left: 17%; top: 21%;
+  left: 17%; top: 23%;
   transform: skewX(25deg);
   background-color: #F656A0;
 }
@@ -691,8 +691,34 @@ html{
 
 .line_top {grid-area: line_top;}
 .line_middle1 {grid-area: line_middle1;}
-.line_middle2 {grid-area: line_middle2;}
+.line_middle2 {grid-area: line_middle2; position: relative;}
 .line_bottom {grid-area: line_bottom; position: relative;}
+
+.second_slider_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  height: 150%;
+  width: 25%;
+  /* background-color: red; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "slider1_second_slider_wrapper"
+                       "slider2_second_slider_wrapper"
+                       "slider3_second_slider_wrapper"
+}
+.slider1_second_slider_wrapper {
+  grid-area: slider1_second_slider_wrapper;
+  overflow: hidden;
+}
+.slider2_second_slider_wrapper {
+  grid-area: slider2_second_slider_wrapper;
+  overflow: hidden;
+}
+.slider3_second_slider_wrapper {
+  grid-area: slider3_second_slider_wrapper;
+  overflow: hidden;
+}
 
 .car1, .car2 {position: absolute; height: 100%;}
 .car1 {left: 0%; animation: 10s infinite ease-in;}
