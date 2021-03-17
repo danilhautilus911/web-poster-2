@@ -30,14 +30,13 @@ html{
 
 .wrapper {
   height: 100%;
-  width: 400%;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 .wrapper2 {
   height: 100%;
-  width: 100%;
-  /* left: -200%; */
+  width: 400%;
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -668,7 +667,7 @@ html{
   grid-area: block3;
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: grid;
   /* display: none; */
   grid-template-rows: 1fr 10%;
@@ -894,6 +893,7 @@ html{
   right: 1%;
   cursor: pointer;
   background: url(../images/bip_bip.svg) no-repeat;
+  animation: bip_bip_flashing 1s infinite;
 }
 .part5_footer3 {
   grid-area: part5_footer3;
@@ -919,7 +919,7 @@ html{
   width: 100%;
   /* overflow: hidden; */
   display: grid;
-  display: none;
+  /* display: none; */
   grid-template-rows: 1fr 10%;
   grid-template-areas:  "mainpart4"
                         "footer4"
