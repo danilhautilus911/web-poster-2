@@ -29,7 +29,16 @@ $('.vpered1').click(function () {
   $('.oval1, .stop_signal, .oval2, .wait_signal, .oval3, .go_signal, .part2_footer2, .phrase1_part1, .phrase2, .phrase3, .phrase4, .phrase5').addClass('animation_start')
 });
 });
-
+$(document).ready(function() {
+$('.vpered2').click(function () {
+  $('.wrapper2').addClass('wrapper2_action2');
+});
+});
+$(document).ready(function() {
+$('.vpered3').click(function () {
+  $('.wrapper2').addClass('wrapper2_action3');
+});
+});
 // $(document).ready(function() {
 // $('.part1_footer3').click(function () {
 //     var x= $('.second_slider_wrapper').css('animation-play-state');
@@ -54,11 +63,11 @@ $('.part2_footer3').click(function () {
 $(document).ready(function() {
 $('.bip_bip_button').mouseover(function () {
   $('.bip_bip_img').addClass('bip_bip_display');
-  $('.bip_bip_button').addClass('bip_bip_button_img');
+  // $('.bip_bip_button').addClass('bip_bip_button_img');
 });
 $('.bip_bip_button').mouseout(function () {
   $('.bip_bip_img').removeClass('bip_bip_display');
-  $('.bip_bip_button').removeClass('bip_bip_button_img');
+  // $('.bip_bip_button').removeClass('bip_bip_button_img');
 });
 });
 
