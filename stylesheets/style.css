@@ -245,7 +245,7 @@ html{
   transform: skewX(25deg);
   background-color: #FFD42F;
   border-radius: 70px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 /* _______________________________________________ */
@@ -570,37 +570,72 @@ html{
   grid-area: part1_footer2;
 }
 .phrase1 {
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 97%;
-  margin-left: 2%;
-}
-.phrase1_part1 {
-  width: 39ch;
-  font-family: monospace;
-  animation: printed_text1 10s steps(39);
+  left: 2%;
+  top: 70%;
+  animation: phrase1_disappear 9s;
   animation-play-state: paused;
 }
-@keyframes printed_text1 {
-  from {
-    width: 0;
-  }
+.phrase1_part1 {
+  display: inline-block;
+  width: 44ch;
+  animation: printed_text1 3s steps(44);
+  animation-play-state: paused;
 }
-.phrase1 div, .phrase2, .phrase3, .phrase4, .phrase5 {
-  position: relative;
+.phrase1_part2 {
+  display: inline-block;
+  width: 14ch;
+  opacity: 1;
+  animation: printed_text1 1.5s 5s steps(14), printed_text2_opacity 5s;
+  animation-play-state: paused;
+}
+.phrase2 {
+  position: absolute;
+  height: 100%;
+  width: 97%;
+  left: 2%;
+  top: 70%;
+  opacity: 0;
+  animation: phrase2_disappear 7.5s 8.5s;
+  animation-play-state: paused;
+}
+.phrase2_part1 {
+  width: 51ch;
+  opacity: 1;
+  animation: printed_text1 2.5s 8.5s steps(51);
+  animation-play-state: paused;
+}
+.phrase2_part2 {
+  width: 32ch;
+  opacity: 1;
+  animation: printed_text1 1.2s 13s steps(32), printed_text2_opacity 13s;
+  animation-play-state: paused;
+}
+.phrase1 div, .phrase2 div {
   display: inline-block;
   font-size: 23px;
-  /* font-family: TwentytwelveSansG; */
   margin-top: 1.5%;
   white-space: nowrap;
   overflow: hidden;
-  /* opacity: 0; */
+  font-family: monospace;
 }
-/* .phrase1 {animation: phrase1_animation 5s ease; animation-play-state: paused;} */
-/* .phrase2 {animation: phrase2_animation 3.25s 5s ease; animation-play-state: paused;}
-.phrase3 {animation: phrase3_animation 3.75s 8.25s ease; animation-play-state: paused;}
-.phrase4 {animation: phrase4_animation 3.5s 12s ease; animation-play-state: paused;}
-.phrase5 {opacity: 1; animation: phrase5_animation 16.5s ease; animation-play-state: paused;} */
+.phrase3 {
+  position: absolute;
+  width: 53ch;
+  height: 100%;
+  margin-left: 2%;
+  top: 30%;
+  opacity: 1;
+  font-size: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  animation: phrase3_disappear 15.7s, printed_text1 3s steps(53) 15.7s;
+  animation-play-state: paused;
+}
+
 
 @keyframes phrase1_animation {
   0% {opacity: 1;}
@@ -707,8 +742,8 @@ html{
   position: absolute;
   bottom: 0;
   left: 20%;
-  height: 150%;
-  width: 25%;
+  height: 170%;
+  width: 24%;
   /* background-color: red; */
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -721,6 +756,7 @@ html{
 .slider1_second_slider_wrapper {
   grid-area: slider1_second_slider_wrapper;
   overflow: hidden;
+  position: relative;
 }
 .slider2_second_slider_wrapper {
   grid-area: slider2_second_slider_wrapper;
@@ -730,6 +766,7 @@ html{
   grid-area: slider3_second_slider_wrapper;
   overflow: hidden;
 }
+
 .car1, .car2 {position: absolute; height: 100%;}
 .car1 {left: 0%; animation: 10s infinite ease-in;}
 .car2 {left: 55%; animation: 7s infinite ease-in;}
@@ -891,7 +928,7 @@ html{
   width: 17%;
   top: 17%;
   right: 1%;
-  cursor: pointer;
+  cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
   background: url(../images/bip_bip.svg) no-repeat;
   animation: bip_bip_flashing 1s infinite;
 }
@@ -962,6 +999,7 @@ html{
   grid-area: previous_button_part4;
   border-right: 5px solid black;
   position: relative;
+  cursor: pointer;
 }
 .previous_button_part4 img {
   position: absolute;
@@ -973,6 +1011,7 @@ html{
   grid-area: next_button_part4;
   border-left: 5px solid black;
   position: relative;
+  cursor: pointer;
 }
 .next_button_part4 img {
   position: absolute;
@@ -1016,14 +1055,77 @@ html{
   border-radius: 80px;
   border: 20px solid black;
   overflow: hidden;
+  position: relative;
+}
+.slider_block4_part2_wrapper {
+  position: absolute;
+  left: 0%;
+  width: 400%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:  "background1 background2 background3 background4";
+  transition: all 0.4s ease;
 }
 .background1_part4 {
+  grid-area: background1;
   position: relative;
   width: 100%;
   height: 100%;
   background: url(../images/nsk_background.png) no-repeat top;
   background-size: 100%;
 }
+.background2_part4 {
+  grid-area: background2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/nsk_background.png) no-repeat top;
+  background-size: 100%;
+}
+.background3_part4 {
+  grid-area: background3;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/nsk_background.png) no-repeat top;
+  background-size: 100%;
+}
+.background4_part4 {
+  grid-area: background4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/nsk_background.png) no-repeat top;
+  background-size: 100%;
+}
+.third_slider_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 31%;
+  height: 85%;
+  width: 35%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "slider1_third_slider_wrapper"
+                       "slider2_third_slider_wrapper"
+                       "slider3_third_slider_wrapper";
+  /* animation: edut_tachki3 2s linear, edut_tachki4 7s 2s infinite;
+  animation-play-state: paused; */
+}
+.slider1_third_slider_wrapper {
+  grid-area: slider1_third_slider_wrapper;
+  overflow: hidden;
+}
+.slider2_third_slider_wrapper {
+  grid-area: slider2_third_slider_wrapper;
+  overflow: hidden;
+}
+.slider3_third_slider_wrapper {
+  grid-area: slider3_third_slider_wrapper;
+  overflow: hidden;
+}
+
 
 /* _______________________________________________ */
 .road_sign_1 {
@@ -1091,6 +1193,7 @@ html{
   border: 5px solid black;
   margin-top: 1%;
   margin-left: 4%;
+  cursor: pointer;
 }
 .part2_footer4 {
   grid-area: part2_footer4;
@@ -1128,4 +1231,12 @@ html{
 }
 .bip_bip_button_img {
   background: url(../images/bip_bip2.svg) no-repeat;
+}
+.slider1_changes_block3 {
+  height: 100%;
+  border: none;
+}
+.slider_block4_action {
+  left: -100%;
+  transition: all 0.2s ease;
 }
