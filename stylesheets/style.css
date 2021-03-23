@@ -36,11 +36,11 @@ html{
 }
 .wrapper2 {
   height: 100%;
-  width: 400%;
+  width: 420%;
   position: absolute;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "block1 block2 block3 block4"
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-areas: "block1 block2 block3 block4 main_footer"
 }
 .wrapper2_action1 {
   left: -100%;
@@ -52,6 +52,10 @@ html{
 }
 .wrapper2_action3 {
   left: -300%;
+  transition: all 0.25s ease;
+}
+.wrapper2_action4 {
+  left: -320%;
   transition: all 0.25s ease;
 }
 
@@ -425,18 +429,11 @@ html{
   grid-template-columns: 2% 1fr 1fr 1fr 2%;
   grid-template-areas:  ". light1 light2 light3 ."
 }
-.light1 {
-  grid-area: light1;
-  position: relative;
-}
-.light2 {
-  grid-area: light2;
-  position: relative;
-}
-.light3 {
-  grid-area: light3;
-  position: relative;
-}
+.light1, .light2, .light3 {position: relative;}
+.light1 {grid-area: light1;}
+.light2 {grid-area: light2;}
+.light3 {grid-area: light3;}
+
 .oval1, .oval2, .oval3 {
   position: relative;
   height: 100%;
@@ -491,70 +488,6 @@ html{
   animation-play-state: paused;
 }
 
-/* _______________________________________________ */
-@keyframes light1_work {
-  0% {opacity: 0.4} 5% {opacity: 0.4}
-  6% {opacity: 1} 20% {opacity: 1}
-  21% {opacity: 0} 22% {opacity: 0}
-  23% {opacity: 1} 24% {opacity: 1}
-  25% {opacity: 0} 26% {opacity: 0}
-  27% {opacity: 1} 28% {opacity: 1}
-  29% {opacity: 0} 30% {opacity: 0}
-  31% {opacity: 1} 32% {opacity: 1}
-  33% {opacity: 0} 34% {opacity: 0.4} 100% {opacity: 0.4}
-}
-@keyframes red_signal_work {
-  0% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98);} 5% {opacity: 0.4; transform: skew(20deg) scale(0.98);}
-  6% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  20% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  21% {opacity: 0; transform: skew(20deg) scale(0.98);} 22% {opacity: 0; transform: skew(20deg) scale(0.98);}
-  23% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  24% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  25% {opacity: 0; transform: skew(20deg) scale(0.98);} 26% {opacity: 0; transform: skew(20deg) scale(0.98);}
-  27% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  28% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  29% {opacity: 0; transform: skew(20deg) scale(0.98);} 30% {opacity: 0; transform: skew(20deg) scale(0.98);}
-  31% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  32% {opacity: 1; box-shadow: 0px 0px 40px 20px #FF0000; transform: skew(20deg) scale(1);}
-  33% {opacity: 0; transform: skew(20deg) scale(0.98);} 34% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1);} 100% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1);}
-}
-@keyframes light2_work {
-  0% {opacity: 0.4} 34% {opacity: 0.4}
-  35% {opacity: 1} 50% {opacity: 1}
-  51% {opacity: 0} 52% {opacity: 0}
-  53% {opacity: 1} 54% {opacity: 1}
-  55% {opacity: 0} 56% {opacity: 0}
-  57% {opacity: 1} 58% {opacity: 1}
-  59% {opacity: 0} 60% {opacity: 0}
-  61% {opacity: 1} 62% {opacity: 1}
-  63% {opacity: 0.4} 100% {opacity: 0.4}
-}
-@keyframes yellow_signal_work {
-  0% {opacity: 0.4; transform: skew(20deg) scale(0.98)} 34% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)}
-  35% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  50% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  51% {opacity: 0; transform: skew(20deg) scale(0.98)} 52% {opacity: 0; transform: skew(20deg) scale(0.98)}
-  53% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  54% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  55% {opacity: 0; transform: skew(20deg) scale(0.98)} 56% {opacity: 0; transform: skew(20deg) scale(0.98)}
-  57% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  58% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  59% {opacity: 0; transform: skew(20deg) scale(0.98)} 60% {opacity: 0; transform: skew(20deg) scale(0.98)}
-  61% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  62% {opacity: 1; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(1)}
-  63% {opacity: 0; box-shadow: 0px 0px 40px 20px #FFD42F; transform: skew(20deg) scale(0.98)}
-  64% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1)} 100% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(1) }
-}
-@keyframes light3_work {
-  0% {opacity: 0.4} 63% {opacity: 0.4}
-  64% {opacity: 1} 100% {opacity: 1}
-}
-@keyframes green_signal_work {
-  0% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)} 63% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)}
-  64% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
-  100% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
-}
-/* _______________________________________________ */
 .footer2 {
   grid-area: footer2;
   position: relative;
@@ -632,39 +565,8 @@ html{
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
-  animation: phrase3_disappear 15.7s, printed_text1 3s steps(53) 15.7s;
+  animation: printed_text2_opacity 15.7s, printed_text1 3s steps(53) 15.7s;
   animation-play-state: paused;
-}
-
-
-@keyframes phrase1_animation {
-  0% {opacity: 1;}
-  90% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes phrase2_animation {
-  0% {opacity: 0;}
-  5% {opacity: 1;}
-  90% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes phrase3_animation {
-  0% {opacity: 0;}
-  5% {opacity: 1;}
-  90% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes phrase4_animation {
-  0% {opacity: 0;}
-  5% {opacity: 1;}
-  90% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes phrase5_animation {
-  0% {opacity: 0;}
-  97% {opacity: 0;}
-  98% {opacity: 1;}
-  100% {opacity: 1;}
 }
 
 .part2_footer2 {
@@ -722,14 +624,15 @@ html{
                        "line_bottom"
 }
 
-.bip_bip_img {
+.bip_bip_img, .bip_bip_img2 {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: black;
   display: none;
+  z-index: 2;
 }
-.bip_bip_img img {position: absolute; height: 100%;}
+.bip_bip_img img, .bip_bip_img2 img {position: absolute; height: 100%;}
 .i_img {left: 30%;}
 .p_img {right: 0;}
 
@@ -741,7 +644,7 @@ html{
 .second_slider_wrapper {
   position: absolute;
   bottom: 0;
-  left: 20%;
+  left: 35%;
   height: 170%;
   width: 24%;
   /* background-color: red; */
@@ -750,8 +653,6 @@ html{
   grid-template-areas: "slider1_second_slider_wrapper"
                        "slider2_second_slider_wrapper"
                        "slider3_second_slider_wrapper";
-  /* animation: edut_tachki3 2s linear, edut_tachki4 7s 2s infinite;
-  animation-play-state: paused; */
 }
 .slider1_second_slider_wrapper {
   grid-area: slider1_second_slider_wrapper;
@@ -768,8 +669,8 @@ html{
 }
 
 .car1, .car2 {position: absolute; height: 100%;}
-.car1 {left: 0%; animation: 10s infinite ease-in;}
-.car2 {left: 55%; animation: 7s infinite ease-in;}
+.car1 {left: 0%; animation: car1_animation 6s infinite ease-in, car1_animation2 7s 6s infinite ease-in, car1_animation3 1s infinite alternate ease-in; animation-play-state: paused;}
+.car2 {left: 55%; animation: car1_animation 3s infinite ease-in, car1_animation2 7s 3s infinite ease-in, car1_animation3 1s infinite alternate ease-in; animation-play-state: paused;}
 
 .car3, .car4, .car5, .car6, .car7, .car8, .car9, .car10 {
   position: relative;
@@ -777,7 +678,7 @@ html{
   height: 100%;
 }
 .car5, .car8, .car9 {width: 22%;}
-.car1 {width: 23%;}
+.car1 {width: 23%; margin-bottom: 0%;}
 .car5 {margin-left: 2%}
 .car2, .car6, .car7, .car3, .car4, .car10 {width: 25%;}
 .car3 {margin-left: -5%;}
@@ -796,80 +697,6 @@ html{
   position: absolute;
   bottom: 0;
   height: 165%;
-}
-@keyframes maschiny_v_probke {
-  0% {margin-bottom: 0%;}
-  19% {margin-bottom: 0%;}
-  20% {margin-bottom: 0.5%; , margin-left: 1%}
-  39% {margin-bottom: 0.5%; margin-left: 1%}
-  40% {margin-bottom: 0%;}
-  59% {margin-bottom: 0%;}
-  60% {margin-bottom: 1%;}
-  79% {margin-bottom: 1%;}
-  80% {margin-bottom: 0%; margin-left: 1%}
-  99% {margin-bottom: 0%; margin-left: 1%}
-  100% {margin-bottom: 1%;}
-}
-@keyframes maschiny_v_probke2 {
-  0% {margin-bottom: 1%;}
-  19% {margin-bottom: 1%;}
-  20% {margin-bottom: 0%; margin-right: 1%}
-  39% {margin-bottom: 0%; margin-right: 1%}
-  40% {margin-bottom: 1%;}
-  59% {margin-bottom: 1%;}
-  60% {margin-bottom: 0%;}
-  79% {margin-bottom: 0%;}
-  80% {margin-bottom: 1%;}
-  99% {margin-bottom: 1%;}
-  100% {margin-bottom: 0%;}
-}
-@keyframes maschiny_v_probke3 {
-  0% {margin-bottom: 0%; margin-left: 1%}
-  19% {margin-bottom: 0%; margin-left: 1%}
-  20% {margin-bottom: 1%;}
-  39% {margin-bottom: 1%;}
-  40% {margin-bottom: 0%; margin-left: 1.5%}
-  59% {margin-bottom: 0%; margin-left: 1.5%}
-  60% {margin-bottom: 1%;}
-  79% {margin-bottom: 1%;}
-  80% {margin-bottom: 0%; margin-left: 1%}
-  99% {margin-bottom: 0%; margin-left: 1%}
-  100% {margin-bottom: 1%;}
-}
-@keyframes edut_tachki1 {
-  0% {}
-  100% {left: 130%;}
-}
-@keyframes edut_tachki2 {
-  0% {bottom: 0%;}
-  10% {bottom: 2%;}
-  15% {bottom: 0%;}
-  20% {bottom: 2%;}
-  25% {bottom: 0%;}
-  29% {bottom: 0%;}
-
-  30% {bottom: 2%; left: 30%;}
-  34% {bottom: 2%; left: 30%;}
-
-  35% {bottom: 0%; left: 35%;}
-  39% {bottom: 0%; left: 35%;}
-
-  40% {bottom: 4%; left: 40%;}
-  44% {bottom: 4%; left: 40%;}
-
-  45% {bottom: 0%; left: 45%;}
-  49% {bottom: 0%; left: 45%;}
-
-  50% {bottom: 4%; left: 50%;}
-  54% {bottom: 4%; left: 50%;}
-
-
-  60% {bottom: 0%;}
-  61% {bottom: 2%;}
-  60% {bottom: 0%;}
-  61% {bottom: 2%;}
-  62% {bottom: 0%;}
-  /* 100% {left: 130%;} */
 }
 /* _______________________________________________ */
 
@@ -964,6 +791,7 @@ html{
 .mainpart4 {
   grid-area: mainpart4;
   display: grid;
+  position: relative;
   grid-template-rows: 5% 15% 1fr 5%;
   grid-template-columns: 3% 1fr 3%;
   grid-template-areas:  ". . ."
@@ -1199,11 +1027,14 @@ html{
   grid-area: part2_footer4;
   position: relative;
 }
-.part2_footer4 img {
+.bip_bip_button2 {
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 17%;
-  right: 7%;
-  cursor: pointer;
+  cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
+  background: url(../images/bip_bip.svg) no-repeat;
+  animation: bip_bip_flashing 1s infinite;
 }
 .part3_footer4 {
   grid-area: part3_footer4;
@@ -1219,6 +1050,59 @@ html{
   justify-content: center;
   margin-top: 4%;
 }
+
+
+
+
+/* начало футера */
+.footer {
+  grid-area: main_footer;
+  position: relative;
+  display: grid;
+  grid-auto-rows: 1fr 10%;
+  grid-template-areas:  "picture_footer"
+                        "text_footer"
+}
+.picture_footer {
+  grid-area: picture_footer;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-left: 5px solid black;
+  overflow: hidden;
+}
+.picture_footer img {
+  top: -2%;
+  left: -2%;
+  position: absolute;
+  height: 102%;
+  width: 102%;
+}
+.text_footer {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  grid-area: text_footer;
+  position: relative;
+}
+.text_footer div {
+  font-size: 15px;
+  font-family: TwentytwelveSansG;
+  position: absolute;
+  top: 20%;
+  height: 100%;
+}
+.text_footer1 {
+  width: 60%;
+  left: 3%;
+}
+.text_footer2 {
+  text-align: right;
+  width: 42%;
+  right: 3%;
+}
+
+
 
 .animation_start {
   animation-play-state: running;
