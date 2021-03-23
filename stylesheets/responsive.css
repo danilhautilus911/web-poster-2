@@ -1,5 +1,8 @@
 /* the layout on iphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .plushka {
+    display: none;
+  }
   .block1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.8fr 0.9fr 9%;
@@ -36,6 +39,17 @@
   .line3 {top: 97%; left: 6%; width: 89%;}
   .slider1, .slider2 {border-bottom: 3px solid black; border-left: 3px solid black; border-right: 3px solid black;}
   .slider3 {border-left: 3px solid black; border-right: 3px solid black;}
+
+
+  /* начало второго блока */
+  .mainpart {display: block;}
+  .light1, .light2, .light3 {grid-area: none; height: 95%; width: 80%; position: absolute; margin: 5% 10%;}
+  .stop_signal, .wait_signal {font-size: 75px;}
+  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
+  .stop_signal {opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
+  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
+  .wait_signal {opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
+
 }
 
 
