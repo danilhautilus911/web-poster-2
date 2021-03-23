@@ -1,0 +1,86 @@
+/* the layout on iphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .block1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.9fr 9%;
+    grid-template-areas:  "part1"
+                          "part2"
+                          "part3"
+  }
+  .p1 {
+    font-size: 81px;
+    margin-left: 5%;
+    margin-top: -2%;
+  }
+  .p2 {display: none;}
+  .slider_wrapper {border-radius: 40px; border: 8px solid black;}
+  .part2 {
+    grid-template-columns: 2.5% 1fr 2.5%;
+    grid-template-rows: 6% 1fr 7%;
+    grid-template-areas: ". . ."
+                         ". slider_wrapper ."
+                         ". . ."
+  }
+  .part3 {border-top: 3px solid black; border-bottom: 3px solid black; grid-template-columns: 46% 27% 27%;}
+  .part3_1 div {font-size: 11px; margin-left: 26%; margin-top: 5.5%;}
+  .part3_1 img {height: 69%; width: 9.5%;}
+  .part3_2 img {top: 42%; right: 34%;}
+  .part3_2 div {font-size: 11px; margin-left: 15%; margin-top: 9%;}
+  .part3_3 {border-left: 3px solid black;}
+  .vpered1 {font-size: 22px; margin-top: 7%;}
+  .next1, .next2, .next3 {background-size: 21px 35px;}
+  .previous1, .previous2, .previous3 {background-size: 21px 35px; margin-left: 16%; width: 100%;}
+  .line1, .line2, .line3 {display: block; position: absolute; height: 1.5%; width: 100%; background-color: black;}
+  .line1 {top: 30%; left: 6%; width: 54%;}
+  .line2 {top: 63%; left: 6%; width: 89%;}
+  .line3 {top: 97%; left: 6%; width: 89%;}
+  .slider1, .slider2 {border-bottom: 3px solid black; border-left: 3px solid black; border-right: 3px solid black;}
+  .slider3 {border-left: 3px solid black; border-right: 3px solid black;}
+}
+
+
+
+/* the layout on ipad vertical */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .block1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 7%;
+    grid-template-areas:  "part1 part1"
+                          "part2 part2"
+                          "part3 part3"
+  }
+  .p1, .p2 {
+    display: inline-block;
+    position: absolute;
+  }
+  .p1 {
+    height: 90%;
+    width: 43%;
+    left: 4%;
+    top: 6%;
+    font-size: 90px;
+  }
+  .p2 {
+    height: 64%;
+    width: 38%;
+    font-size: 20px;
+    right: 5%;
+    top: 10%;
+    border: 16px solid red;
+  }
+  .part2 {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr 5%;
+    grid-template-areas: ". slider_wrapper ."
+                         ". . ."
+  }
+  .part3 {grid-template-columns: 53% 30% 17%;}
+  .part3_1 div, .part3_2 div {font-size: 20px;}
+  .part3_1 div {margin-top: 3.5%; margin-left: 16%;}
+  .part3_1 img {left: 1%;}
+  .part3_2 div {margin-left: 10%; margin-top: 6%;}
+  .part3_2 img {top: 35%; right: 18.5%;}
+  .vpered1 {font-size: 32px;}
+  .next1, .next2, .next3 {width: 86%; margin-left: 2%;}
+  .previous1, .previous2, .previous3 {width: 70%; margin-left: 12%;}
+}
