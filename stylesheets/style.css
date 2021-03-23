@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'layout.css';
 @import 'animation.css';
+
 body {
  width: 100%;
  height: 100%;
@@ -71,16 +72,7 @@ html{
   grid-template-areas:  "part1 part2 part2"
                         "part3 part3 part3"
 }
-/* the layout on ipad */
-@media only screen and (min-device-width: 568px) and (max-device-width: 1024px) {
-  .block1 {
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr 10%;
-  grid-template-areas:  "part1 part1 part1"
-                        "part2 part2 part2"
-                        "part3 part3 part3"
-  }
-}
+
 /* _______________________________________________ */
 .part1 {
   position: relative;
@@ -97,6 +89,7 @@ html{
   font-family: TwentytwelveSansG;
   /* text-decoration: underline; */
 }
+.line1, .line2, .line3 {display: none;}
 .p2 {
   height: 33%;
   width: 70%;
