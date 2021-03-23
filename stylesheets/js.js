@@ -44,28 +44,31 @@ $('.vpered1').click(function () {
 
 });
 });
+
 $(document).ready(function() {
 $('.vpered2').click(function () {
   $('.wrapper2').addClass('wrapper2_action2');
+  $('.car1').addClass('animation_start');
+  $('.car2').addClass('animation_start');
 });
 });
+
 $(document).ready(function() {
 $('.vpered3').click(function () {
   $('.wrapper2').addClass('wrapper2_action3');
 });
 });
-// $(document).ready(function() {
-// $('.part1_footer3').click(function () {
-//     var x= $('.second_slider_wrapper').css('animation-play-state');
-//     if (x == 'paused') {
-//     $('.second_slider_wrapper').css('animation-play-state', 'running');
-//   }
-// });
-// });
+
+$(document).ready(function() {
+$('.vpered4').click(function () {
+  $('.wrapper2').toggleClass('wrapper2_action4');
+});
+});
+
 
 $(document).ready(function() {
 $('.part1_footer3').click(function () {
-    $('.second_slider_wrapper').css('animation', 'edut_tachki3 2s linear, edut_tachki4 7s 2s infinite running, maschiny_v_probke 1s infinite ease-in');
+    $('.second_slider_wrapper').css('animation', 'edut_tachki3 2s linear, edut_tachki4 6s 2s infinite linear, car1_animation3 1s infinite alternate ease-in');
 });
 });
 
@@ -75,14 +78,28 @@ $('.part2_footer3').click(function () {
 });
 });
 
+
+// $(document).ready(function() {
+// $('.part3_footer3').click(function () {
+//     $('.second_slider_wrapper').css('animation-duration', '5s');
+// });
+// });
+
 $(document).ready(function() {
-$('.bip_bip_button').mouseover(function () {
-  $('.bip_bip_img').addClass('bip_bip_display');
+$('.bip_bip_button, .bip_bip_button2').mouseover(function () {
+  $('.bip_bip_img, .bip_bip_img2').addClass('bip_bip_display');
   // $('.bip_bip_button').addClass('bip_bip_button_img');
 });
-$('.bip_bip_button').mouseout(function () {
-  $('.bip_bip_img').removeClass('bip_bip_display');
+
+$('.bip_bip_button, .bip_bip_button2').mouseout(function () {
+  $('.bip_bip_img, .bip_bip_img2').removeClass('bip_bip_display');
   // $('.bip_bip_button').removeClass('bip_bip_button_img');
+});
+});
+
+$(document).ready(function() {
+$('.next_button_part4').click(function () {
+  $('.third_slider_wrapper').css('animation-play-state', 'running');
 });
 });
 
