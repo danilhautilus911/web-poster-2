@@ -101,14 +101,14 @@ html{
 }
 .button1_block1 {
   top: 23%;
-  right: 35%;
+  left: 20%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 .button2_block1 {
-  top: 54%;
-  right: 77%;
+  top: 38%;
+  right: 22%;
   background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
@@ -411,12 +411,18 @@ html{
   grid-area: part3_1;
   /* background: red; */
 }
-.text1_part1 {
+.text1_part1, .text2_part1 {
   font-size: 23px;
   font-family: TwentytwelveSansG;
   margin-top: 2.5%;
   margin-left: 11%;
 }
+.text2_part1 {
+  width: 47ch;
+  animation: printed_text1 3s steps(47);
+  animation-play-state: paused;
+}
+
 
 .part3_2 {
   grid-area: part3_2;
@@ -965,7 +971,7 @@ html{
   height: 100%;
   background-size: 100%;
 }
-.button1_block4, .button2_block4, .button3_block4 {
+.button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
   position: absolute;
   height: 5.5%;
   width: 2%;
@@ -975,86 +981,86 @@ html{
 }
 .background1_part4 {position: relative; grid-area: background1; background: url(../images/nsk_background.png) no-repeat top;}
 .button1_block4 {top: 9%; left: 68.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
 .background2_part4 {grid-area: background2; background: url(../images/tomsk_background.png) no-repeat center;}
 .button2_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
 .background3_part4 {grid-area: background3; background: url(../images/krasnoyarsk_background.png) no-repeat center;}
-.button3_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+.button3_block4 {top: 42%; left: 13.5%;
+  background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
-.background4_part4 {grid-area: background4; background: url(../images/chelyabinck_background.png) no-repeat center;}
+.background4_part4 {grid-area: background4; background: url(../images/chelyabinck_background.png) no-repeat bottom;}
 .button4_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
 .background5_part4 {grid-area: background5;  background: url(../images/tiumen_background.png) no-repeat center;}
-.button5_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+.button5_block4 {top: 14%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
 .background6_part4 {grid-area: background6; background: url(../images/ekatirinburg_background.png) no-repeat center;}
 .button6_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
 .background7_part4 {grid-area: background7; background: url(../images/novgorod_background.png) no-repeat center;}
-.button7_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+.button7_block4 {top: 42%; left: 13.5%;
+  background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
 .background8_part4 {grid-area: background8; background: url(../images/krasnodar_background.png) no-repeat center;}
 .button8_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
 .background9_part4 {grid-area: background9; background: url(../images/rostov_background.png) no-repeat center;}
 .button9_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
 .background10_part4 {grid-area: background10; background: url(../images/sochi_background.png) no-repeat bottom;}
 .button10_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
 .background11_part4 {grid-area: background11; background: url(../images/st_petersburg_background.png) no-repeat center;}
 .button11_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
 .background12_part4 {grid-area: background12; background: url(../images/moscow_background.png) no-repeat bottom;}
-.button12_block4 {top: 22%; left: 23.5%;
-  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
-  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+.button12_block4 {bottom: 7%; right: 22.5%;
+  background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 .third_slider_wrapper {
   position: absolute;
