@@ -91,7 +91,48 @@ html{
   margin-top: 10%;
   text-align: center;
 }
-
+.button1_block1, .button2_block1, .button3_block1 {
+  position: absolute;
+  height: 4%;
+  width: 2.8%;
+  border-radius: 50%;
+  border: 8px solid black;
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
+}
+.button1_block1 {
+  top: 23%;
+  right: 35%;
+  background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+  background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+}
+.button2_block1 {
+  top: 54%;
+  right: 77%;
+  background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+  background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
+}
+.button3_block1 {
+  top: 78%;
+  right: 66%;
+  background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+  background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
+}
+.button_general_block1 {
+  top: 13%;
+  left: 1.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  position: absolute;
+  height: 38%;
+  width: 1.8%;
+  border-radius: 50%;
+  border: 8px solid black;
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
+}
 /* _______________________________________________ */
 .part1 {
   position: relative;
@@ -370,12 +411,7 @@ html{
   grid-area: part3_1;
   /* background: red; */
 }
-.part3_1 img {
-  position: absolute;
-  top: 14%;
-  left: 1%;
-}
-.part3_1 div {
+.text1_part1 {
   font-size: 23px;
   font-family: TwentytwelveSansG;
   margin-top: 2.5%;
@@ -885,57 +921,22 @@ html{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:  "city1 city2 city3 city4 city5 city6 city7 city8 city9 city10 city11 city12";
-  transition: all 0.4s ease;
+  transition: all 1.5s ease;
 }
-.city1 {
-  grid-area: city1;
-  background-color: red;
-}
-.city2 {
-  grid-area: city2;
-  background-color: green;
-}
-.city3 {
-  grid-area: city3;
-  background-color: blue;
-}
-.city4 {
-  grid-area: city4;
-  background-color: blue;
-}
-.city5 {
-  grid-area: city5;
-  background-color: blue;
-}
-.city6 {
-  grid-area: city6;
-  background-color: blue;
-}
-.city7 {
-  grid-area: city7;
-  background-color: blue;
-}
-.city8 {
-  grid-area: city8;
-  background-color: blue;
-}
-.city9 {
-  grid-area: city9;
-  background-color: blue;
-}
-.city10 {
-  grid-area: city10;
-  background-color: blue;
-}
-.city11 {
-  grid-area: city11;
-  background-color: blue;
-}
-.city12 {
-  grid-area: city12;
-  background-color: blue;
-}
+.city1 {grid-area: city1;}
+.city2 {grid-area: city2;}
+.city3 {grid-area: city3;}
+.city4 {grid-area: city4;}
+.city5 {grid-area: city5;}
+.city6 {grid-area: city6;}
+.city7 {grid-area: city7;}
+.city8 {grid-area: city8;}
+.city9 {grid-area: city9;}
+.city10 {grid-area: city10;}
+.city11 {grid-area: city11;}
+.city12 {grid-area: city12;}
 #city_name_paragraphs {
+  margin-top: 6%;
   text-align: center;
   font-size: 36px;
   font-family: TwentytwelveSansG;
@@ -956,61 +957,104 @@ html{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:  "background1 background2 background3 background4 background5 background6 background7 background8 background9 background10 background11 background12";
-  transition: all 0.4s ease;
+  transition: all 1.5s ease;
 }
-.slider_block4_part2_wrapper div {
+.slider_block4 {
   position: relative;
   width: 100%;
   height: 100%;
   background-size: 100%;
 }
-.background1_part4 {
-  grid-area: background1;
-  background: url(../images/nsk_background.png) no-repeat top;
+.button1_block4, .button2_block4, .button3_block4 {
+  position: absolute;
+  height: 5.5%;
+  width: 2%;
+  border-radius: 50%;
+  border: 8px solid black;
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
 }
-.background2_part4 {
-  grid-area: background2;
-  background: url(../images/nsk_background.png) no-repeat top;
+.background1_part4 {position: relative; grid-area: background1; background: url(../images/nsk_background.png) no-repeat top;}
+.button1_block4 {top: 9%; left: 68.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background3_part4 {
-  grid-area: background3;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background2_part4 {grid-area: background2; background: url(../images/tomsk_background.png) no-repeat center;}
+.button2_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background4_part4 {
-  grid-area: background4;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background3_part4 {grid-area: background3; background: url(../images/krasnoyarsk_background.png) no-repeat center;}
+.button3_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background5_part4 {
-  grid-area: background5;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background4_part4 {grid-area: background4; background: url(../images/chelyabinck_background.png) no-repeat center;}
+.button4_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background6_part4 {
-  grid-area: background6;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background5_part4 {grid-area: background5;  background: url(../images/tiumen_background.png) no-repeat center;}
+.button5_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background7_part4 {
-  grid-area: background7;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background6_part4 {grid-area: background6; background: url(../images/ekatirinburg_background.png) no-repeat center;}
+.button6_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background8_part4 {
-  grid-area: background8;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background7_part4 {grid-area: background7; background: url(../images/novgorod_background.png) no-repeat center;}
+.button7_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background9_part4 {
-  grid-area: background9;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background8_part4 {grid-area: background8; background: url(../images/krasnodar_background.png) no-repeat center;}
+.button8_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background10_part4 {
-  grid-area: background10;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background9_part4 {grid-area: background9; background: url(../images/rostov_background.png) no-repeat center;}
+.button9_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background11_part4 {
-  grid-area: background11;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background10_part4 {grid-area: background10; background: url(../images/sochi_background.png) no-repeat bottom;}
+.button10_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
-.background12_part4 {
-  grid-area: background12;
-  background: url(../images/nsk_background.png) no-repeat top;
+
+.background11_part4 {grid-area: background11; background: url(../images/st_petersburg_background.png) no-repeat center;}
+.button11_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+}
+
+.background12_part4 {grid-area: background12; background: url(../images/moscow_background.png) no-repeat bottom;}
+.button12_block4 {top: 22%; left: 23.5%;
+  background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
+  background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
 }
 .third_slider_wrapper {
   position: absolute;
@@ -1023,7 +1067,7 @@ html{
   grid-template-areas: "slider1_third_slider_wrapper"
                        "slider2_third_slider_wrapper"
                        "slider3_third_slider_wrapper";
-  animation: third_slider_wrapper_animation 2s ease-in;
+  animation: third_slider_wrapper_animation 1.5s ease-in;
   animation-play-state: paused;
 }
 .slider1_third_slider_wrapper {
