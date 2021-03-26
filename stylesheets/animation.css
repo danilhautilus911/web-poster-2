@@ -243,20 +243,19 @@
   0% {left: -30%}
   100% {left: 100%}
 }
-/* @keyframes edut_tachki4_2 {
-  0% {left: -30%}
-  100% {left: 100%}
-} */
-/* @keyframes edut_tachki5 {
-  0% {left: -30%}
-  100% {left: 110%}
+@keyframes third_slider_wrapper_animation {
+  0% {bottom: 0%}
+  10% {bottom: 2%}
+  20% {bottom: 0%}
+  30% {bottom: 2%}
+  40% {bottom: 3%}
+  50% {bottom: 2%}
+  60% {bottom: 0%}
+  70% {bottom: 1%}
+  80% {bottom: 0%}
+  90% {bottom: 3%}
+  100% {bottom: 1%}
 }
-@keyframes nitro {
-  to {
-    margin-left: 30%;
-  }
-} */
-
 
 
 
