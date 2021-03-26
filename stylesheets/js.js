@@ -26,7 +26,8 @@ $(document).ready(function() {
     });
 
     $('.button1_block1').click(function () {
-      $('.').addClass('wrapper2_action3');
+      // $('.text1_part1').addClass('animation_start');
+      $('.text2_part1').addClass('animation_start');
     });
 });
 
