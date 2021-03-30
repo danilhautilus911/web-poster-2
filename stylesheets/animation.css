@@ -118,10 +118,19 @@
   0% {opacity: 0.4} 63% {opacity: 0.4}
   64% {opacity: 1} 100% {opacity: 1}
 }
+@keyframes light3_work_iphone_ipad {
+  0% {opacity: 0} 63% {opacity: 0}
+  64% {opacity: 1} 100% {opacity: 1}
+}
 @keyframes green_signal_work {
   0% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)} 63% {opacity: 0.4; box-shadow: none; transform: skew(20deg) scale(0.98)}
   64% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
   100% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: skew(20deg) scale(1)}
+}
+@keyframes green_signal_work_iphone_ipad {
+  0% {opacity: 0; box-shadow: none; transform: rotate(-32deg) scale(0.98)} 63% {opacity: 0; box-shadow: none; transform: rotate(-32deg) scale(0.98)}
+  64% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: rotate(-32deg) scale(1)}
+  100% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: rotate(-32deg) scale(1)}
 }
 
 @keyframes printed_text1 {
