@@ -1,7 +1,22 @@
 /* the layout on iphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .wrapper2 {
+    width: 470%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;
+  }
+  .wrapper2_action4 {
+      left: -370%;
+  }
   .plushka {
-    display: none;
+    top: -83%;
+    right: 4%;
+    border: 8px solid black;
+    height: 16%;
+    width: 27%;
+  }
+  .plushka div {
+    font-size: 11px;
+    margin-top: 11%;
   }
   .block1 {
     grid-template-columns: 1fr;
@@ -9,6 +24,9 @@
     grid-template-areas:  "part1"
                           "part2"
                           "part3"
+  }
+  .button1_block1, .button2_block1, .button3_block1 {
+    display: none;
   }
   .p1 {
     font-size: 81px;
@@ -25,7 +43,8 @@
                          ". . ."
   }
   .part3 {border-top: 3px solid black; border-bottom: 3px solid black; grid-template-columns: 46% 27% 27%;}
-  .part3_1 div {font-size: 11px; margin-left: 26%; margin-top: 5.5%;}
+  .text1_part1 {font-size: 11px; margin-left: 26%; margin-top: 5.5%;}
+  .button_general_block1 {height: 36%; width: 4.8%; border: 6px solid black;}
   .part3_1 img {height: 69%; width: 9.5%;}
   .part3_2 img {top: 42%; right: 34%;}
   .part3_2 div {font-size: 11px; margin-left: 15%; margin-top: 9%;}
@@ -42,18 +61,173 @@
 
 
   /* начало второго блока */
-  .mainpart {display: block;}
+  .block2 {grid-template-rows: 1fr 9%;}
+  .mainpart {display: block; }
   .light1, .light2, .light3 {grid-area: none; height: 95%; width: 80%; position: absolute; margin: 5% 10%;}
-  .stop_signal, .wait_signal {font-size: 75px;}
+  .stop_signal, .wait_signal, .go_signal {font-size: 75px;}
   .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
   .stop_signal {opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
+
   .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
   .wait_signal {opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
 
+  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
+  .go_signal {opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
+
+  .footer2 {
+    grid-template-columns: 1fr 27%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  .phrase1 div {
+    font-size: 14px;
+    display: none;
+  }
+  .phrase2 div, .phrase3 {
+    display: none;
+  }
+
+  .part2_footer2 {
+    animation: none;
+    border-left: 3px solid black;
+  }
+  .part2_footer2 div {
+    font-size: 22px;
+    margin-top: 7%;
+  }
+
+
+  /* начало третьего блока */
+  .block3 {
+    grid-area: block3;
+    grid-template-rows: 1fr 9%;
+  }
+  .dashed_line img {
+    width: 218%;
+    height: 100%;
+  }
+  .car7, .car8, .car9, .car10 {display: none;}
+  .car5 {margin-left: 0%; width: 54%;}
+  .car6 {width: 44%;}
+  .car3 {margin-left: -15%;}
+  .car4 {margin-right: 0%; margin-left: 9%;}
+  .car3, .car4, .car2, .car1 {width: 51%;}
+  .car5 img, .car4 img, .car1 img {height: 120%;}
+  .car6 img, .car3 img, .car2 img {height: 100%;}
+
+  .second_slider_wrapper {
+    height: 139%;
+    width: 72%;
+    margin-left: -19%;
+  }
+  .footer3 {
+    grid-template-columns: 14% 28% 1fr 27%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  .part1_footer3, .part2_footer3 {border-right: 3px solid black;}
+  .part1_footer3 div, .part2_footer3 div, .part5_footer3 div {
+    font-size: 22px;
+    margin-top: 7%;
+  }
+  .part1_footer3 div {margin-top: 14%;}
+  .part5_footer3 {border-left: 3px solid black;}
+  .bip_bip_button {
+    width: 93%;
+    top: -10%;
+    left: 4%;
+  }
+
+  /* начало четвертого блока */
+  .block4 {
+    grid-template-rows: 1fr 9%;
+  }
+  .mainpart4 {
+    grid-template-rows: 3% 10% 1fr 3%;
+  }
+  .slider_block4_part1 {
+    grid-template-columns: 7% 1fr 7%;
+  }
+  .city_slider {
+    grid-template-columns: 16% 1fr 16%;
+  }
+  #city_name_paragraphs {
+    margin-top: 9%;
+    font-size: 24px;
+  }
+  .previous_button_part4 img, .next_button_part4 img {top: 16%;}
+  .next_button_part4 img {left: 1%;}
+  .slider_block4_part2 {
+    border: 8px solid black;
+  }
+  .rectangle_part4 {
+    height: 84%;
+    width: 94%;
+    border-radius: 30px;
+    border: 8px solid black;
+  }
+  .third_slider_wrapper {
+    left: 6%;
+    height: 55%;
+    width: 86%;
+  }
+  .footer4 {
+    grid-template-columns: 1fr 1fr 27%;
+    grid-template-areas:  "part1_footer4 part2_footer4 part3_footer4";
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  .part3_footer4 {
+    border-left: 3px solid black;
+  }
+  .vpered4 {
+    font-size: 22px;
+    margin-top: 7%;
+  }
+  .road_sign_1 {
+    top: 9%;
+    left: -1%;
+    height: 17%;
+    width: 28%;
+  }
+  .road_sign_2 {
+    display: none;
+  }
+  .road_sign_3 {
+    top: 9%;
+    right: 2.5%;
+    height: 18%;
+    width: 38%;
+  }
+  .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
+    height: 4%;
+    width: 6%;
+    border: 6px solid black;
+  }
+  .city11 p, .city9 p {
+    font-size: 19px !important;
+  }
+
+  /* начало футера */
+  .footer {grid-auto-rows: 1fr 9%;}
+  .picture_footer {
+    border-left: 3px solid black;
+  }
+  .picture_footer img {
+    top: -5%;
+    left: -2%;
+    height: 107%;
+    width: 102%;
+  }
+  .text_footer {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+  }
+  .text_footer div {font-size: 13px;}
+  .text_footer2 {width: 47%;}
+
 }
-
-
-
 /* the layout on ipad vertical */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
   .block1 {
