@@ -695,6 +695,15 @@ html{
 .line_middle2 {grid-area: line_middle2; position: relative;}
 .line_bottom {grid-area: line_bottom; position: relative;}
 
+.dashed_line {
+  width: 100%;
+  height: 12%;
+}
+.dashed_line img {
+  width: 100%;
+  height: 100%;
+}
+
 .second_slider_wrapper {
   position: absolute;
   bottom: 0;
@@ -771,8 +780,8 @@ html{
   position: relative;
   background: #E0FFFF;
   display: grid;
-  grid-template-columns: 7% 12% 10% 1fr 10%;
-  grid-template-areas:  "part1_footer3 part2_footer3 part3_footer3 part4_footer3 part5_footer3";
+  grid-template-columns: 7% 12% 1fr 10%;
+  grid-template-areas: "part1_footer3 part2_footer3 part4_footer3 part5_footer3";
   border-top: 5px solid black;
   border-bottom: 5px solid black;
 }
@@ -822,8 +831,7 @@ html{
   top: 17%;
   right: 1%;
   cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
-  background: url(../images/bip_bip.svg) no-repeat;
-  animation: bip_bip_flashing 1s infinite;
+  /* animation: bip_bip_flashing 1s infinite; */
 }
 .part5_footer3 {
   grid-area: part5_footer3;
