@@ -129,8 +129,8 @@
 }
 @keyframes green_signal_work_iphone_ipad {
   0% {opacity: 0; box-shadow: none; transform: rotate(-32deg) scale(0.98)} 63% {opacity: 0; box-shadow: none; transform: rotate(-32deg) scale(0.98)}
-  64% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: rotate(-32deg) scale(1)}
-  100% {opacity: 1; box-shadow: 0px 0px 40px 20px #11DA00; transform: rotate(-32deg) scale(1)}
+  64% {opacity: 1; transform: rotate(-32deg) scale(1)}
+  100% {opacity: 1; transform: rotate(-32deg) scale(1)}
 }
 
 @keyframes printed_text1 {
