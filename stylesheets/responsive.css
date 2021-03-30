@@ -1,12 +1,7 @@
 /* the layout on iphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .wrapper2 {
-    width: 470%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;
-  }
-  .wrapper2_action4 {
-      left: -370%;
-  }
+  .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
+  .wrapper2_action4 {left: -370%;}
   .plushka {
     top: -83%;
     right: 4%;
@@ -79,8 +74,21 @@
     border-top: 3px solid black;
     border-bottom: 3px solid black;
   }
+  .phrase1 {
+    animation: none;
+  }
   .phrase1 div {
     font-size: 14px;
+    /* display: none; */
+    animation: none;
+    display: inline-block;
+    font-size: 23px;
+    margin-top: 1.5%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+  }
+  .phrase1_part1 {
     display: none;
   }
   .phrase2 div, .phrase3 {
@@ -230,6 +238,9 @@
 }
 /* the layout on ipad vertical */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .plushka {display: none;}
+  .wrapper2 {width: 450%; grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;}
+  .wrapper2_action4 {left: -350%;}
   .block1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 7%;
@@ -237,38 +248,90 @@
                           "part2 part2"
                           "part3 part3"
   }
-  .p1, .p2 {
-    display: inline-block;
-    position: absolute;
-  }
-  .p1 {
-    height: 90%;
-    width: 43%;
-    left: 4%;
-    top: 6%;
-    font-size: 90px;
-  }
-  .p2 {
-    height: 64%;
-    width: 38%;
-    font-size: 20px;
-    right: 5%;
-    top: 10%;
-    border: 16px solid red;
-  }
+  .p1, .p2 {display: inline-block; position: absolute;}
+  .p1 {height: 90%; width: 43%; left: 4%; top: 6%; font-size: 90px;}
+  .p2 {height: 64%; width: 38%; font-size: 20px; right: 5%; top: 10%; border: 16px solid red;}
   .part2 {
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 1fr 5%;
+    grid-template-rows: 1fr 8%;
     grid-template-areas: ". slider_wrapper ."
                          ". . ."
   }
   .part3 {grid-template-columns: 53% 30% 17%;}
-  .part3_1 div, .part3_2 div {font-size: 20px;}
-  .part3_1 div {margin-top: 3.5%; margin-left: 16%;}
+  .text1_part1, .part3_2 div {font-size: 20px;}
+  .text1_part1 {margin-top: 3.5%; margin-left: 16%;}
   .part3_1 img {left: 1%;}
   .part3_2 div {margin-left: 10%; margin-top: 6%;}
   .part3_2 img {top: 35%; right: 18.5%;}
   .vpered1 {font-size: 32px;}
   .next1, .next2, .next3 {width: 86%; margin-left: 2%;}
   .previous1, .previous2, .previous3 {width: 70%; margin-left: 12%;}
+  .button_general_block1 {left: 2%; width: 3%;}
+  .button1_block1, .button2_block1, .button3_block1 {width: 3.2%;}
+  .button1_block1 {top: 20%;}
+  .button2_block1 {top: 35%; right: 20%;}
+  .button3_block1 {top: 73%;}
+
+
+  /* начало второго блока */
+  .block2 {grid-template-rows: 1fr 7%;}
+  .mainpart {display: block;}
+  .light1, .light2, .light3 {grid-area: none; position: absolute; height: 100%; width: 88%; margin: 0% 6%;}
+  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
+  .stop_signal {left: 28%; opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
+
+  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
+  .wait_signal {left: 28%; opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
+
+  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
+  .go_signal {left: 38%; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
+
+  .footer2 {grid-template-columns: 1fr 17%;}
+
+
+  /* начало третьего блока */
+  .block3 {grid-template-rows: 1fr 7%;}
+  .footer3 {grid-template-columns: 10% 18% 1fr 17%;}
+  .footer3 div {font-size: 32px;}
+  .bip_bip_button {width: 35%; top: -15%; right: 3%;}
+  .car8, .car10 {display: none;}
+  .car1 img, .car4 img, .car5 img, .car7 img, .car9 img {height: 100%}
+  .car2 img, .car3 img, .car6 img {height: 90%;}
+  .car5 {width: 35%; margin-left: -17%;}
+  .car2, .car6, .car7, .car3, .car4 {width: 40%;}
+  .dashed_line img {width: 133%; height: 100%;}
+  .second_slider_wrapper {height: 121%; width: 42%; display: grid; margin-left: -6%;}
+
+  /* начало четвертого блока */
+  .block4 {grid-template-rows: 1fr 7%;}
+  .mainpart4 {grid-template-rows: 5% 10% 1fr 3%;}
+  .footer4 {grid-template-columns: 1fr 20% 17%;}
+  .vpered4 {font-size: 32px;}
+  .city_slider {grid-template-columns: 18% 1fr 18%;}
+  .third_slider_wrapper {left: 10%; height: 73%; width: 88%;}
+  .road_sign_1 {top: 6%; left: 4%; height: 23%; width: 24%;}
+  .road_sign_2 {display: none;}
+  .road_sign_3 {top: 13%; right: -1.5%; height: 16%; width: 31%;}
+  .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
+    height: 5.5%;
+    width: 6%;
+    border: 10px solid black;
+  }
+  #city_name_paragraphs {margin-top: 11%;}
+  .city9 p, .city11 p {font-size: 31px !important; margin-top: 13% !important;}
+
+  /* начало футора блока */
+  .footer {grid-auto-rows: 1fr 7%;}
+  .picture_footer img {top: -0.5%;}
+  .text_footer div {font-size: 20px; top: 13%;}
+
+
+  .bip_bip_img img {
+    height: 37%;
+    width: 100%;
+  }
+  .b_img {top: 0%; height: 40% !important; width: 100% !important;}
+  .i_img {top: 30.5%; left: 0%;}
+  .p_img {top: 63%;}
+
 }
