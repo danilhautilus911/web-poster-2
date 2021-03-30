@@ -464,17 +464,18 @@
 
 @media only screen and (min-device-width: 1680px) {
   /* начало первого блока */
-  .plushka div {font-size: 23px;}
-  .p1 {font-size: 144px;}
-  .p2 {height: 32%; width: 79%; margin-left: 8%; margin-top: 1%; font-size: 28px;}
-  .text1_part1, .part3_2 div {margin-top: 3%;}
-  .button_general_block1 {top: 14%;}
+  .plushka div {font-size: 25px;}
+  .p1 {font-size: 144px; margin-left: 10%;}
+  .p2 {height: 31%; width: 70%; margin-left: 10%; margin-top: 4%; font-size: 28px;}
+  .text1_part1, .part3_2 div {margin-top: 2.5%; font-size: 26px;}
+  .button_general_block1 {top: 18%; width: 1.7%;}
   .part3_2 div {width: 26%; margin-left: 68%;}
-  .vpered1, .part2_footer2 div, .vpered3, .vpered4 {margin-top: 7%;}
+  .vpered1, .part2_footer2 div, .vpered3, .vpered4 {margin-top: 4%; font-size: 43px; }
   .part3, .footer2, .footer3, .footer4, .text_footer {border-top: 7px solid black; border-bottom: 7px solid black;}
   .part3_3, .part2_footer2, .part5_footer3, .part3_footer4 {border-left: 7px solid black;}
   .slider1, .slider2 {border-bottom: 7px solid black; border-left: 7px solid black; border-right: 7px solid black;}
   .slider3 {border-left: 7px solid black; border-right: 7px solid black;}
+  .button1_block1, .button2_block1, .button3_block1 {width: 2.6%;}
 
   /* начало второго блока */
   .mainpart {grid-template-columns: 4% 1fr 1fr 1fr 4%;}
