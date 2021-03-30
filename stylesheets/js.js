@@ -132,9 +132,13 @@ $(document).ready(function(){
       } else {city_name_block4--}
       console.log(city_name_block4);
 
-      if (0 <= city_name_block4 <= 12) {
+      if (0 < city_name_block4 <= 12) {
         $('.city_name_wrapper').css('left', -100 * city_name_block4 + '%');
-      } else {city_name_block4 = 0}
+      } else if (city_name_block4 < 0) {
+        city_name_block4++;
+      } else if (12 < city_name_block4) {
+        city_name_block4--;
+      }
   	});
 });
 
