@@ -1,0 +1,32 @@
+@media only screen and (min-width: 320px) and (max-width: 765px) {
+  /* начало первого блока */
+  .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
+  .wrapper2_action4 {left: -370%;}
+  .plushka {display: none;}
+
+  .block1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.9fr 9%;
+    grid-template-areas:  "part1"
+                          "part2"
+                          "part3"
+  }
+  .button1_block1, .button2_block1, .button3_block1 {display: none;}
+  .p1 {font-size: 10px; margin-left: 5%;  margin-top: -2%;}
+  .p2 {display: none;}
+  .previous1 img, .previous2 img, .previous3 img {height: 10%;}
+  .next1 img, .next2 img, .next3 img {height: 10%;}
+
+  .slider_wrapper {border: 3px solid black;}
+
+
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
+  .p1 {font-size: 13.5vh;}
+  .p2 {font-size: 13.5vh;}
+
+}
+@media only screen and (min-width: 1680px) {
+  .p1 {font-size: 10vh;}
+}
