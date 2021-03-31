@@ -3,6 +3,7 @@
   .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
   .wrapper2_action4 {left: -370%;}
   .plushka {
+    display: none;
     top: -83%;
     right: 4%;
     border: 8px solid black;
@@ -17,7 +18,7 @@
                           "part2"
                           "part3"
   }
-  .button1_block1, .button2_block1, .button3_block1 { display: none;}
+  .button1_block1, .button2_block1, .button3_block1 {display: none;}
   .p1 {font-size: 81px; margin-left: 5%;  margin-top: -2%;}
   .p2 {display: none;}
   .slider_wrapper {border-radius: 40px; border: 8px solid black;}
@@ -29,7 +30,7 @@
                          ". . ."
   }
   .part3 {border-top: 3px solid black; border-bottom: 3px solid black; grid-template-columns: 46% 27% 27%;}
-  .text1_part1 {font-size: 11px;}
+  .text1_part1 {display: none;}
   .button_general_block1 {height: 36%; width: 4.8%; border: 6px solid black;}
   .part3_1 img {height: 69%; width: 9.5%;}
   .part3_2 img {top: 42%; right: 34%;}
@@ -44,6 +45,8 @@
   .line3 {top: 97%; left: 6%; width: 89%;}
   .slider1, .slider2 {border-bottom: 3px solid black; border-left: 3px solid black; border-right: 3px solid black;}
   .slider3 {border-left: 3px solid black; border-right: 3px solid black;}
+  .previous1 img, .previous2 img, .previous3 img {height: 50%;}
+  .next1 img, .next2 img, .next3 img {height: 50%;}
 
 
   /* начало второго блока */
@@ -470,16 +473,17 @@
   /* начало первого блока */
   .plushka div {font-size: 25px;}
   .p1 {font-size: 144px; margin-left: 10%;}
-  .p2 {height: 31%; width: 70%; margin-left: 10%; margin-top: 4%; font-size: 28px;}
-  .text1_part1, .part3_2 div {font-size: 26px;}
-  .button_general_block1 {top: 18%; width: 1.7%;}
-  .part3_2 div {width: 26%; margin-left: 68%;}
+  .p2 {height: 32%; width: 70%; margin-left: 10%; margin-top: 3%; font-size: 26px;}
+  .text1_part1, .part3_2 div {margin-top: 2.5%; font-size: 26px;}
+  .button_general_block1 {top: 18%; width: 4%;}
+  .text1_part1 {margin-top: 0.4%;}
+  .part3_2 div {width: 31%; margin-left: 65%;}
   .vpered1, .part2_footer2 div, .vpered3, .vpered4 {margin-top: 4%; font-size: 43px; }
   .part3, .footer2, .footer3, .footer4, .text_footer {border-top: 7px solid black; border-bottom: 7px solid black;}
   .part3_3, .part2_footer2, .part5_footer3, .part3_footer4 {border-left: 7px solid black;}
   .slider1, .slider2 {border-bottom: 7px solid black; border-left: 7px solid black; border-right: 7px solid black;}
   .slider3 {border-left: 7px solid black; border-right: 7px solid black;}
-  .button1_block1, .button2_block1, .button3_block1 {width: 2.6%;}
+  .button1_block1, .button2_block1, .button3_block1 {width: 2.9%;}
 
   /* начало второго блока */
   .mainpart {grid-template-columns: 4% 1fr 1fr 1fr 4%;}
