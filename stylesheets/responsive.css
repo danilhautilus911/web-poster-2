@@ -200,6 +200,8 @@
 /* the layout on ipad vertical */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {height: 1500px;}
+  .wrapper {height: 1500px;}
+  .wrapper2 {height: 1500px;}
   .plushka {display: none;}
   .wrapper2 {width: 450%; grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;}
   .wrapper2_action4 {left: -350%;}
@@ -411,7 +413,7 @@
 
 
 
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1439px) {
+@media only screen and (min-width: 1366px) and (max-width: 1439px) {
   /* начало первого блока */
   body {height: 100vh; width: 100vw;}
   .wrapper {height: 100vh; width: 100vw;}
