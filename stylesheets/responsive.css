@@ -1,5 +1,8 @@
 /* the layout on iphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 765px) {
+  body {height: 568px;}
+  .wrapper {height: 568px;}
+  .wrapper2 {height: 568px;}
   .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
   .wrapper2_action4 {left: -370%;}
   .plushka {
@@ -199,9 +202,9 @@
 
 /* the layout on ipad vertical */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {height: 1500px;}
-  .wrapper {height: 1500px;}
-  .wrapper2 {height: 1500px;}
+  body {height: 1024px;}
+  .wrapper {height: 1024px;}
+  .wrapper2 {height: 1024px;}
   .plushka {display: none;}
   .wrapper2 {width: 450%; grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;}
   .wrapper2_action4 {left: -350%;}
@@ -301,10 +304,10 @@
 
 
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
-  body {height: 100vh; width: 100vw;}
-  .wrapper {height: 100vh; width: 100vw;}
-  .wrapper2 {height: 100vh; width: 430vw; grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  body {height: 640px; width: 100vw;}
+  .wrapper {height: 640px; width: 100vw;}
+  .wrapper2 {height: 640px; width: 430vw; grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;}
   .wrapper2_action4 {left: -330%;}
 
   /* начало первого блока */
@@ -360,11 +363,11 @@
 
 
 
-@media only screen and (min-device-width: 1280px) and (max-device-width: 1365px) {
+@media only screen and (min-width: 1280px) and (max-width: 1365px) {
   /* начало первого блока */
-  body {height: 100vh; width: 100vw;}
-  .wrapper {height: 100vh; width: 100vw;}
-  .wrapper2 {height: 100vh; width: 420vw;}
+  body {height: 670px; width: 100vw;}
+  .wrapper {height: 670px; width: 100vw;}
+  .wrapper2 {height: 670px; width: 420vw;}
   .p1 {font-size: 98px; height: 53%;}
   .p2 {font-size: 19px; height: 31%;}
   .part3_2 div {margin-left: 59%;}
@@ -415,10 +418,10 @@
 
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
   /* начало первого блока */
-  body {height: 100vh; width: 100vw;}
-  .wrapper {height: 100vh; width: 100vw;}
-  .wrapper2 {height: 100vh; width: 420vw;}
-  .p1 {font-size: 88px; margin-left: 14%;}
+  body {height: 640px; width: 100vw;}
+  .wrapper {height: 640px; width: 100vw;}
+  .wrapper2 {height: 640px; width: 420vw;}
+  .p1 {font-size: 94px; margin-left: 14%;}
   .p2 {height: 31%; width: 69%; margin-left: 8%; margin-top: -1%; font-size: 19px;}
   .block1 {grid-template-columns: 1fr 1fr 1fr;}
   .button_general_block1 {height: 41%; width: 1.6%; border: 6px solid black;}
