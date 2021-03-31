@@ -1,5 +1,5 @@
 /* the layout on iphone */
-@media only screen and (min-width: 320px) and (max-width: 599px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 765px) {
   .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
   .wrapper2_action4 {left: -370%;}
   .plushka {
@@ -195,7 +195,8 @@
 
 
 /* the layout on ipad vertical */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {height: 1500px;}
   .plushka {display: none;}
   .wrapper2 {width: 450%; grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr;}
   .wrapper2_action4 {left: -350%;}
