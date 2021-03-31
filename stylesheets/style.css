@@ -4,25 +4,11 @@
 
 body {
  width: 100%;
- height: 100%;
+ height: 100vh;
  margin: 0 auto;
- display: block;
- position: relative;
- /* overflow: hidden; */
+ displa
 }
-/* body::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  opacity: 0.2;
-  background: url("../images/background1.png") no-repeat;
-  background-size: 100% auto;
-} */
+
 html{
   position: relative;
   height: 100%;
@@ -98,10 +84,12 @@ html{
   border-radius: 50%;
   border: 8px solid black;
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
+  cursor: pointer;
+  z-index: 2;
 }
 .button1_block1 {
   top: 23%;
-  left: 20%;
+  left: 18%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
@@ -122,13 +110,13 @@ html{
 }
 .button_general_block1 {
   top: 13%;
-  left: 1.5%;
+  left: 2.5%;
   background: -webkit-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
   background: -moz-linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
   background: linear-gradient(0deg, rgb(124, 124, 124) 35%, rgb(255, 255, 255));
   position: absolute;
   height: 38%;
-  width: 1.8%;
+  width: 4%;
   border-radius: 50%;
   border: 8px solid black;
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
@@ -152,7 +140,7 @@ html{
 .line1, .line2, .line3 {display: none;}
 .p2 {
   height: 33%;
-  width: 70%;
+  width: 66%;
   margin: 0 auto;
   margin-top: -1%;
   /* background: red; */
@@ -261,7 +249,7 @@ html{
 
 .element1_slide1_slider2 {
   position: absolute;
-  height: 100%; width: 54%;
+  height: 102%; width: 54%;
   left: 20%;
   transform: skewX(25deg);
   background-color: #F656A0;
@@ -377,20 +365,22 @@ html{
   width: 78%;
   margin: 0 auto;
   margin-top: 50%;
+  cursor: pointer;
 }
-.next1 { grid-area: next_button1; background: url("../images/nextbutton.png") no-repeat;}
-.next2 { grid-area: next_button2; background: url("../images/nextbutton.png") no-repeat;}
-.next3 { grid-area: next_button3; background: url("../images/nextbutton.png") no-repeat;}
+.next1 { grid-area: next_button1;}
+.next2 { grid-area: next_button2;}
+.next3 { grid-area: next_button3;}
 
 .previous1, .previous2, .previous3 {
   height: 58%;
   width: 58%;
   margin: 0 auto;
   margin-top: 50%;
+  cursor: pointer;
 }
-.previous1 { grid-area: previous_button1; background: url("../images/previousbutton.png") no-repeat;}
-.previous2 { grid-area: previous_button2; background: url("../images/previousbutton.png") no-repeat;}
-.previous3 { grid-area: previous_button3; background: url("../images/previousbutton.png") no-repeat;}
+.previous1 { grid-area: previous_button1;}
+.previous2 { grid-area: previous_button2;}
+.previous3 { grid-area: previous_button3;}
 
 .active-slide {
  display:block;
@@ -409,19 +399,33 @@ html{
 }
 .part3_1 {
   grid-area: part3_1;
+  position: relative;
   /* background: red; */
 }
-.text1_part1, .text2_part1 {
+.text1_part1, .text2_part1, .text3_part1, .text4_part1 {
+  position: absolute;
+  top: 26%;
+  left: 11%;
+  height: 54%;
   font-size: 23px;
-  font-family: TwentytwelveSansG;
-  margin-top: 2.5%;
-  margin-left: 11%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
 }
+.text2_part1, .text3_part1, .text4_part1 {display: none; animation-play-state: paused;}
 .text2_part1 {
   width: 47ch;
   animation: printed_text1 3s steps(47);
-  animation-play-state: paused;
 }
+.text3_part1 {
+  width: 55ch;
+  animation: printed_text1 3s steps(55);
+}
+.text4_part1 {
+  width: 41ch;
+  animation: printed_text1 3s steps(41);
+}
+.disappearing {display: none;}
 
 
 .part3_2 {
@@ -429,7 +433,7 @@ html{
   /* background: yellow; */
 }
 .part3_2 div {
-  font-size: 23px;
+  font-size: 22px;
   font-family: TwentytwelveSansG;
   margin-top: 2.5%;
   margin-left: 64%;
@@ -684,11 +688,15 @@ html{
   width: 100%;
   background-color: black;
   display: none;
-  z-index: 2;
+  z-index: 4;
+  transition: all 0.5s ease;
 }
 .bip_bip_img img, .bip_bip_img2 img {position: absolute; height: 100%;}
 .i_img {left: 30%;}
 .p_img {right: 0;}
+.b2_img {display: none;}
+.i2_img {display: none;}
+.p2_img {display: none;}
 
 .line_top {grid-area: line_top;}
 .line_middle1 {grid-area: line_middle1;}
@@ -778,7 +786,7 @@ html{
 .footer3 {
   grid-area: footer3;
   position: relative;
-  background: #E0FFFF;
+  /* background: #E0FFFF; */
   display: grid;
   grid-template-columns: 7% 12% 1fr 10%;
   grid-template-areas: "part1_footer3 part2_footer3 part4_footer3 part5_footer3";
@@ -792,7 +800,8 @@ html{
   display: flex;
   justify-content: center;
 }
-.part1_footer3 div, .part2_footer3 div, .part3_footer3 div {margin-top: 4%;}
+.part2_footer3 div, .part3_footer3 div {margin-top: 4%;}
+.part1_footer3 div {margin-top: 7%;}
 .part1_footer3 {
   grid-area: part1_footer3;
   border-right: 5px solid black;
@@ -827,11 +836,15 @@ html{
 .bip_bip_button {
   position: absolute;
   height: 100%;
-  width: 17%;
-  top: 17%;
-  right: 1%;
+  width: 15%;
+  top: 0%;
+  right: 0%;
   cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
-  /* animation: bip_bip_flashing 1s infinite; */
+  background: url(../images/bip_bip.svg) no-repeat;
+  background-position-x: left;
+  background-position-y: 30%;
+  animation: bip_bip_flashing 2s infinite;
+  border: none;
 }
 .part5_footer3 {
   grid-area: part5_footer3;
@@ -972,6 +985,7 @@ html{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:  "background1 background2 background3 background4 background5 background6 background7 background8 background9 background10 background11 background12";
   transition: all 1.5s ease;
+  background: url(../images/noise.png);
 }
 .slider_block4 {
   position: relative;
@@ -979,96 +993,129 @@ html{
   height: 100%;
   background-size: 100%;
 }
-.button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
+.button_part4 {
   position: absolute;
   height: 5.5%;
   width: 2%;
   border-radius: 50%;
   border: 8px solid black;
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
+  cursor: pointer;
 }
-.background1_part4 {position: relative; grid-area: background1; background: url(../images/nsk_background.png) no-repeat top;}
+.background1_part4 {position: relative; grid-area: background1; overflow: hidden;}
+.background__1 {height: 100%; width: 100%; background: url(../images/nsk_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
 .button1_block4 {top: 9%; left: 68.5%;
   background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
-.background2_part4 {grid-area: background2; background: url(../images/tomsk_background.png) no-repeat center;}
+.background2_part4 {position: relative; grid-area: background2;}
+.background__2 {height: 100%; width: 100%; background: url(../images/tomsk_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
 .button2_block4 {top: 22%; left: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
-.background3_part4 {grid-area: background3; background: url(../images/krasnoyarsk_background.png) no-repeat center;}
+.background3_part4 {position: relative; grid-area: background3;}
+.background__3 {height: 100%; width: 100%; background: url(../images/krasnoyarsk_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
 .button3_block4 {top: 42%; left: 13.5%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
-.background4_part4 {grid-area: background4; background: url(../images/chelyabinck_background.png) no-repeat bottom;}
-.button4_block4 {top: 22%; left: 23.5%;
+.background4_part4 {position: relative; grid-area: background4;}
+.background__4 {height: 100%; width: 100%; background: url(../images/chelyabinck_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
+.button4_block4 {top: 22%; right: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
-.background5_part4 {grid-area: background5;  background: url(../images/tiumen_background.png) no-repeat center;}
+.background5_part4 {position: relative; grid-area: background5;}
+.background__5 {height: 100%; width: 100%; background: url(../images/tiumen_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
 .button5_block4 {top: 14%; left: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
-.background6_part4 {grid-area: background6; background: url(../images/ekatirinburg_background.png) no-repeat center;}
-.button6_block4 {top: 22%; left: 23.5%;
+.background6_part4 {position: relative; grid-area: background6;}
+.background__6 {height: 100%; width: 100%; background: url(../images/ekatirinburg_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
+.button6_block4 {bottom: 22%; right: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
-.background7_part4 {grid-area: background7; background: url(../images/novgorod_background.png) no-repeat center;}
+.background7_part4 {position: relative; grid-area: background7;}
+.background__7 {height: 100%; width: 100%; background: url(../images/novgorod_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
 .button7_block4 {top: 42%; left: 13.5%;
   background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
-.background8_part4 {grid-area: background8; background: url(../images/krasnodar_background.png) no-repeat center;}
-.button8_block4 {top: 22%; left: 23.5%;
+.background8_part4 {position: relative; grid-area: background8;}
+.background__8 {height: 100%; width: 100%; background: url(../images/krasnodar_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
+.button8_block4 {top: 30%; right: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
-.background9_part4 {grid-area: background9; background: url(../images/rostov_background.png) no-repeat center;}
-.button9_block4 {top: 22%; left: 23.5%;
+.background9_part4 {position: relative; grid-area: background9;}
+.background__9 {height: 100%; width: 100%; background: url(../images/rostov_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
+.button9_block4 {top: 40%; left: 30%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
 }
 
-.background10_part4 {grid-area: background10; background: url(../images/sochi_background.png) no-repeat bottom;}
+.background10_part4 {position: relative; grid-area: background10;}
+.background__10 {height: 100%; width: 100%; background: url(../images/sochi_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
 .button10_block4 {top: 22%; left: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: -moz-linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
   background: linear-gradient(0deg, rgb(246, 85, 160) 35%, rgb(254, 217, 234));
 }
 
-.background11_part4 {grid-area: background11; background: url(../images/st_petersburg_background.png) no-repeat center;}
-.button11_block4 {top: 22%; left: 23.5%;
+.background11_part4 {position: relative; grid-area: background11;}
+.background__11 {height: 100%; width: 100%; background: url(../images/st_petersburg_background.svg) no-repeat center; background-size: cover; opacity: 0.9;}
+.button11_block4 {top: 22%; right: 23.5%;
   background: -webkit-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: -moz-linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
   background: linear-gradient(0deg, rgb(0, 182, 245) 35%, rgb(198, 240, 255));
 }
 
-.background12_part4 {grid-area: background12; background: url(../images/moscow_background.png) no-repeat bottom;}
+.background12_part4 {position: relative; grid-area: background12;}
+.background__12 {height: 100%; width: 100%; background: url(../images/moscow_background.svg) no-repeat bottom; background-size: cover; opacity: 0.9;}
 .button12_block4 {bottom: 7%; right: 22.5%;
   background: -webkit-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: -moz-linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
   background: linear-gradient(0deg, rgb(255, 212, 47) 35%, rgb(255, 243, 197));
+}
+.lenta_stop {
+  position: absolute;
+  top: -10%;
+  left: 6%;
+  height: 130%;
+  width: 3%;
+  transform: rotate(-15deg);
+  background: url(../images/stop.svg) no-repeat;
+  z-index: 2;
+}
+.lenta_stop2 {
+  position: absolute;
+  top: -10%;
+  right: 6%;
+  height: 130%;
+  width: 3%;
+  transform: rotate(15deg);
+  background: url(../images/stop.svg) no-repeat;
+  z-index: 2;
 }
 .third_slider_wrapper {
   position: absolute;
@@ -1105,6 +1152,7 @@ html{
   left: 8%;
   height: 27%;
   width: 16%;
+  z-index: 3;
 }
 .road_sign_1 img {
   height: 100%;
@@ -1116,6 +1164,7 @@ html{
   left: 0%;
   height: 27%;
   width: 16%;
+  z-index: 3;
 }
 .road_sign_2 img {
   height: 100%;
@@ -1127,6 +1176,8 @@ html{
   right: 0.5%;
   height: 29%;
   width: 24%;
+  z-index: 3;
+
 }
 .road_sign_3 img {
   height: 82%;
@@ -1136,7 +1187,7 @@ html{
 .footer4 {
   grid-area: footer4;
   position: relative;
-  background: #E0FFFF;
+  /* background: #E0FFFF; */
   display: grid;
   grid-template-columns: 1fr 11% 10%;
   grid-template-areas:  "part1_footer4 part2_footer4 part3_footer4";
@@ -1147,6 +1198,68 @@ html{
   grid-area: part1_footer4;
   position: relative;
 }
+.text11_part4 {font-size: 20px !important; top: 30% !important;}
+.text_part4 {
+  position: absolute;
+  top: 26%;
+  left: 4%;
+  height: 54%;
+  font-size: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  display: none;
+  animation-play-state: paused;
+}
+.text1_part4 {
+  width: 49ch;
+  animation: printed_text1 3s steps(49);
+}
+.text2_part4 {
+  width: 47ch;
+  animation: printed_text1 3s steps(47);
+}
+.text3_part4 {
+  width: 48ch;
+  animation: printed_text1 3s steps(48);
+}
+.text4_part4 {
+  width: 48ch;
+  animation: printed_text1 3s steps(48);
+}
+.text5_part4 {
+  width: 45ch;
+  animation: printed_text1 3s steps(45);
+}
+.text6_part4 {
+  width: 48ch;
+  animation: printed_text1 3s steps(48);
+}
+.text7_part4 {
+  width: 47ch;
+  animation: printed_text1 3s steps(47);
+}
+.text8_part4 {
+  width: 48ch;
+  animation: printed_text1 3s steps(48);
+}
+.text9_part4 {
+  width: 49ch;
+  animation: printed_text1 3s steps(49);
+}
+.text10_part4 {
+  width: 47ch;
+  animation: printed_text1 3s steps(47);
+}
+.text11_part4 {
+  width: 88ch;
+  animation: printed_text1 3s steps(88);
+}
+.text12_part4 {
+  width: 50ch;
+  animation: printed_text1 3s steps(50);
+}
+
 .hr {
  position: absolute;
  border: 3px dashed black;
@@ -1173,12 +1286,19 @@ html{
 .bip_bip_button2 {
   position: absolute;
   height: 100%;
-  width: 100%;
-  top: 17%;
+  width: 97%;
+  top: 0%;
+  right: 0%;
   cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
-  /* background: url(../images/bip_bip.svg) no-repeat; */
-  /* animation: bip_bip_flashing 1s infinite; */
+  background: url(../images/bip_bip.svg) no-repeat;
+  background-position-x: left;
+  background-position-y: 30%;
+  animation: bip_bip_flashing 2s infinite;
 }
+.b_img2 {left: 0%;}
+.i_img2 {left: 30%;}
+.p_img2 {right: 0%;}
+
 .part3_footer4 {
   grid-area: part3_footer4;
   border-left: 5px solid black;
@@ -1232,7 +1352,7 @@ html{
   font-size: 15px;
   font-family: TwentytwelveSansG;
   position: absolute;
-  top: 20%;
+  top: 22%;
   height: 100%;
 }
 .text_footer1 {
@@ -1262,10 +1382,11 @@ html{
 }
 .bip_bip_display {
   display: block;
+  transition: all 5s ease;
 }
-.bip_bip_button_img {
+/* .bip_bip_button_img {
   background: url(../images/bip_bip2.svg) no-repeat;
-}
+} */
 .slider1_changes_block3 {
   height: 100%;
   border: none;
