@@ -29,7 +29,7 @@
                          ". . ."
   }
   .part3 {border-top: 3px solid black; border-bottom: 3px solid black; grid-template-columns: 46% 27% 27%;}
-  .text1_part1 {font-size: 11px; margin-left: 26%; margin-top: 5.5%;}
+  .text1_part1 {font-size: 11px;}
   .button_general_block1 {height: 36%; width: 4.8%; border: 6px solid black;}
   .part3_1 img {height: 69%; width: 9.5%;}
   .part3_2 img {top: 42%; right: 34%;}
@@ -217,7 +217,7 @@
   }
   .part3 {grid-template-columns: 53% 30% 17%;}
   .text1_part1, .part3_2 div {font-size: 20px;}
-  .text1_part1 {margin-top: 3.5%; margin-left: 16%;}
+  /* .text1_part1 {margin-top: 3.5%; margin-left: 16%;} */
   .part3_1 img {left: 1%;}
   .part3_2 div {margin-left: 10%; margin-top: 6%;}
   .part3_2 img {top: 35%; right: 18.5%;}
@@ -305,7 +305,7 @@
   .p1 {font-size: 85px;}
   .p2 {height: 35%; width: 69%; font-size: 18px; margin-top: -8%; margin-left: 8%;}
   .button_general_block1 {height: 36%;}
-  .text1_part1 {margin-left: 13%;}
+  /* .text1_part1 {margin-left: 13%;} */
   .part3_2 div {margin-left: 50%;}
   .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 25px;}
   .plushka div {font-size: 15px; margin-top: 15%;}
@@ -364,7 +364,7 @@
   .part3_2 div {margin-left: 59%;}
   .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px; margin-top: 5%;}
   .part3_2 div {margin-top: 2%;}
-  .text1_part1 {margin-top: 2%; margin-left: 12%;}
+  /* .text1_part1 {margin-top: 2%; margin-left: 12%;} */
   .button_general_block1 {width: 1.7%;}
   .previous1, .previous2, .previous3 {width: 65%;}
   .next1, .next2, .next3 {width: 85%;}
@@ -416,7 +416,7 @@
   .p2 {height: 31%; width: 69%; margin-left: 8%; margin-top: -1%; font-size: 19px;}
   .block1 {grid-template-columns: 1fr 1fr 1fr;}
   .button_general_block1 {height: 41%; width: 1.6%; border: 6px solid black;}
-  .text1_part1, .part3_2 div {margin-top: 1.4%;}
+  /* .text1_part1, .part3_2 div {margin-top: 1.4%;} */
   .part3_2 div {margin-left: 62%;}
   .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px;}
   .plushka {height: 13%; width: 17%;}
@@ -470,7 +470,7 @@
   .plushka div {font-size: 25px;}
   .p1 {font-size: 144px; margin-left: 10%;}
   .p2 {height: 31%; width: 70%; margin-left: 10%; margin-top: 4%; font-size: 28px;}
-  .text1_part1, .part3_2 div {margin-top: 2.5%; font-size: 26px;}
+  .text1_part1, .part3_2 div {font-size: 26px;}
   .button_general_block1 {top: 18%; width: 1.7%;}
   .part3_2 div {width: 26%; margin-left: 68%;}
   .vpered1, .part2_footer2 div, .vpered3, .vpered4 {margin-top: 4%; font-size: 43px; }
