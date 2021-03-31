@@ -14,13 +14,13 @@ html{
 }
 
 .wrapper {
-  height: 100vh;
+  height: 750px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 .wrapper2 {
-  height: 100vh;
+  height: 750px;
   width: 420%;
   position: absolute;
   display: grid;
@@ -131,7 +131,7 @@ html{
   margin-top: 0%;
   opacity: 1;
   position: relative;
-  font-size: 11px;
+  font-size: 115px;
   font-family: TwentytwelveSansG;
   /* text-decoration: underline; */
 }
