@@ -275,8 +275,8 @@
 
 
 @keyframes bip_bip_flashing {
- 0% {background: url(../images/bip_bip.svg) no-repeat;}
- 49% {background: url(../images/bip_bip.svg) no-repeat;}
- 50% {background: url(../images/bip_bip2.svg) no-repeat;}
- 100% {background: url(../images/bip_bip2.svg) no-repeat;}
+ 0% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
+ 49% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
+ 50% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
+ 100% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
 }
