@@ -29,6 +29,39 @@ $(document).ready(function() {
       // $('.text1_part1').addClass('animation_start');
       $('.text2_part1').addClass('animation_start');
     });
+
+    $('.button1_block1, .button2_block1, .button3_block1').mouseover(function () {
+      $('.text1_part1').addClass('disappearing');
+    });
+
+    $('.button1_block1').mouseover(function () {
+      $('.text3_part1, .text4_part1').removeClass('bip_bip_display');
+      $('.text2_part1').addClass('bip_bip_display');
+      $('.text2_part1').css('animation-play-state', 'running');
+    });
+    $('.button1_block1').mouseout(function () {
+      $('.text2_part1').css('animation-play-state', 'paused');
+    });
+
+    $('.button2_block1').mouseover(function () {
+      $('.text2_part1, .text4_part1').removeClass('bip_bip_display');
+      $('.text3_part1').addClass('bip_bip_display');
+      $('.text3_part1').css('animation-play-state', 'running');
+    });
+    $('.button2_block1').mouseout(function () {
+      $('.text3_part1').css('animation-play-state', 'paused');
+    });
+
+    $('.button3_block1').mouseover(function () {
+      $('.text2_part1, .text3_part1').removeClass('bip_bip_display');
+      $('.text4_part1').addClass('bip_bip_display');
+      $('.text4_part1').css('animation-play-state', 'running');
+    });
+    $('.button3_block1').mouseout(function () {
+      $('.text4_part1').css('animation-play-state', 'paused');
+    });
+
+
 });
 
 
@@ -92,7 +125,7 @@ $('.part3_footer3').click(function () {
 });
 
 $(document).ready(function() {
-$('.bip_bip_button, .bip_bip_button2').mouseover(function () {
+$('.bip_bip_button, .bip_bip_button2').click(function () {
   $('.bip_bip_img, .bip_bip_img2').addClass('bip_bip_display');
 });
 
@@ -104,49 +137,27 @@ $('.bip_bip_button, .bip_bip_button2').mouseout(function () {
 
 $(document).ready(function(){
   let slider_block4 = 0;
-	$('.next_button_part4, .previous_button_part4').click(function(){
-    if ($(this).hasClass('next_button_part4')) {
-      slider_block4++
-    } else {slider_block4--}
-    console.log(slider_block4);
-
-    if ((0 < slider_block4) && (slider_block4 <= 12)) {
+  $('.next_button_part4, .previous_button_part4').click(function(){
+    if ($(this).hasClass('next_button_part4') && slider_block4 < 12) {
+      slider_block4++;
+    } else if ($(this).hasClass('previous_button_part4') && slider_block4 > 0) {
+      slider_block4--;
+    }
       $('.slider_block4_part2_wrapper').css('left', -100 * slider_block4 + '%');
-    }
-    if (slider_block4 = 4) {
-      $('.slider_block4_part2_wrapper').css('left', -100 * 4 + '%');
-      slider_block4 = 5;
-    }
-    if (12 > slider_block4) {
-      slider_block4 == 0
-    }
-	});
+      console.log(slider_block4);
+    });
 
-// 	$('.next_button_part4, .previous_button_part4').click(function(){
-//   if (slider_block = 1) {
-//     $('.number2').css('background-color', 'yellow')
-//   } else if (slider_block = 2) {
-//     $('.number3').css('background-color', 'yellow')
-//   }
-// });
-});
-
-  $(document).ready(function(){
-    let city_name_block4 = 0;
-  	$('.next_button_part4, .previous_button_part4').click(function(){
-      if ($(this).hasClass('next_button_part4')) {
-        city_name_block4++;
-      } else {city_name_block4--}
+  let city_name_block4 = 0;
+  $('.next_button_part4, .previous_button_part4').click(function(){
+    if ($(this).hasClass('next_button_part4') && city_name_block4 < 12) {
+      city_name_block4++;
+    } else if ($(this).hasClass('previous_button_part4') && city_name_block4 > 0) {
+      city_name_block4--;
+    }
+      $('.city_name_wrapper').css('left', -100 * city_name_block4 + '%');
       console.log(city_name_block4);
+    });
 
-      if (0 < city_name_block4 <= 12) {
-        $('.city_name_wrapper').css('left', -100 * city_name_block4 + '%');
-      } else if (city_name_block4 < 0) {
-        city_name_block4++;
-      } else if (12 < city_name_block4) {
-        city_name_block4--;
-      }
-  	});
 });
 
 $(document).ready(function() {
@@ -161,6 +172,113 @@ $('.next_button_part4, .previous_button_part4').click(function() {
   $("." + el.attr("class") + ":last").remove();
 });
 
+$('.button1_block4').mouseover(function () {
+  $('.text2_part4').removeClass('bip_bip_display');
+  $('.text1_part4').addClass('bip_bip_display');
+  $('.text1_part4').css('animation-play-state', 'running');
+});
+$('.button1_block4').mouseout(function () {
+  $('.text1_part4').css('animation-play-state', 'paused');
+});
+
+$('.button2_block4').mouseover(function () {
+  $('.text1_part4, .text3_part4').removeClass('bip_bip_display');
+  $('.text2_part4').addClass('bip_bip_display');
+  $('.text2_part4').css('animation-play-state', 'running');
+});
+$('.button2_block4').mouseout(function () {
+  $('.text2_part4').css('animation-play-state', 'paused');
+});
+
+$('.button3_block4').mouseover(function () {
+  $('.text2_part4, .text4_part4').removeClass('bip_bip_display');
+  $('.text3_part4').addClass('bip_bip_display');
+  $('.text3_part4').css('animation-play-state', 'running');
+});
+$('.button3_block4').mouseout(function () {
+  $('.text3_part4').css('animation-play-state', 'paused');
+});
+
+$('.button4_block4').mouseover(function () {
+  $('.text3_part4, .text5_part4').removeClass('bip_bip_display');
+  $('.text4_part4').addClass('bip_bip_display');
+  $('.text4_part4').css('animation-play-state', 'running');
+});
+$('.button4_block4').mouseout(function () {
+  $('.text4_part4').css('animation-play-state', 'paused');
+});
+
+$('.button5_block4').mouseover(function () {
+  $('.text4_part4, .text6_part4').removeClass('bip_bip_display');
+  $('.text5_part4').addClass('bip_bip_display');
+  $('.text5_part4').css('animation-play-state', 'running');
+});
+$('.button5_block4').mouseout(function () {
+  $('.text5_part4').css('animation-play-state', 'paused');
+});
+
+$('.button6_block4').mouseover(function () {
+  $('.text5_part4, .text7_part4').removeClass('bip_bip_display');
+  $('.text6_part4').addClass('bip_bip_display');
+  $('.text6_part4').css('animation-play-state', 'running');
+});
+$('.button6_block4').mouseout(function () {
+  $('.text6_part4').css('animation-play-state', 'paused');
+});
+
+$('.button7_block4').mouseover(function () {
+  $('.text6_part4, .text8_part4').removeClass('bip_bip_display');
+  $('.text7_part4').addClass('bip_bip_display');
+  $('.text7_part4').css('animation-play-state', 'running');
+});
+$('.button7_block4').mouseout(function () {
+  $('.text7_part4').css('animation-play-state', 'paused');
+});
+
+$('.button8_block4').mouseover(function () {
+  $('.text7_part4, .text9_part4').removeClass('bip_bip_display');
+  $('.text8_part4').addClass('bip_bip_display');
+  $('.text8_part4').css('animation-play-state', 'running');
+});
+$('.button8_block4').mouseout(function () {
+  $('.text8_part4').css('animation-play-state', 'paused');
+});
+
+$('.button9_block4').mouseover(function () {
+  $('.text8_part4, .text10_part4').removeClass('bip_bip_display');
+  $('.text9_part4').addClass('bip_bip_display');
+  $('.text9_part4').css('animation-play-state', 'running');
+});
+$('.button9_block4').mouseout(function () {
+  $('.text9_part4').css('animation-play-state', 'paused');
+});
+
+$('.button10_block4').mouseover(function () {
+  $('.text9_part9, .text11_part4').removeClass('bip_bip_display');
+  $('.text10_part4').addClass('bip_bip_display');
+  $('.text10_part4').css('animation-play-state', 'running');
+});
+$('.button10_block4').mouseout(function () {
+  $('.text10_part4').css('animation-play-state', 'paused');
+});
+
+$('.button11_block4').mouseover(function () {
+  $('.text10_part9, .text12_part4').removeClass('bip_bip_display');
+  $('.text11_part4').addClass('bip_bip_display');
+  $('.text11_part4').css('animation-play-state', 'running');
+});
+$('.button11_block4').mouseout(function () {
+  $('.text11_part4').css('animation-play-state', 'paused');
+});
+
+$('.button12_block4').mouseover(function () {
+  $('.text11_part4').removeClass('bip_bip_display');
+  $('.text12_part4').addClass('bip_bip_display');
+  $('.text12_part4').css('animation-play-state', 'running');
+});
+$('.button12_block4').mouseout(function () {
+  $('.text12_part4').css('animation-play-state', 'paused');
+});
 
 });
 
