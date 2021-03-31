@@ -469,8 +469,12 @@
 
 
 
-@media only screen and (min-device-width: 1680px) {
+@media only screen and (min-width: 1680px) {
   /* начало первого блока */
+  body {height: 905px;}
+  .wrapper {height: 905px;}
+  .wrapper2 {height: 905px;}
+
   .plushka div {font-size: 25px;}
   .p1 {font-size: 144px; margin-left: 10%;}
   .p2 {height: 32%; width: 70%; margin-left: 10%; margin-top: 3%; font-size: 26px;}
