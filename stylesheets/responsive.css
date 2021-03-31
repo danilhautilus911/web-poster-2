@@ -1,8 +1,5 @@
 /* the layout on iphone */
-@media only screen and (min-device-width: 320px) and (max-device-width: 765px) {
-  body {height: 568px;}
-  .wrapper {height: 568px;}
-  .wrapper2 {height: 568px;}
+@media only screen and (min-width: 320px) and (max-width: 765px) {
   .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
   .wrapper2_action4 {left: -370%;}
   .plushka {
@@ -42,10 +39,10 @@
   .vpered1 {font-size: 22px; margin-top: 7%;}
   .next1, .next2, .next3 {background-size: 21px 35px;}
   .previous1, .previous2, .previous3 {background-size: 21px 35px; margin-left: 16%; width: 100%;}
-  .line1, .line2, .line3 {display: block; position: absolute; height: 1.5%; width: 100%; background-color: black;}
+  /* .line1, .line2, .line3 {display: block; position: absolute; height: 1.5%; width: 100%; background-color: black;}
   .line1 {top: 30%; left: 6%; width: 54%;}
   .line2 {top: 63%; left: 6%; width: 89%;}
-  .line3 {top: 97%; left: 6%; width: 89%;}
+  .line3 {top: 97%; left: 6%; width: 89%;} */
   .slider1, .slider2 {border-bottom: 3px solid black; border-left: 3px solid black; border-right: 3px solid black;}
   .slider3 {border-left: 3px solid black; border-right: 3px solid black;}
   .previous1 img, .previous2 img, .previous3 img {height: 50%;}
@@ -201,7 +198,7 @@
 
 
 /* the layout on ipad vertical */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
   body {height: 1024px;}
   .wrapper {height: 1024px;}
   .wrapper2 {height: 1024px;}
@@ -304,22 +301,83 @@
 
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  body {height: 640px; width: 100vw;}
-  .wrapper {height: 640px; width: 100vw;}
-  .wrapper2 {height: 640px; width: 430vw; grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  .wrapper2 {width: 430%; grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;}
   .wrapper2_action4 {left: -330%;}
 
   /* начало первого блока */
-  .p1 {font-size: 85px;}
-  .p2 {height: 35%; width: 69%; font-size: 18px; margin-top: -8%; margin-left: 8%;}
-  .button_general_block1 {height: 36%;}
+  body {max-height: 900px}
+  .wrapper {max-height: 900px}
+  .wrapper2 {max-height: 900px}
+  .block1 {grid-template-columns: 0.5fr 1fr 1fr;}
+  .p1 {font-size: 11.2vh; height: 40vh; margin-top: 4vh;}
+  .p2 {font-size: 2.5vh; width: 24vw; height: 28vh; margin-top: -4vh;}
+  /* .button_general_block1 {height: 36%;} */
   /* .text1_part1 {margin-left: 13%;} */
   .part3_2 div {margin-left: 50%;}
   .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 25px;}
   .plushka div {font-size: 15px; margin-top: 15%;}
   .part2 {grid-template-rows: 10% 1fr 5%;}
-  .button1_block1, .button2_block1, .button3_block1 {height: 3.5%;}
+  /* .button1_block1, .button2_block1, .button3_block1 {height: 3.5%;} */
+
+  /* начало второго блока */
+  .mainpart {grid-template-columns: 3% 1fr 1fr 1fr 3%;}
+  .stop_signal, .wait_signal, .go_signal {font-size: 90px;}
+  .stop_signal {left: 16%;}
+  .wait_signal {left: 19%;}
+  .go_signal {left: 33%;}
+  .phrase3 {top: 22%;}
+
+  /* начало третьего блока */
+  .part1_footer3 div {font-size: 25px; margin-top: 14%;}
+  .part2_footer3 div {font-size: 25px; margin-top: 8%;}
+  .bip_bip_button {width: 15%; top: -8%;}
+  .b2_img {display: none;}
+  .i2_img {display: none;}
+  .p2_img {display: none;}
+  .b_img {left: -3%;}
+  .i_img {left: 26%;}
+  .p_img {left: 50%;}
+  .bip_bip_img, .bip_bip_img2 {overflow: hidden;}
+
+  /* начало четвертого блока */
+  .bip_bip_button2 {width: 97%; top: -12%;}
+  .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
+    height: 4.5%;
+  }
+  .slider_block4_part1 {grid-template-columns: 25% 1fr 25%;}
+  .city_slider {grid-template-columns: 15% 1fr 15%;}
+  .previous_button_part4 img {height: 70%; top: 25%; left: 44%;}
+  .next_button_part4 img {height: 70%; top: 25%; left: 19%;}
+  .road_sign_2 {height: 30%; width: 18%;}
+  #city_name_paragraphs {margin-top: 9%;}
+
+  /* начало четвертого блока */
+ .text_footer div {font-size: 16px; top: 17%;}
+ .picture_footer img {height: 129%; top: -15%;}
+ .b_img2 {left: -3%;}
+ .i_img2 {left: 26%;}
+ .p_img2 {left: 50%;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {
+  .wrapper2 {width: 430%; grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr;}
+  .wrapper2_action4 {left: -330%;}
+
+  /* начало первого блока */
+  body {max-height: 900px}
+  .wrapper {max-height: 900px}
+  .wrapper2 {max-height: 900px}
+  .block1 {grid-template-columns: 1fr 1fr 1fr;}
+  .p1 {font-size: 10.5vh;}
+  .p2 {height: 35%; width: 69%; font-size: 18px; margin-top: -8%; margin-left: 8%;}
+  /* .button_general_block1 {height: 36%;} */
+  /* .text1_part1 {margin-left: 13%;} */
+  .part3_2 div {margin-left: 50%;}
+  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 25px;}
+  .plushka div {font-size: 15px; margin-top: 15%;}
+  .part2 {grid-template-rows: 10% 1fr 5%;}
+  /* .button1_block1, .button2_block1, .button3_block1 {height: 3.5%;} */
 
   /* начало второго блока */
   .mainpart {grid-template-columns: 3% 1fr 1fr 1fr 3%;}
@@ -365,16 +423,17 @@
 
 @media only screen and (min-width: 1280px) and (max-width: 1365px) {
   /* начало первого блока */
-  body {height: 670px; width: 100vw;}
-  .wrapper {height: 670px; width: 100vw;}
-  .wrapper2 {height: 670px; width: 420vw;}
-  .p1 {font-size: 98px; height: 53%;}
-  .p2 {font-size: 19px; height: 31%;}
-  .part3_2 div {margin-left: 59%;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px; margin-top: 5%;}
-  .part3_2 div {margin-top: 2%;}
-  /* .text1_part1 {margin-top: 2%; margin-left: 12%;} */
-  .button_general_block1 {width: 1.7%;}
+  body {max-height: 900px}
+  .wrapper {max-height: 900px}
+  .wrapper2 {max-height: 900px}
+  .p1 {font-size: 12.5vh;}
+  .p2 {font-size: 2.5vh; width: 24vw; height: 25vh; margin-top: -4vh;}
+  /* .part3_2 div {margin-left: 59%;} */
+  /* .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px; margin-top: 5%;} */
+  /* .part3_2 div {margin-top: 2%;} */
+  .text1_part1 {left: 6vw;}
+  .vpered1 {font-size: 3.6vh; margin-top: 1.5vh;}
+  /* .button_general_block1 {width: 1.7%;} */
   .previous1, .previous2, .previous3 {width: 65%;}
   .next1, .next2, .next3 {width: 85%;}
 
@@ -418,19 +477,20 @@
 
 @media only screen and (min-width: 1366px) and (max-width: 1439px) {
   /* начало первого блока */
-  body {height: 640px; width: 100vw;}
-  .wrapper {height: 640px; width: 100vw;}
-  .wrapper2 {height: 640px; width: 420vw;}
-  .p1 {font-size: 94px; margin-left: 14%;}
-  .p2 {height: 31%; width: 69%; margin-left: 8%; margin-top: -1%; font-size: 19px;}
+  /* body {height: 100vh; width: 100vw;}
+  .wrapper {height: 100vh; width: 100vw;}
+  .wrapper2 {height: 100vh; width: 420vw;} */
+  .p1 {font-size: 14vh;}
+  .p2 {height: 28vh;}
   .block1 {grid-template-columns: 1fr 1fr 1fr;}
-  .button_general_block1 {height: 41%; width: 1.6%; border: 6px solid black;}
+  .vpered1 {font-size: 4vh; margin-top: 1.3vh;}
+  /* .button_general_block1 {height: 41%; width: 1.6%; border: 6px solid black;} */
   /* .text1_part1, .part3_2 div {margin-top: 1.4%;} */
-  .part3_2 div {margin-left: 62%;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px;}
-  .plushka {height: 13%; width: 17%;}
-  .plushka div {font-size: 18px;}
-  .button1_block1, .button2_block1, .button3_block1 {width: 2.5%;}
+  /* .part3_2 div {margin-left: 62%;} */
+  /* .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px;} */
+  /* .plushka {height: 13%; width: 17%;}
+  .plushka div {font-size: 18px;} */
+  /* .button1_block1, .button2_block1, .button3_block1 {width: 2.5%;} */
 
   /* начало второго блока */
   .stop_signal, .wait_signal, .go_signal {font-size: 90px;}
@@ -476,15 +536,15 @@
 
 @media only screen and (min-width: 1680px) {
   /* начало первого блока */
-  body {height: 905px;}
-  .wrapper {height: 905px;}
-  .wrapper2 {height: 905px;}
+  body {height: 100vh;}
+  .wrapper {height: 100vh;}
+  .wrapper2 {height: 100vh;}
 
   .plushka div {font-size: 25px;}
-  .p1 {font-size: 144px; margin-left: 10%;}
-  .p2 {height: 32%; width: 70%; margin-left: 10%; margin-top: 3%; font-size: 26px;}
+  .p1 {font-size: 14.5vh; margin-left: 10%;}
+  .p2 {height: 32%; width: 70%; margin-left: 10%; margin-top: 3%; font-size: 2.9vh;}
   .part3_2 div {margin-top: 2.5%; font-size: 26px;}
-  .button_general_block1 {top: 18%; width: 4%;}
+  /* .button_general_block1 {top: 18%; width: 4%;} */
   .text1_part1, .text2_part1, .text3_part1, .text4_part1 {margin-top: 0.4%; font-size: 26px;}
   .part3_2 div {width: 31%; margin-left: 65%;}
   .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 4%; font-size: 43px; }
@@ -492,7 +552,7 @@
   .part3_3, .part2_footer2, .part5_footer3, .part3_footer4 {border-left: 7px solid black;}
   .slider1, .slider2 {border-bottom: 7px solid black; border-left: 7px solid black; border-right: 7px solid black;}
   .slider3 {border-left: 7px solid black; border-right: 7px solid black;}
-  .button1_block1, .button2_block1, .button3_block1 {width: 2.9%;}
+  /* .button1_block1, .button2_block1, .button3_block1 {} */
 
   /* начало второго блока */
   .mainpart {grid-template-columns: 4% 1fr 1fr 1fr 4%;}
