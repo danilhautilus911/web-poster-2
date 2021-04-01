@@ -236,6 +236,14 @@
   0% {left: -30%;}
   100% {left: 100%;}
 }
+@keyframes car1_animation2_iphone {
+  0% {left: -70%;}
+  100% {left: 100%;}
+}
+@keyframes car2_animation2_iphone {
+  0% {left: -55%;}
+  100% {left: 100%;}
+}
 @keyframes car1_animation3 {
   0% {bottom: 0%}
   10% {bottom: 2%}
@@ -275,8 +283,8 @@
 
 
 @keyframes bip_bip_flashing {
- 0% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
- 49% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
- 50% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
- 100% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: left; background-position-y: 30%;}
+ 0% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: center; background-position-y: 30%;}
+ 49% {background: url(../images/bip_bip.svg) no-repeat; background-position-x: center; background-position-y: 30%;}
+ 50% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: center; background-position-y: 30%;}
+ 100% {background: url(../images/bip_bip2.svg) no-repeat; background-position-x: center; background-position-y: 30%;}
 }
