@@ -606,7 +606,7 @@ html{
 }
 .phrase1 div, .phrase2 div {
   display: inline-block;
-  font-size: 23px;
+  font-size: 3.1vh;
   margin-top: 1.5%;
   white-space: nowrap;
   overflow: hidden;
@@ -619,7 +619,7 @@ html{
   margin-left: 2%;
   top: 30%;
   opacity: 1;
-  font-size: 23px;
+  font-size: 3.1vh;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -647,11 +647,11 @@ html{
 }
 .part2_footer2 div {
   width: 100%;
-  font-size: 36px;
+  font-size: 4.3vh;
+  margin-top: 1vh;
   font-family: TwentytwelveSansG;
   display: flex;
   justify-content: center;
-  margin-top: 4%;
 }
 
 
@@ -795,13 +795,13 @@ html{
 }
 .part1_footer3 div, .part2_footer3 div, .part3_footer3 div, .part5_footer3 div {
   width: 100%;
-  font-size: 36px;
+  font-size: 4.3vh;
   font-family: TwentytwelveSansG;
   display: flex;
   justify-content: center;
 }
-.part2_footer3 div, .part3_footer3 div {margin-top: 4%;}
-.part1_footer3 div {margin-top: 7%;}
+.part2_footer3 div, .part3_footer3 div {margin-top: 1vh;}
+.part1_footer3 div {margin-top: 1vh;}
 .part1_footer3 {
   grid-area: part1_footer3;
   border-right: 5px solid black;
@@ -857,7 +857,8 @@ html{
   transition: all 0.25s ease;
 }
 .vpered3 {
-  margin-top: 4%;
+  font-size: 4.3vh;
+  margin-top: 1vh;
 }
 
 
@@ -919,7 +920,7 @@ html{
 .previous_button_part4 img {
   position: absolute;
   height: 80%;
-  top: 19%;
+  top: 16%;
   left: 38%;
 }
 .next_button_part4 {
@@ -931,7 +932,7 @@ html{
 .next_button_part4 img {
   position: absolute;
   height: 80%;
-  top: 19%;
+  top: 16%;
   left: 10%;
 }
 .city_name {
@@ -995,8 +996,8 @@ html{
 }
 .button_part4 {
   position: absolute;
-  height: 5.5%;
-  width: 2%;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   border: 8px solid black;
   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.5);
@@ -1161,7 +1162,7 @@ html{
 .road_sign_2 {
   position: absolute;
   top: 9%;
-  left: 0%;
+  left: -0.5%;
   height: 27%;
   width: 16%;
   z-index: 3;
@@ -1201,10 +1202,10 @@ html{
 .text11_part4 {font-size: 20px !important; top: 30% !important;}
 .text_part4 {
   position: absolute;
-  top: 26%;
   left: 4%;
   height: 54%;
-  font-size: 23px;
+  top: 26%;
+  font-size: 3.1vh;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -1307,11 +1308,11 @@ html{
 }
 .vpered4 {
   width: 100%;
-  font-size: 36px;
   font-family: TwentytwelveSansG;
   display: flex;
   justify-content: center;
-  margin-top: 4%;
+  font-size: 4.3vh;
+  margin-top: 1vh;
 }
 
 
@@ -1349,7 +1350,7 @@ html{
   position: relative;
 }
 .text_footer div {
-  font-size: 15px;
+  font-size: 17px;
   font-family: TwentytwelveSansG;
   position: absolute;
   top: 22%;
@@ -1361,7 +1362,7 @@ html{
 }
 .text_footer2 {
   text-align: right;
-  width: 42%;
+  width: 46%;
   right: 3%;
 }
 
