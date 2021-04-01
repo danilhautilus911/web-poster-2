@@ -365,6 +365,10 @@ html{
   margin-top: 50%;
   cursor: pointer;
 }
+.next1 img, .next2 img, .next3 img {
+  height: 100%;
+  width: 100%;
+}
 .next1 { grid-area: next_button1;}
 .next2 { grid-area: next_button2;}
 .next3 { grid-area: next_button3;}
@@ -375,6 +379,10 @@ html{
   margin: 0 auto;
   margin-top: 50%;
   cursor: pointer;
+}
+.previous1 img, .previous2 img, .previous3 img {
+  height: 100%;
+  width: 100%;
 }
 .previous1 { grid-area: previous_button1;}
 .previous2 { grid-area: previous_button2;}
@@ -456,7 +464,7 @@ html{
   display: flex;
   cursor: pointer;
   justify-content: center;
-  margin-top: 1vh;
+  margin-top: 1.3vh;
 }
 .part3_3:hover {
   background: #06A0D6;
@@ -593,15 +601,15 @@ html{
   animation-play-state: paused;
 }
 .phrase2_part1 {
-  width: 51ch;
+  width: 42ch;
   opacity: 1;
-  animation: printed_text1 2.5s 8.5s steps(51);
+  animation: printed_text1 2.5s 8.5s steps(42);
   animation-play-state: paused;
 }
 .phrase2_part2 {
   width: 32ch;
   opacity: 1;
-  animation: printed_text1 1.2s 13s steps(32), printed_text2_opacity 13s;
+  animation: printed_text1 1.6s 12.5s steps(32), printed_text2_opacity 12.5s;
   animation-play-state: paused;
 }
 .phrase1 div, .phrase2 div {
@@ -648,7 +656,7 @@ html{
 .part2_footer2 div {
   width: 100%;
   font-size: 4.3vh;
-  margin-top: 1vh;
+  margin-top: 1.3vh;
   font-family: TwentytwelveSansG;
   display: flex;
   justify-content: center;
@@ -690,6 +698,7 @@ html{
   display: none;
   z-index: 4;
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .bip_bip_img img, .bip_bip_img2 img {position: absolute; height: 100%;}
 .i_img {left: 30%;}
@@ -800,7 +809,7 @@ html{
   display: flex;
   justify-content: center;
 }
-.part2_footer3 div, .part3_footer3 div {margin-top: 1vh;}
+.part2_footer3 div, .part3_footer3 div {margin-top: 1.3vh;}
 .part1_footer3 div {margin-top: 1vh;}
 .part1_footer3 {
   grid-area: part1_footer3;
@@ -841,7 +850,7 @@ html{
   right: 0%;
   cursor: url(../images/bip_bip_cursor.png) 100 70, pointer;
   background: url(../images/bip_bip.svg) no-repeat;
-  background-position-x: left;
+  background-position-x: center;
   background-position-y: 30%;
   animation: bip_bip_flashing 2s infinite;
   border: none;
@@ -858,7 +867,7 @@ html{
 }
 .vpered3 {
   font-size: 4.3vh;
-  margin-top: 1vh;
+  margin-top: 1.3vh;
 }
 
 
@@ -1184,6 +1193,7 @@ html{
   height: 82%;
   width: 100%;
 }
+.b2_2_img, .i2_2_img, .p2_2_img {position: absolute; height: 100%; display: none;}
 /* _______________________________________________ */
 .footer4 {
   grid-area: footer4;
@@ -1312,7 +1322,7 @@ html{
   display: flex;
   justify-content: center;
   font-size: 4.3vh;
-  margin-top: 1vh;
+  margin-top: 1.3vh;
 }
 
 
