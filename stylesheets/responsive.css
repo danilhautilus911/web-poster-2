@@ -1,204 +1,36 @@
 /* the layout on iphone */
 @media only screen and (min-width: 320px) and (max-width: 765px) {
+  body {height: 800px;}
+  .wrapper {padding-bottom: 55%;}
+
+  .plushka, .button1_block1, .button2_block1, .button3_block1, .button_general_block1, .p2, .text1_part1, .text2_part1, .text3_part1, .text4_part1 {display: none;}
   .wrapper2 {width: 470%; grid-template-columns: 1fr 1fr 1fr 1fr 0.7fr;}
   .wrapper2_action4 {left: -370%;}
-  .plushka {
-    display: none;
-    top: -83%;
-    right: 4%;
-    border: 8px solid black;
-    height: 16%;
-    width: 27%;
-  }
-  .plushka div {font-size: 11px;  margin-top: 11%;}
   .block1 {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 0.9fr 9%;
+    grid-template-rows: 1fr 1fr 7%;
     grid-template-areas:  "part1"
                           "part2"
                           "part3"
   }
-  .button1_block1, .button2_block1, .button3_block1 {display: none;}
-  .p1 {font-size: 81px; margin-left: 5%;  margin-top: -2%;}
-  .p2 {display: none;}
-  .slider_wrapper {border-radius: 40px; border: 8px solid black;}
+  .p1 {font-size: 20vw; margin-left: 10vw;}
   .part2 {
-    grid-template-columns: 2.5% 1fr 2.5%;
-    grid-template-rows: 6% 1fr 7%;
-    grid-template-areas: ". . ."
-                         ". slider_wrapper ."
+    grid-template-columns: 5% 1fr 7%;
+    grid-template-rows: 1fr 5%;
+    grid-template-areas: ". slider_wrapper ."
                          ". . ."
   }
-  .part3 {border-top: 3px solid black; border-bottom: 3px solid black; grid-template-columns: 46% 27% 27%;}
-  .text1_part1 {display: none;}
-  .button_general_block1 {height: 36%; width: 4.8%; border: 6px solid black;}
-  .part3_1 img {height: 69%; width: 9.5%;}
-  .part3_2 img {top: 42%; right: 34%;}
-  .part3_2 div {font-size: 11px; margin-left: 15%; margin-top: 9%;}
-  .part3_3 {border-left: 3px solid black;}
-  .vpered1 {font-size: 22px; margin-top: 7%;}
-  .next1, .next2, .next3 {background-size: 21px 35px;}
-  .previous1, .previous2, .previous3 {background-size: 21px 35px; margin-left: 16%; width: 100%;}
-  /* .line1, .line2, .line3 {display: block; position: absolute; height: 1.5%; width: 100%; background-color: black;}
-  .line1 {top: 30%; left: 6%; width: 54%;}
-  .line2 {top: 63%; left: 6%; width: 89%;}
-  .line3 {top: 97%; left: 6%; width: 89%;} */
-  .slider1, .slider2 {border-bottom: 3px solid black; border-left: 3px solid black; border-right: 3px solid black;}
-  .slider3 {border-left: 3px solid black; border-right: 3px solid black;}
-  .previous1 img, .previous2 img, .previous3 img {height: 50%;}
-  .next1 img, .next2 img, .next3 img {height: 50%;}
-
-
-  /* начало второго блока */
-  .block2 {grid-template-rows: 1fr 9%;}
-  .mainpart {display: block; }
-  .light1, .light2, .light3 {grid-area: none; height: 95%; width: 80%; position: absolute; margin: 5% 10%;}
-  .stop_signal, .wait_signal, .go_signal {font-size: 75px;}
-  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
-  .stop_signal {opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
-
-  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
-  .wait_signal {opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
-
-  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
-  .go_signal {opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
-
-  .footer2 {
-    grid-template-columns: 1fr 27%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
-  .phrase1 {animation: none;}
-  .phrase1 div {
-    font-size: 14px;
-    /* display: none; */
-    animation: none;
-    display: inline-block;
-    font-size: 23px;
-    margin-top: 1.5%;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: monospace;
-  }
-  .phrase1_part1 {display: none;}
-  .phrase2 div, .phrase3 {display: none;}
-  .part2_footer2 {animation: none; border-left: 3px solid black;}
-  .part2_footer2 div {font-size: 22px; margin-top: 7%;}
-
-
-  /* начало третьего блока */
-  .block3 {
-    grid-area: block3;
-    grid-template-rows: 1fr 9%;
-  }
-  .dashed_line img {
-    width: 218%;
-    height: 100%;
-  }
-  .car7, .car8, .car9, .car10 {display: none;}
-  .car5 {margin-left: 0%; width: 54%;}
-  .car6 {width: 44%;}
-  .car3 {margin-left: -15%;}
-  .car4 {margin-right: 0%; margin-left: 9%;}
-  .car3, .car4, .car2, .car1 {width: 51%;}
-  .car5 img, .car4 img, .car1 img {height: 120%;}
-  .car6 img, .car3 img, .car2 img {height: 100%;}
-
-  .second_slider_wrapper {
-    height: 139%;
-    width: 72%;
-    margin-left: -19%;
-  }
-  .footer3 {
-    grid-template-columns: 14% 28% 1fr 27%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
-  .part1_footer3, .part2_footer3 {border-right: 3px solid black;}
-  .part1_footer3 div, .part2_footer3 div, .part5_footer3 div {
-    font-size: 22px;
-    margin-top: 7%;
-  }
-  .part1_footer3 div {margin-top: 14%;}
-  .part5_footer3 {border-left: 3px solid black;}
-  .bip_bip_button {
-    width: 93%;
-    top: -10%;
-    left: 4%;
+  .part3 {
+    grid-template-columns: 1fr 20%;
+    grid-template-areas: "part3_2 part3_3";
   }
 
-  /* начало четвертого блока */
-  .block4 {grid-template-rows: 1fr 9%;}
-  .mainpart4 {grid-template-rows: 3% 10% 1fr 3%;}
-  .slider_block4_part1 {grid-template-columns: 7% 1fr 7%;}
-  .city_slider {grid-template-columns: 16% 1fr 16%;}
-  #city_name_paragraphs {margin-top: 9%; font-size: 24px;}
-  .previous_button_part4 img, .next_button_part4 img {top: 16%;}
-  .next_button_part4 img {left: 1%;}
-  .slider_block4_part2 {border: 8px solid black;}
-  .rectangle_part4 {
-    height: 84%;
-    width: 94%;
-    border-radius: 30px;
-    border: 8px solid black;
-  }
-  .third_slider_wrapper {
-    left: 6%;
-    height: 55%;
-    width: 86%;
-  }
-  .footer4 {
-    grid-template-columns: 1fr 1fr 27%;
-    grid-template-areas:  "part1_footer4 part2_footer4 part3_footer4";
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-  }
-  .part3_footer4 {border-left: 3px solid black;}
-  .vpered4 {font-size: 22px; margin-top: 7%;}
-  .road_sign_1 {
-    top: 9%;
-    left: -1%;
-    height: 17%;
-    width: 28%;
-  }
-  .road_sign_2 {display: none;}
-  .road_sign_3 {
-    top: 9%;
-    right: 2.5%;
-    height: 18%;
-    width: 38%;
-  }
-  .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
-    height: 4%;
-    width: 6%;
-    border: 6px solid black;
-  }
-  .city11 p, .city9 p {  font-size: 19px !important;}
-
-  /* начало футера */
-  .footer {grid-auto-rows: 1fr 9%;}
-  .picture_footer {
-    border-left: 3px solid black;
-  }
-  .picture_footer img {
-    top: -5%;
-    left: -2%;
-    height: 107%;
-    width: 102%;
-  }
-  .text_footer {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    border-left: 3px solid black;
-  }
-  .text_footer div {font-size: 13px;}
-  .text_footer2 {width: 47%;}
 }
 
 
 
 /* the layout on ipad vertical */
-@media only screen and (min-width: 768px) and (max-width: 1099px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   body {height: 1024px;}
   .wrapper {height: 1024px;}
   .wrapper2 {height: 1024px;}
@@ -222,16 +54,16 @@
                          ". . ."
   }
   .part3 {grid-template-columns: 53% 30% 17%;}
-  .text1_part1, .part3_2 div {font-size: 20px;}
-  /* .text1_part1 {margin-top: 3.5%; margin-left: 16%;} */
-  .part3_1 img {left: 1%;}
-  .part3_2 div {margin-left: 10%; margin-top: 6%;}
-  .part3_2 img {top: 35%; right: 18.5%;}
+  .text1_part1, .text2_part1, .text3_part1, .text4_part1 {font-size: 18px; top: 30%;}
+  .text1_part1, .text2_part1, .text3_part1, .text4_part1 {left: 8vw;}
+  /* .part3_1 img {left: 1%;} */
+  .part3_2 div {right: 4.2vw; font-size: 18px; top: 30%;}
+  .part3_2 img {right: 1vw; top: 40%;}
   .vpered1 {font-size: 32px;}
   .next1, .next2, .next3 {width: 86%; margin-left: 2%;}
   .previous1, .previous2, .previous3 {width: 70%; margin-left: 12%;}
-  .button_general_block1 {left: 2%; width: 3%;}
-  .button1_block1, .button2_block1, .button3_block1 {width: 3.2%;}
+  /* .button_general_block1 {left: 2%; width: 3%;} */
+  /* .button1_block1, .button2_block1, .button3_block1 {width: 3.2%;} */
   .button1_block1 {top: 20%;}
   .button2_block1 {top: 35%; right: 20%;}
   .button3_block1 {top: 73%;}
@@ -299,6 +131,12 @@
   .p_img {top: 63%;}
 }
 
+@media only screen and (min-width: 810px) and (max-width: 920px) {
+  .p2 {height: 60%;}
+}
+@media only screen and (min-width: 920px) and (max-width: 1100px) {
+  .p2 {height: 50%;}
+}
 
 
 @media only screen and (min-width: 1100px) and (max-width: 1199px) {
@@ -309,15 +147,21 @@
   body {max-height: 900px}
   .wrapper {max-height: 900px}
   .wrapper2 {max-height: 900px}
-  .block1 {grid-template-columns: 0.5fr 1fr 1fr;}
-  .p1 {font-size: 11.2vh; height: 40vh; margin-top: 4vh;}
-  .p2 {font-size: 2.5vh; width: 24vw; height: 28vh; margin-top: -4vh;}
+  .block1 {grid-template-columns: 0.4fr 1fr 1fr;}
+  .p1 {font-size: 10vh; height: 40vh; margin-top: 4vh;}
+  .p2 {font-size: 2vh; width: 20vw; height: 20vh; margin-top: -4vh;}
   /* .button_general_block1 {height: 36%;} */
   /* .text1_part1 {margin-left: 13%;} */
-  .part3_2 div {margin-left: 50%;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 25px;}
+  .text1_part1, .text2_part1, .text3_part1, .text4_part1 {font-size: 2.8vh; left: 6vw;}
+  .part3_2 div {right: 4vw; font-size: 2.8vh;}
+  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 1.3vh; font-size: 3.5vh;}
   .plushka div {font-size: 15px; margin-top: 15%;}
   .part2 {grid-template-rows: 10% 1fr 5%;}
+  .button2_block1 {top: 40vh;}
+  .next1 img, .next2 img, .next3 img {margin-left: -0.5vw;}
+  .previous1 img, .previous2 img, .previous3 img {margin-left: -0.5vw;}
+
+
   /* .button1_block1, .button2_block1, .button3_block1 {height: 3.5%;} */
 
   /* начало второго блока */
@@ -369,14 +213,17 @@
   .wrapper {max-height: 900px}
   .wrapper2 {max-height: 900px}
   .block1 {grid-template-columns: 1fr 1fr 1fr;}
-  .p1 {font-size: 10.5vh;}
-  .p2 {height: 35%; width: 69%; font-size: 18px; margin-top: -8%; margin-left: 8%;}
+  .p1 {font-size: 12vh; margin-top: 4vh;}
+  .p2 {height: 20.2vh; width: 69%; font-size: 18px; margin-top: -8%; margin-left: 8%;}
   /* .button_general_block1 {height: 36%;} */
-  /* .text1_part1 {margin-left: 13%;} */
-  .part3_2 div {margin-left: 50%;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 25px;}
-  .plushka div {font-size: 15px; margin-top: 15%;}
+  .text1_part1, .text2_part1, .text3_part1, .text4_part1 {left: 6vw; font-size: 2.7vh;}
+  .part3_2 div {margin-left: 50%; font-size: 2.7vh;}
+  .part3_2 img {top: 3vh;}
+  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 10%; font-size: 3.8vh;}
+  .plushka div {font-size: 2.2vh; margin-top: 15%;}
   .part2 {grid-template-rows: 10% 1fr 5%;}
+  .button2_block1 {top: 40vh;}
+  .next1 img, .next2 img, .next3 img {margin-left: -0.5vw;}
   /* .button1_block1, .button2_block1, .button3_block1 {height: 3.5%;} */
 
   /* начало второго блока */
@@ -536,33 +383,31 @@
 
 @media only screen and (min-width: 1680px) {
   /* начало первого блока */
-  body {height: 100vh;}
-  .wrapper {height: 100vh;}
-  .wrapper2 {height: 100vh;}
+  body {height: 100vh; max-height: 1050px;}
+  .wrapper {height: 100vh; max-height: 1050px;}
+  .wrapper2 {height: 100vh; max-height: 1050px;}
 
-  .plushka div {font-size: 25px;}
-  .p1 {font-size: 14.5vh; margin-left: 10%;}
-  .p2 {height: 32%; width: 70%; margin-left: 10%; margin-top: 3%; font-size: 2.9vh;}
-  .part3_2 div {margin-top: 2.5%; font-size: 26px;}
-  /* .button_general_block1 {top: 18%; width: 4%;} */
-  .text1_part1, .text2_part1, .text3_part1, .text4_part1 {margin-top: 0.4%; font-size: 26px;}
-  .part3_2 div {width: 31%; margin-left: 65%;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 4%; font-size: 43px; }
+  .plushka div {font-size: 25px; margin-top: 2vh;}
+  .p1 {font-size: 14.5vh; margin-left: 2vw;}
+  .p2 {width: 27vw; margin-top: 3%; margin-left: 2vw; font-size: 2.9vh;}
+  .part3_2 div {font-size: 3.1vh;}
+  .button_general_block1 {top: 17%;}
   .part3, .footer2, .footer3, .footer4, .text_footer {border-top: 7px solid black; border-bottom: 7px solid black;}
   .part3_3, .part2_footer2, .part5_footer3, .part3_footer4 {border-left: 7px solid black;}
   .slider1, .slider2 {border-bottom: 7px solid black; border-left: 7px solid black; border-right: 7px solid black;}
   .slider3 {border-left: 7px solid black; border-right: 7px solid black;}
-  /* .button1_block1, .button2_block1, .button3_block1 {} */
+
 
   /* начало второго блока */
   .mainpart {grid-template-columns: 4% 1fr 1fr 1fr 4%;}
-  .phrase1 div, .phrase2 div, .phrase3 {font-size: 26px;}
+  .phrase1 div, .phrase2 div {margin-top: 1.2%;}
+  .phrase3 {top: 23%;}
 
   /* начало третьего блока */
   .part1_footer3, .part2_footer3 {border-right: 7px solid black;}
-  .part2_footer3 div {margin-top: 7%;}
-  .part1_footer3 div {margin-top: 12%;}
-  .bip_bip_button {right: 1%; background-size: 96%; animation: none;}
+  /* .part2_footer3 div {margin-top: 7%;} */
+  /* .part1_footer3 div {margin-top: 12%;} */
+  .bip_bip_button {right: -1%; background-size: 85%; animation: none;}
   .bip_bip_img img {height: 100%; width: 50%;}
   .b_img {left: -4%;}
   .i_img, .i_img2 {left: 26%;}
@@ -572,16 +417,20 @@
   .p2_img {display: none;}
 
   /* начало четвертого блока */
-  .previous_button_part4 img {height: 72%; left: 41%;}
-  .next_button_part4 img {height: 72%; left: 10%;}
+  .previous_button_part4 img {height: 72%; left: 41%; top: 20%;}
+  .next_button_part4 img {height: 72%; left: 10%; top: 20%;}
   .road_sign_2 {left: -0.5%;}
-  #city_name_paragraphs {font-size: 42px;}
-  .bip_bip_button2 {background-size: 96%; right: 4%; animation: none;}
+  #city_name_paragraphs {font-size: 42px; margin-top: 5%;}
+  .bip_bip_button2 {background-size: 85%; right: -2%; animation: none;}
   .text_part4 {font-size: 26px;}
+  .road_sign_2 {left: 0%;}
 
   /* футер */
   .picture_footer, .text_footer {border-left: 7px solid black;}
-  .text_footer div {font-size: 17px;}
+  .text_footer div {font-size: 20px; top: 15%;}
+  .text_footer2 {width: 48%;}
+
+  .picture_footer img {height: 110%; width: 110%; left: -8%;}
   .b_img2 {left: 0%;}
   .i_img2 {left: 29%;}
   .p_img2 {left: 55%;}
