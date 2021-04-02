@@ -138,7 +138,7 @@ $('.bip_bip_button, .bip_bip_button2').mouseout(function () {
 $(document).ready(function(){
   let slider_block4 = 0;
   $('.next_button_part4, .previous_button_part4').click(function(){
-    if ($(this).hasClass('next_button_part4') && slider_block4 < 12) {
+    if ($(this).hasClass('next_button_part4') && slider_block4 < 11) {
       slider_block4++;
     } else if ($(this).hasClass('previous_button_part4') && slider_block4 > 0) {
       slider_block4--;
@@ -149,7 +149,7 @@ $(document).ready(function(){
 
   let city_name_block4 = 0;
   $('.next_button_part4, .previous_button_part4').click(function(){
-    if ($(this).hasClass('next_button_part4') && city_name_block4 < 12) {
+    if ($(this).hasClass('next_button_part4') && city_name_block4 < 11) {
       city_name_block4++;
     } else if ($(this).hasClass('previous_button_part4') && city_name_block4 > 0) {
       city_name_block4--;
