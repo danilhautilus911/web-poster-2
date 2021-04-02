@@ -567,6 +567,7 @@ html{
 .part1_footer2 {
   position: relative;
   grid-area: part1_footer2;
+  /* overflow: hidden; */
 }
 .phrase1 {
   position: absolute;
@@ -633,6 +634,22 @@ html{
   font-family: monospace;
   animation: printed_text2_opacity 15.7s, printed_text1 3s steps(53) 15.7s;
   animation-play-state: paused;
+}
+.phrase3_iphone {
+  position: absolute;
+  width: 53ch;
+  height: 100%;
+  margin-left: 2%;
+  top: 15%;
+  opacity: 1;
+  font-size: 3.1vh;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  animation: printed_text2_opacity 15.7s, printed_text1 3s steps(53) 15.7s;
+  animation-play-state: paused;
+  display: none;
+  line-height: 1.5;
 }
 
 .part2_footer2 {
@@ -1379,7 +1396,7 @@ html{
 
 
 .animation_start {
-  animation-play-state: running;
+  animation-play-state: running !important;
 }
 .animation_for_third_slider_wrapper {
   animation: third_slider_wrapper_animation 2s ease-in;
