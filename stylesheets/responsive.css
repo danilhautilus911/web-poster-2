@@ -92,7 +92,7 @@
   .block4 {grid-template-rows: 1fr 10%;}
   .mainpart4 {grid-template-rows: 5% 10% 1fr 3%;}
   .footer4 {grid-template-columns: 1fr 20% 30%; grid-template-areas:  "part2_footer4 part1_footer4 part3_footer4";}
-  .vpered4 {font-size: 32px;}
+  .vpered4 {font-size: 4.2vh; margin-top: 1.3vh;}
   .city_slider {grid-template-columns: 18% 1fr 18%;}
   .rectangle_part4 {border: 11px solid black; width: 91%;}
   .third_slider_wrapper {left: 8%; height: 58%; width: 88%;}
@@ -100,13 +100,16 @@
   .road_sign_2 {display: none;}
   .road_sign_3 {top: 13%; right: 1.5%; height: 20%; width: 39%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {display: none;}
-  .bip_bip_button2 {left: 8%; width: 65px;}
+  .bip_bip_button2 {width: 14vw;
+    /* top: 0.5vh; */
+    left: 4vw;
+    background-size: 226%; animation: none; background-position-x: left;}
   #city_name_paragraphs {margin-top: 2.5vh; font-size: 28px;}
   .city7 p, .city9 p, .city11 p {font-size: 20px !important; margin-top: 11% !important;}
   .slider_block4_part2 {border: 14px solid black;}
   .slider_block4_part1 {grid-template-columns: 10% 1fr 10%;}
-  .next_button_part4 img {height: 66%; top: 28%;}
-  .previous_button_part4 img {height: 66%; top: 28%; left: 47%;}
+  .next_button_part4 img {height: 66%; top: 2vh; left: 1vw;}
+  .previous_button_part4 img {height: 66%; top: 2vh; left: 5.5vw;}
   .lenta_stop {left: -4%; width: 12%;}
   .lenta_stop2 {right: -11%; width: 12%;}
   .b_img2, .i_img2, .p_img2 {display: none;}
@@ -122,7 +125,8 @@
   /* начало футора блока */
   .footer {grid-auto-rows: 1fr 10%;}
   .picture_footer img {left: -11%; height: 101%; width: 124%; top: 0%;}
-  .text_footer div {font-size: 15px; top: 8%;}
+  .text_footer div {font-size: 1.8vh; top: 2vh;}
+  .text_footer2 {width: 25vw;}
 
 
 }
@@ -171,32 +175,43 @@
   .block2 {grid-template-rows: 1fr 10%;}
   .mainpart {display: block;}
   .light1, .light2, .light3 {grid-area: none; position: absolute; height: 100%; width: 88%; margin: 0% 6%;}
-  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
+  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear; animation-play-state: paused;}
   .stop_signal, .wait_signal, .go_signal {font-size: 95px;}
-  .stop_signal {left: 23%; opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
-  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
-  .wait_signal {left: 28%; opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
-  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
-  .go_signal {left: 31%; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
-  .phrase1 div, .phrase2 div, .phrase3 {font-size: 2.5vh;}
+  .stop_signal {left: 24vw; opacity: 0; animation: light1_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .wait_signal {left: 24vw; opacity: 0; animation: light2_work_iphone_ipad 25s ease; animation-play-state: paused;}
+  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .go_signal {left: 32vw; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease; animation-play-state: paused;}
+  .phrase1 div, .phrase2 div, .phrase3_iphone {font-size: 2.5vh;}
   .footer2 {grid-template-columns: 1fr 30%;}
+  .phrase3 {display: none;}
+  .phrase3_iphone {display: block; top: 0.2vh; width: 39ch;}
+  .second_slider_wrapper {width: 30vw; margin-left: -11vw;}
+  .part2_footer2 div {font-size: 4.6vh; margin-top: 1vh}
 
 
   /* начало третьего блока */
   .block3 {grid-template-rows: 1fr 10%;}
   .footer3 {grid-template-columns: 17% 33% 1fr 30%;}
-  .footer3 div {font-size: 32px;}
-  .bip_bip_button {width: 74%; top: 0%; right: 12%;}
+  .footer3 div {font-size: 4.6vh;}
+  .bip_bip_button {width: 55%;
+    top: 4%;
+    right: 19%;
+    background-size: 226%; animation: none; background-position-x: left;}
   .car8, .car10 {display: none;}
   .car1 {left: 0%; animation: car1_animation 6s infinite ease-in, car2_animation2_iphone 7s 6s infinite ease-in, car1_animation3 1s infinite alternate ease-in;}
   .car2 {animation: car1_animation 3s infinite ease-in, car1_animation2_iphone 7s 3s infinite ease-in, car1_animation3 1s infinite alternate ease-in;}
   .car1 img, .car4 img, .car5 img, .car7 img, .car9 img {height: 110%}
   .car2 img, .car3 img, .car6 img {height: 98%;}
-  .car5 {width: 46%; margin-left: -2%;}
-  .car2, .car6, .car7, .car3, .car4 {width: 51%;}
+  .part1_footer3 div {margin-top: 1.4vh;}
+  .car5 {width: 35%; margin-left: -2%;}
+  .car2, .car6, .car3 {width: 41%;}
+  .car4 {width: 40%; margin-right: 0%;}
+  .car9 {width: 19%;}
+  .car7 {width: 19%;}
   .dashed_line img {width: 133%; height: 100%;}
-  .second_slider_wrapper {height: 130%; width: 60%; display: grid; margin-left: -18%;}
-  .car9, .car7 {display: none;}
+  .second_slider_wrapper {width: 54vw; height: 30vh; margin-left: -10vw;}
+  /* .car9, .car7 {display: none;} */
   .b_img, .i_img, .p_img {display: none;}
   .b2_img, .i2_img, .p2_img {display: block !important;}
   .b2_img {top: 0%;}
@@ -208,15 +223,18 @@
   .block4 {grid-template-rows: 1fr 10%;}
   .mainpart4 {grid-template-rows: 5% 10% 1fr 3%;}
   .footer4 {grid-template-columns: 1fr 20% 30%; grid-template-areas:  "part2_footer4 part1_footer4 part3_footer4";}
-  .vpered4 {font-size: 32px;}
+  .vpered4 {font-size: 4.6vh;}
   .city_slider {grid-template-columns: 18% 1fr 18%;}
   .rectangle_part4 {border: 14px solid black; width: 91%;}
-  .third_slider_wrapper {left: 8%; height: 58%; width: 88%;}
+  .third_slider_wrapper {left: 16%; height: 40vh; width: 65vw;}
   .road_sign_1 {top: 11%; left: -1%; height: 19%; width: 31%;}
   .road_sign_2 {display: none;}
   .road_sign_3 {top: 13%; right: 1.5%; height: 20%; width: 39%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {display: none;}
-  .bip_bip_button2 {left: 8%; width: 65px;}
+  .bip_bip_button2 {width: 11vw;
+    top: 0.3vh;
+    left: 4vw;
+    background-size: 226%; animation: none; background-position-x: left;}
   #city_name_paragraphs {margin-top: 9%; font-size: 28px;}
   .city7 p, .city9 p, .city11 p {font-size: 20px !important; margin-top: 11% !important;}
   .slider_block4_part2 {border: 14px solid black;}
@@ -285,39 +303,47 @@
 
   /* начало второго блока */
   .block2 {grid-template-rows: 1fr 10%;}
-  .mainpart {display: block;}
+  .mainpart {display: block; background-position: center;}
   .light1, .light2, .light3 {grid-area: none; position: absolute; height: 100%; width: 88%; margin: 0% 6%;}
-  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
+  .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear; animation-play-state: paused;}
   .stop_signal, .wait_signal, .go_signal {font-size: 95px;}
-  .stop_signal {left: 23%; opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
-  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
-  .wait_signal {left: 28%; opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
-  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
-  .go_signal {left: 31%; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
-  .phrase1 div, .phrase2 div, .phrase3 {font-size: 2.5vh;}
+  .stop_signal {left: 28vw; opacity: 0; animation: light1_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .wait_signal {left: 28vw; opacity: 0; animation: light2_work_iphone_ipad 25s ease; animation-play-state: paused;}
+  .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear; animation-play-state: paused;}
+  .go_signal {left: 36vw; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease; animation-play-state: paused;}
+  .phrase1 div, .phrase2 div, .phrase3_iphone {font-size: 2.5vh;}
   .footer2 {grid-template-columns: 1fr 30%;}
+  .phrase3 {display: none;}
+  .phrase3_iphone {display: block; top: 0.2vh; width: 39ch;}
 
 
   /* начало третьего блока */
   .block3 {grid-template-rows: 1fr 10%;}
   .footer3 {grid-template-columns: 17% 33% 1fr 30%;}
   .footer3 div {font-size: 32px;}
-  .bip_bip_button {width: 74%; top: 0%; right: 12%;}
   .car8, .car10 {display: none;}
   .car1 {left: 0%; animation: car1_animation 6s infinite ease-in, car2_animation2_iphone 7s 6s infinite ease-in, car1_animation3 1s infinite alternate ease-in;}
   .car2 {animation: car1_animation 3s infinite ease-in, car1_animation2_iphone 7s 3s infinite ease-in, car1_animation3 1s infinite alternate ease-in;}
   .car1 img, .car4 img, .car5 img, .car7 img, .car9 img {height: 110%}
   .car2 img, .car3 img, .car6 img {height: 98%;}
-  .car5 {width: 46%; margin-left: -2%;}
-  .car2, .car6, .car7, .car3, .car4 {width: 51%;}
+  .car5 {width: 35%; margin-left: -2%;}
+  .car2, .car6, .car3 {width: 41%;}
+  .car4 {width: 40%; margin-right: 0%;}
+  .car9 {width: 19%;}
+  .car7 {width: 19%;}
   .dashed_line img {width: 133%; height: 100%;}
-  .second_slider_wrapper {height: 130%; width: 60%; display: grid; margin-left: -18%;}
-  .car9, .car7 {display: none;}
+  .second_slider_wrapper {width: 42vw; height: 30vh; margin-left: -8vw;}
+  /* .car9, .car7 {display: none;} */
   .b_img, .i_img, .p_img {display: none;}
   .b2_img, .i2_img, .p2_img {display: block !important;}
   .b2_img {top: 0%;}
   .i2_img {top: 32%;}
   .p2_img {top: 66%;}
+  .bip_bip_button {width: 50%;
+    top: 1%;
+    right: 23%;
+    background-size: 226%; animation: none; background-position-x: left;}
 
 
   /* начало четвертого блока */
@@ -327,18 +353,21 @@
   .vpered4 {font-size: 32px;}
   .city_slider {grid-template-columns: 18% 1fr 18%;}
   .rectangle_part4 {border: 14px solid black; width: 91%;}
-  .third_slider_wrapper {left: 8%; height: 58%; width: 88%;}
+  .third_slider_wrapper {left: 17vw; height: 50vh; width: 60vw;}
   .road_sign_1 {top: 11%; left: -1%; height: 19%; width: 31%;}
   .road_sign_2 {display: none;}
   .road_sign_3 {top: 13%; right: 1.5%; height: 20%; width: 39%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {display: none;}
-  .bip_bip_button2 {left: 8%; width: 65px;}
-  #city_name_paragraphs {margin-top: 9%; font-size: 28px;}
+  .bip_bip_button2 {width: 9.5vw;
+    /* top: 0.5vh; */
+    left: 4vw;
+    background-size: 226%; animation: none; background-position-x: left;}
+  #city_name_paragraphs {margin-top: 3vh; font-size: 28px;}
   .city7 p, .city9 p, .city11 p {font-size: 20px !important; margin-top: 11% !important;}
   .slider_block4_part2 {border: 14px solid black;}
   .slider_block4_part1 {grid-template-columns: 10% 1fr 10%;}
-  .next_button_part4 img {height: 66%; top: 28%;}
-  .previous_button_part4 img {height: 66%; top: 28%; left: 47%;}
+  .next_button_part4 img {height: 66%; top: 24%;}
+  .previous_button_part4 img {height: 66%; top: 24%; left: 47%;}
   .lenta_stop {left: -4%; width: 12%;}
   .lenta_stop2 {right: -11%; width: 12%;}
   .b_img2, .i_img2, .p_img2 {display: none;}
