@@ -69,7 +69,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 $('.vpered1').click(function () {
   $('.wrapper2').addClass('wrapper2_action1');
-  $('.oval1, .stop_signal, .oval2, .wait_signal, .oval3, .go_signal, .part2_footer2, .phrase1, .phrase1_part1, .phrase1_part2, .phrase2, .phrase2_part1, .phrase2_part2, .phrase3').addClass('animation_start');
+  $('.oval1, .stop_signal, .oval2, .wait_signal, .oval3, .go_signal, .part2_footer2, .phrase1, .phrase1_part1, .phrase1_part2, .phrase2, .phrase2_part1, .phrase2_part2, .phrase3, .phrase3_iphone, .red_signal_work_iphone_ipad, .light1_work_iphone_ipad, .yellow_signal_work_iphone_ipad, .light2_work_iphone_ipad, .light3_work_iphone_ipad, .green_signal_work_iphone_ipad').addClass('animation_start');
   $('.slider1').clone().appendTo('.slider1_second_slider_wrapper');
   $('.slider2').clone().appendTo('.slider2_second_slider_wrapper');
   $('.slider3').clone().appendTo('.slider3_second_slider_wrapper');
