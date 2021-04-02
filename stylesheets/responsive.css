@@ -28,7 +28,7 @@
                          ". . ."
   }
   .part3 {grid-template-columns: 1fr 1fr 30%;}
-  .part3_2 img {left: 16vw; top: 2.7vh;}
+  .part3_2 img {left: 16vw; top: 3.1vh;}
   .next1, .next2, .next3 {width: 86%; margin-left: 2%;}
   .previous1, .previous2, .previous3 {width: 70%; margin-left: 22%;}
   .next1, .next2, .next3 {width: 70%; margin-left: 12%;}
@@ -57,7 +57,7 @@
   .phrase1_part1, .phrase2_part1 {margin-top: 1.3vh !important;}
   .footer2 {grid-template-columns: 1fr 30%;}
   .phrase3 {display: none;}
-  .phrase3_iphone {display: block;}
+  .phrase3_iphone {display: block; width: 36ch; animation: printed_text2_opacity 15.7s, printed_text1 2s steps(53) 15.7s; animation-play-state: paused;}
   /* .part2_footer2 div {font-size: 4.2vh; margin-top: 1vh; margin-left: 1vw; position: absolute; z-index: 2; height: 100%; width: 100%; display: block;} */
 
 
@@ -79,7 +79,15 @@
   .car5 {width: 46%; margin-left: -2%;}
   .car2, .car6, .car7, .car3, .car4 {width: 51%;}
   .dashed_line img {width: 133%; height: 100%;}
-  .second_slider_wrapper {height: 130%; width: 60%; display: grid; margin-left: -18%;}
+  .second_slider_wrapper {height: 130%; width: 60%; display: grid; margin-left: -18%;
+    animation-name: edut_tachki5, car1_animation3;
+    animation-duration: 6s, 1s;
+    animation-delay: -3s, 0s;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, ease-in;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: paused, paused;}
   .car9, .car7 {display: none;}
   .b_img, .i_img, .p_img {display: none;}
   .b2_img, .i2_img, .p2_img {display: block !important;}
@@ -103,7 +111,7 @@
   .bip_bip_button2 {width: 14vw;
     /* top: 0.5vh; */
     left: 4vw;
-    background-size: 226%; animation: none; background-position-x: left;}
+    background-size: 226%; animation: none; background-position-x: left; cursor: url(../images/bip_bip_cursor.png) 70 80, pointer;}
   #city_name_paragraphs {margin-top: 2.5vh; font-size: 28px;}
   .city7 p, .city9 p, .city11 p {font-size: 20px !important; margin-top: 11% !important;}
   .slider_block4_part2 {border: 14px solid black;}
@@ -210,7 +218,15 @@
   .car9 {width: 19%;}
   .car7 {width: 19%;}
   .dashed_line img {width: 133%; height: 100%;}
-  .second_slider_wrapper {width: 54vw; height: 30vh; margin-left: -10vw;}
+  .second_slider_wrapper {width: 54vw; height: 30vh; margin-left: -10vw;
+    animation-name: edut_tachki5, car1_animation3;
+    animation-duration: 6s, 1s;
+    animation-delay: -3s, 0s;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, ease-in;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: paused, paused;}
   /* .car9, .car7 {display: none;} */
   .b_img, .i_img, .p_img {display: none;}
   .b2_img, .i2_img, .p2_img {display: block !important;}
@@ -234,7 +250,7 @@
   .bip_bip_button2 {width: 11vw;
     top: 0.3vh;
     left: 4vw;
-    background-size: 226%; animation: none; background-position-x: left;}
+    background-size: 226%; animation: none; background-position-x: left; cursor: url(../images/bip_bip_cursor.png) 70 80, pointer;}
   #city_name_paragraphs {margin-top: 9%; font-size: 28px;}
   .city7 p, .city9 p, .city11 p {font-size: 20px !important; margin-top: 11% !important;}
   .slider_block4_part2 {border: 14px solid black;}
@@ -255,13 +271,16 @@
 
   /* начало футора блока */
   .footer {grid-auto-rows: 1fr 10%;}
-  .picture_footer img {left: -11%; height: 101%; width: 124%; top: 0%;}
-  .text_footer div {font-size: 15px; top: 8%;}
+  .picture_footer img {left: -11%; height: 120%; width: 124%; top: 0%;}
+  .text_footer div {font-size: 2vh; top: 1.6vh;}
+  .text_footer1 {width: 24vw;}
+  .text_footer2 {width: 23vw;}
+
 
 
 }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 767px) {
   .plushka {
     height: 10.5vh;
     width: 27vw;
@@ -333,7 +352,15 @@
   .car9 {width: 19%;}
   .car7 {width: 19%;}
   .dashed_line img {width: 133%; height: 100%;}
-  .second_slider_wrapper {width: 42vw; height: 30vh; margin-left: -8vw;}
+  .second_slider_wrapper {width: 42vw; height: 30vh; margin-left: -8vw;
+    animation-name: edut_tachki5, car1_animation3;
+    animation-duration: 6s, 1s;
+    animation-delay: -3s, 0s;
+    animation-direction: normal, alternate;
+    animation-timing-function: linear, ease-in;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: paused, paused;}
   /* .car9, .car7 {display: none;} */
   .b_img, .i_img, .p_img {display: none;}
   .b2_img, .i2_img, .p2_img {display: block !important;}
@@ -343,7 +370,7 @@
   .bip_bip_button {width: 50%;
     top: 1%;
     right: 23%;
-    background-size: 226%; animation: none; background-position-x: left;}
+    background-size: 226%; animation: none; background-position-x: left; cursor: url(../images/bip_bip_cursor.png) 120 120, pointer;}
 
 
   /* начало четвертого блока */
@@ -382,8 +409,11 @@
 
   /* начало футора блока */
   .footer {grid-auto-rows: 1fr 10%;}
-  .picture_footer img {left: -11%; height: 101%; width: 124%; top: 0%;}
-  .text_footer div {font-size: 15px; top: 8%;}
+  .picture_footer img {left: -12%; height: 140%; width: 124%; top: -20%;}
+  .text_footer div {font-size: 2vh; top: 1.7vh;}
+  .text_footer1 {width: 25vw;}
+  .text_footer2 {width: 20vw;}
+
 
 
 }
@@ -427,6 +457,8 @@
   .button1_block1 {top: 20%;}
   .button2_block1 {top: 35%; right: 20%;}
   .button3_block1 {top: 73%;}
+  .part3_2 {display: none;}
+  .vpered1 {margin-top: 0.7vh;}
 
 
   /* начало второго блока */
@@ -435,21 +467,26 @@
   .light1, .light2, .light3 {grid-area: none; position: absolute; height: 100%; width: 88%; margin: 0% 6%;}
   .oval1 {opacity: 0; animation: red_signal_work_iphone_ipad 25s linear;}
   .stop_signal {left: 28%; opacity: 0; animation: light1_work_iphone_ipad 25s linear;}
-
   .oval2 {opacity: 0; animation: yellow_signal_work_iphone_ipad 25s linear;}
   .wait_signal {left: 28%; opacity: 0; animation: light2_work_iphone_ipad 25s ease;}
-
   .oval3 {opacity: 1; animation: light3_work_iphone_ipad 25s linear;}
   .go_signal {left: 38%; opacity: 1; animation: green_signal_work_iphone_ipad 25s ease;}
-
   .footer2 {grid-template-columns: 1fr 17%;}
+  .phrase1 div, .phrase2 div, .phrase3_iphone {font-size: 2vh;}
+  .phrase3 {display: none;}
+  .phrase3_iphone {display: block; line-height: 1;}
+  .phrase1_part2, .phrase2_part2 {margin-top: 0% !important;}
+  .part2_footer2 div {margin-top: 0.7vh; font-size: 32px;}
 
 
   /* начало третьего блока */
   .block3 {grid-template-rows: 1fr 7%;}
   .footer3 {grid-template-columns: 10% 18% 1fr 17%;}
-  .footer3 div {font-size: 32px;}
-  .bip_bip_button {width: 35%; top: -15%; right: 3%;}
+  .footer3 div {font-size: 32px; }
+  .vpered3 {margin-top: 0.8vh;}
+  .part2_footer3 div {margin-top: 0.8vh;}
+  .part1_footer3 div {margin-top: 0.7vh;}
+  .bip_bip_button {width: 35%; top: 0%; right: 3%;}
   .car8, .car10 {display: none;}
   .car1 img, .car4 img, .car5 img, .car7 img, .car9 img {height: 100%}
   .car2 img, .car3 img, .car6 img {height: 90%;}
@@ -462,10 +499,10 @@
   .block4 {grid-template-rows: 1fr 7%;}
   .mainpart4 {grid-template-rows: 5% 10% 1fr 3%;}
   .footer4 {grid-template-columns: 1fr 20% 17%;}
-  .vpered4 {font-size: 32px;}
+  .vpered4 {font-size: 32px; margin-top: 0.8vh;}
   .city_slider {grid-template-columns: 18% 1fr 18%;}
   .third_slider_wrapper {left: 10%; height: 73%; width: 88%;}
-  .road_sign_1 {top: 6%; left: 4%; height: 23%; width: 24%;}
+  .road_sign_1 {top: 8%; left: 1%; height: 23%; width: 24%;}
   .road_sign_2 {display: none;}
   .road_sign_3 {top: 13%; right: -1.5%; height: 16%; width: 31%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
@@ -473,8 +510,27 @@
     width: 6%;
     border: 10px solid black;
   }
-  #city_name_paragraphs {margin-top: 11%;}
+  #city_name_paragraphs {margin-top: 12%;}
   .city9 p, .city11 p {font-size: 31px !important; margin-top: 13% !important;}
+  .city7 p {font-size: 28px !important; margin-top: 13% !important;}
+  .bip_bip_button2 {display: none;}
+  .previous_button_part4 img {height: 70%; top: 25%; left: 42%;}
+  .next_button_part4 img {height: 70%; top: 25%; left: 23%;}
+  .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {z-index: 2; height: 40px; width: 40px;}
+  .text_part4 {font-size: 18px;}
+  .lenta_stop {width: 12%; left: 2%;}
+  .button2_block4 {top: 15%;}
+  .button3_block4 {top: 6%; left: 30.5%;}
+  .button4_block4 {top: 18%;}
+  .button6_block4  {top: 11%; right: 23.5%;}
+  .button7_block4 {top: 13%;}
+  .button8_block4 {top: 15%;}
+  .button9_block4 {top: 9%;}
+  .button10_block4 {top: 17%;}
+  .button11_block4  {top: 16%;}
+  .lenta_stop2 {width: 12%; right: -12%;}
+  .button12_block4 {top: 13%;}
+  .text11_part4 {font-size: 10px;}
 
   /* начало футора блока */
   .footer {grid-auto-rows: 1fr 7%;}
@@ -514,7 +570,7 @@
   /* .text1_part1 {margin-left: 13%;} */
   .text1_part1, .text2_part1, .text3_part1, .text4_part1 {font-size: 2.8vh; left: 6vw;}
   .part3_2 div {right: 4vw; font-size: 2.8vh;}
-  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 1.3vh; font-size: 3.5vh;}
+  .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {margin-top: 1.4vh; font-size: 3.8vh;}
   .plushka div {font-size: 15px; margin-top: 15%;}
   .part2 {grid-template-rows: 10% 1fr 5%;}
   .button2_block1 {top: 40vh;}
@@ -533,9 +589,9 @@
   .phrase3 {top: 22%;}
 
   /* начало третьего блока */
-  .part1_footer3 div {font-size: 25px; margin-top: 14%;}
-  .part2_footer3 div {font-size: 25px; margin-top: 8%;}
-  .bip_bip_button {width: 15%; top: -8%;}
+  .part1_footer3 div {font-size: 3.8vh; margin-top: 1.4vh;}
+  .part2_footer3 div {margin-top: 1.4vh; font-size: 3.8vh;}
+  .bip_bip_button {width: 19%; top: 0%;}
   .b2_img {display: none;}
   .i2_img {display: none;}
   .p2_img {display: none;}
@@ -545,19 +601,20 @@
   .bip_bip_img, .bip_bip_img2 {overflow: hidden;}
 
   /* начало четвертого блока */
-  .bip_bip_button2 {width: 97%; top: -12%;}
+  .bip_bip_button2 {width: 115%; top: -1%; right: 6%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
-    height: 4.5%;
+    height: 25px;
+    width: 25px;
   }
   .slider_block4_part1 {grid-template-columns: 25% 1fr 25%;}
   .city_slider {grid-template-columns: 15% 1fr 15%;}
   .previous_button_part4 img {height: 70%; top: 25%; left: 44%;}
   .next_button_part4 img {height: 70%; top: 25%; left: 19%;}
   .road_sign_2 {height: 30%; width: 18%;}
-  #city_name_paragraphs {margin-top: 9%;}
+  #city_name_paragraphs {margin-top: 5vh;}
 
   /* начало четвертого блока */
- .text_footer div {font-size: 16px; top: 17%;}
+ .text_footer div {font-size: 2.5vh; top: 17%;}
  .picture_footer img {height: 129%; top: -15%;}
  .b_img2 {left: -3%;}
  .i_img2 {left: 26%;}
@@ -595,9 +652,9 @@
   .phrase3 {top: 22%;}
 
   /* начало третьего блока */
-  .part1_footer3 div {font-size: 25px; margin-top: 14%;}
-  .part2_footer3 div {font-size: 25px; margin-top: 8%;}
-  .bip_bip_button {width: 15%; top: -8%;}
+  .part1_footer3 div {font-size: 25px; margin-top: 18%;}
+  .part2_footer3 div {font-size: 25px; margin-top: 10%;}
+  .bip_bip_button {width: 18%; top: 0%;}
   .b2_img {display: none;}
   .i2_img {display: none;}
   .p2_img {display: none;}
@@ -607,9 +664,10 @@
   .bip_bip_img, .bip_bip_img2 {overflow: hidden;}
 
   /* начало четвертого блока */
-  .bip_bip_button2 {width: 97%; top: -12%;}
+  .bip_bip_button2 {width: 111%; top: -1%; right: 4%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
-    height: 4.5%;
+    height: 25px;
+    width: 25px;
   }
   .slider_block4_part1 {grid-template-columns: 25% 1fr 25%;}
   .city_slider {grid-template-columns: 15% 1fr 15%;}
@@ -619,8 +677,8 @@
   #city_name_paragraphs {margin-top: 9%;}
 
   /* начало четвертого блока */
- .text_footer div {font-size: 16px; top: 17%;}
- .picture_footer img {height: 129%; top: -15%;}
+ .text_footer div {font-size: 2.5vh; top: 17%;}
+ .picture_footer img {height: 139%; top: -15%;}
  .b_img2 {left: -3%;}
  .i_img2 {left: 26%;}
  .p_img2 {left: 50%;}
@@ -639,7 +697,7 @@
   /* .vpered1, .part2_footer2 div, .part5_footer3 div, .vpered4 {font-size: 30px; margin-top: 5%;} */
   /* .part3_2 div {margin-top: 2%;} */
   .text1_part1 {left: 6vw;}
-  .vpered1 {font-size: 3.6vh; margin-top: 1.5vh;}
+  .vpered1 {font-size: 4.3vh; margin-top: 1.5vh;}
   /* .button_general_block1 {width: 1.7%;} */
   .previous1, .previous2, .previous3 {width: 65%;}
   .next1, .next2, .next3 {width: 85%;}
@@ -653,9 +711,9 @@
   .phrase3 {top: 25%;}
 
   /* начало третьего блока */
-  .part1_footer3 div {font-size: 30px; margin-top: 5%;}
-  .part2_footer3 div {font-size: 30px; margin-top: 3%;}
-  .bip_bip_button {width: 14%; top: -9%;}
+  .part1_footer3 div {font-size: 30px; margin-top: 1.3vh;}
+  .part2_footer3 div {font-size: 30px; margin-top: 1.3vh;}
+  .bip_bip_button {width: 18%; top: 2%;}
   .b2_img {display: none;}
   .i2_img {display: none;}
   .p2_img {display: none;}
@@ -666,16 +724,19 @@
 /* начало четвертого блока */
   .previous_button_part4 img {height: 70%; top: 26%; left: 47%;}
   .next_button_part4 img {height: 70%; top: 26%; left: 15%;}
-  .bip_bip_button2 {width: 94%; top: -10%;}
+  .bip_bip_button2 {width: 109%; top: 0%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
-  height: 6%;
+  height: 25px;
+  width: 25px;
   }
   .b_img2 {left: 0%;}
   .i_img2 {left: 30%;}
   .p_img2 {left: 57%;}
+  #city_name_paragraphs {font-size: 42px; margin-top: 5.5%;}
+
 
   /* футер */
-  .text_footer div {font-size: 13px;}
+  .text_footer div {font-size: 2vh;}
   .picture_footer img {height: 105%;}
 }
 
@@ -700,8 +761,8 @@
 
   /* начало третьего блока */
   .part1_footer3 div, .part2_footer3 div {font-size: 30px;}
-  .part1_footer3 div {margin-top: 6%;}
-  .bip_bip_button {height: 100%; width: 14%; top: -10%;}
+  .part1_footer3 div {margin-top: 11%;}
+  .bip_bip_button {height: 100%; width: 17%; top: 2%;}
   .car2, .car6, .car7, .car3, .car4, .car10 {width: 26%;}
   .b2_img {display: none;}
   .i2_img {display: none;}
@@ -711,17 +772,20 @@
   .p_img {left: 50%;}
 
   /* начало четвертого блока */
-  .bip_bip_button2 {height: 72%; width: 85%; top: 4%; right: 8%;}
+  .bip_bip_button2 {height: 72%; width: 96%; top: 11%; right: 8%;}
   .slider_block4_part1 {grid-template-columns: 25% 1fr 25%;}
   .previous_button_part4 img {height: 70%; top: 26%; left: 46%;}
   .next_button_part4 img {height: 70%; top: 26%; left: 12%;}
   .road_sign_2 {left: 1%;}
   .button1_block4, .button2_block4, .button3_block4, .button4_block4, .button5_block4, .button6_block4, .button7_block4, .button8_block4, .button9_block4, .button10_block4, .button11_block4, .button12_block4 {
-    height: 6.5%;
+    height: 25px;
+    width: 25px;
   }
   .b_img2 {left: 6%;}
   .i_img2 {left: 29%;}
   .p_img2 {left: 50%;}
+  #city_name_paragraphs {font-size: 42px; margin-top: 7%;}
+
 
   .text_footer div {font-size: 14px;}
   .picture_footer img {height: 130%; top: -15%;}
