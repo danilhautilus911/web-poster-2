@@ -182,7 +182,7 @@ html{
   border-left: 5px solid black;
   border-right: 5px solid black;
 }
-#slide1, #slide2, #slide3 {width: 100%; height: 100%; position: relative;}
+#slide1, #slide2, #slide3 {width: 100%; height: 100%; position: relative; cursor: pointer;}
 /* #slide1 {background-color: red;} */
 /* #slide2 {background-color: green;} */
 /* #slide3 {background-color: yellow;} */
@@ -243,7 +243,7 @@ html{
   border-right: 5px solid black;
 }
 
-#slide1_2, #slide2_2, #slide3_2 {width: 100%; height: 100%; position: relative;}
+#slide1_2, #slide2_2, #slide3_2 {width: 100%; height: 100%; position: relative; cursor: pointer;}
 
 .element1_slide1_slider2 {
   position: absolute;
@@ -299,7 +299,7 @@ html{
   border-left: 5px solid black;
   border-right: 5px solid black;
 }
-#slide1_3, #slide2_3, #slide3_3 {width: 100%; height: 100%; position: relative; overflow: hidden;}
+#slide1_3, #slide2_3, #slide3_3 {width: 100%; height: 100%; position: relative; overflow: hidden; cursor: pointer;}
 /* #slide3_3 {background-color: skyblue;} */
 
 .element1_slide1_slider3 {
@@ -932,7 +932,7 @@ html{
   top: 0%;
   height: 80%;
   width: 95%;
-  background-color: pink;
+  /* background-color: pink; */
   border-radius: 100px;
   border: 20px solid black;
   z-index: -1;
